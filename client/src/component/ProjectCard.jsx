@@ -8,7 +8,6 @@ function ProjectCard() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const isMobileScreen = window.innerWidth <= 767;
   const [projectData, setProjectData] = useState([]);
-console.log(currentSlide)
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? projectData.length - 3 : prevSlide - 2
@@ -22,7 +21,7 @@ console.log(currentSlide)
   };
 
   useEffect(() => {
-    fetch("https://rozisoft-website-backend.vercel.app/project/all-project")
+    fetch("/project/all-project")
       .then((response) => response.json())
       .then((data) => {
         setProjectData(data);
