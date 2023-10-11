@@ -1,0 +1,136 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+/* Google Fonts */
+
+/* Root Styles Properties Starts Here */
+:root {
+  --primary: #174956;
+  --secondary: #456d78;
+  --ternary: #74929a;
+  --green-light: #befff7;
+  --white: #ffffff;
+  --black: #000000;
+  --width-full: 100%;
+}
+/* Root Styles Properties Ends Here */
+
+/* Default Styling Starts Here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body ::selection {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+/* Default Styling Ends Here */
+
+/* Scroll bar Customization Starts Here */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ternary);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background-color: #777;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+/* Scroll bar Customization Ends Here */
+
+/* Helper Classes Starts Here */
+.full-width {
+  width: var(--width-full);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.heading {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-y {
+  margin: 1rem 0;
+}
+
+.line {
+  width: 10%;
+  float: right;
+  height: 1rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 3rem;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 1rem 5rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.9s ease;
+}
+
+.btn:hover {
+  scale: 1.1;
+}
+
+/* Helper Classes Ends Here */

@@ -1,0 +1,51 @@
+/* Blog Page Styles Starts Here */
+.blog-page {
+  background: linear-gradient(
+    100deg,
+    #17495610,
+    #17495613,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+}
+
+.blog-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  border-radius: 1rem;
+}
+
+.blog-styles h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 2.3rem;
+}
+
+.blog-styles h2,
+h3,
+h3,
+h5,
+h6 {
+  color: #174956bd;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+.blog-styles p {
+  color: #133b46fb;
+  font-size: 0.9rem;
+}
+
+.blog-styles li {
+  list-style: inherit;
+  color: var(--ternary);
+}
+
+.blog-styles a {
+  text-decoration: underline;
+}
+
+/* Blog Page Styles Ends Here */

@@ -1,0 +1,92 @@
+/* project-card-styles Starts Here */
+
+.project-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container {
+  padding: 1rem 0;
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  gap: 1rem;
+}
+
+/* Styles for individual cards */
+.card {
+  background-color: #8f8f8f36;
+  border-radius: 1rem;
+  cursor: pointer;
+  flex: 0 0 80%;
+  max-width: 31%;
+  height: 100%;
+  margin-right: 1rem;
+  transition: transform 1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-bg {
+  background-position: center;
+  background-size: 100% auto;
+  height: 12rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-content-project {
+  padding: 1rem;
+}
+
+.card-content-project hr {
+  width: 3.5rem;
+  height: 0.8rem;
+  background-color: var(--primary);
+  border-radius: 2rem;
+}
+
+.card-content-project span {
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-content-project p {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* Styles for navigation buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #474747a8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-btn button img {
+  width: 2rem;
+}
+
+.prev-button {
+  left: 0px;
+}
+
+.next-button {
+  right: 0px;
+}
+
+/* project-card-styles Ends Here */

@@ -1,0 +1,39 @@
+/* Blog Card Styles Starts Here */
+.blog-card {
+  border-radius: 1rem;
+  background-color: #17495628;
+  flex: 0 0 80%;
+  max-width: 31%;
+}
+
+.back-img {
+  height: 15rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.blog-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.blog-content .upper-tags {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-content .upper-tags span {
+  background-color: var(--primary);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.blog-content h1 {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+/* Blog Card Styles Ends Here */

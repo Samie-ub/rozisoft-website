@@ -1,0 +1,239 @@
+/* Login Section Style Starts Here */
+.admin-form {
+  background-image: url("https://images.pexels.com/photos/1449455/pexels-photo-1449455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  overflow-y: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay-dash {
+  background-color: #174956b9;
+}
+.admin-form form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff28;
+  backdrop-filter: blur(10px);
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.admin-form form label {
+  font-weight: bold;
+  color: var(--white);
+  margin: 0.7rem 0;
+}
+
+.admin-form input {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #ffffff5d;
+  backdrop-filter: blur(10px);
+}
+
+.admin-form input:focus {
+  outline: none;
+}
+
+.admin-form img {
+  position: absolute;
+  width: 2rem;
+  background-color: var(--primary);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  bottom: 92%;
+  left: 45%;
+}
+
+.admin-form img:hover {
+  background-color: #174956b9;
+  backdrop-filter: blur(10px);
+}
+
+/* Login Section Style Ends Here */
+
+/* Dashboard Styles Starts Here */
+.blog-stats {
+  background: linear-gradient(
+    to bottom,
+    #17495610,
+    #17495613,
+    #17495613,
+    #17495613,
+    #ffffff
+  );
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.blog-stats h1 {
+  color: var(--secondary);
+  padding: 1rem 0;
+}
+
+.blog-stats span {
+  position: absolute;
+  left: 60%;
+  background-color: var(--primary);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  color: var(--white);
+  margin: 1rem 0;
+}
+
+.blog-stats span:hover {
+  scale: 1.1;
+}
+
+.stat-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-img img {
+  width: 5rem;
+  border-radius: 0.5rem;
+}
+
+.stat-card p {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.i-width {
+  width: 50% !important;
+}
+
+/* Dashboard Styles Ends Here */
+
+/* Dashboard Sidebar Styles Starts Here */
+.sidebar {
+  width: 17rem;
+  background-color: var(--primary);
+  position: fixed;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  padding: 0rem 0 1rem 0;
+}
+
+.sidebar a:hover {
+  color: var(--secondary);
+}
+
+.logo {
+  background-color: var(--secondary);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo h1 {
+  text-transform: uppercase;
+}
+
+.dash-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/* Dashboard Sidebar Styles Ends Here */
+
+/* Account Section Styles Starts Here */
+.blog-stats form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.blog-stats form input {
+  padding: 0.6rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.blog-stats form input:focus {
+  outline: none;
+}
+
+.blog-stats form button {
+  margin-top: 0 !important;
+}
+
+.blog-stats button {
+  margin: 0;
+}
+
+.blog-stats table {
+  width: 100%;
+  text-align: center;
+}
+/* Account Section Styles Ends Here */
+
+/* Service Section Styling Starts Here */
+.dash-service-card .service-card {
+  max-width: 100%;
+}
+.dash-service-card .card {
+  max-width: 100%;
+}
+.slide-down {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.slide-down.active {
+  max-height: 1000px;
+}
+.service-das-form input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #17495613;
+  border: none;
+  margin: 1rem 0;
+}
+.service-das-form input:focus {
+  outline: none;
+}
+
+.service-das-form input,
+.service-das-form textarea::placeholder {
+  text-transform: capitalize;
+}
+.service-das-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #17495613;
+  border: none;
+  margin: 1rem 0;
+}
+/* Service Section Styling Ends Here */
+
+/* Mobile Responsivness Start Here */
+@media (max-width: 767px) {
+  .admin-form form {
+    padding: 2rem;
+  }
+  .admin-form img {
+    bottom: 90%;
+    left: 40%;
+  }
+  .blog-stats {
+    padding: 1rem;
+  }
+  .stat-card {
+    display: block;
+  }
+}
+
+/* Mobile Responsivness Ends Here */

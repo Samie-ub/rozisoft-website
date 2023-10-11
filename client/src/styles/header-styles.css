@@ -1,0 +1,24 @@
+/* Header Styles Starts Here */
+.header-container {
+  background-color: var(--primary);
+  padding: 0.8rem 0;
+}
+.header-item img {
+  width: 1.2rem;
+  margin: 0 0.3rem;
+}
+
+.header-item p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+/* Header Styles Ends Here */
+
+/* Mobile Responsiveness Starts Here */
+@media (max-width: 767px) {
+  .header-container {
+    display: none;
+  }
+}
+/* Mobile Responsiveness Ends Here */

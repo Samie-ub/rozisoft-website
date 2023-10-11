@@ -1,0 +1,119 @@
+/* Service Card Styles Starts Here  */
+.service-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-container {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  gap: 2rem;
+}
+
+.service-card {
+  flex: 0 0 50%;
+  max-width: 48%;
+}
+
+.slider-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slider-controls button {
+  background-color: var(--primary);
+  border: none;
+  padding: 1rem 0.7rem 0.7rem 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.slider-controls button:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+}
+
+.slider-controls button img {
+  width: 1.8rem;
+}
+
+.slider-controls button:focus {
+  outline: none;
+}
+.service-bg {
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.gradient-card {
+  background: linear-gradient(120deg, #ffffffc9, #ffffffb9, #ffffffa9);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20rem;
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.gradient-card h1 {
+  font-size: 2.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.gradient-card span {
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+.card-content {
+  height: 35%;
+  width: 70%;
+  transition: transform 0.2s ease;
+  padding-bottom: 1.5rem;
+}
+
+.card-line {
+  width: 10%;
+  height: 1rem;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 3rem;
+  margin: 1rem 0;
+}
+.hover-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  opacity: 0;
+  transition: 0.6s ease-in-out all;
+}
+
+.hover-content p {
+  text-transform: capitalize;
+  color: var(--black);
+  font-weight: 500;
+}
+.hover-content ul li {
+  text-transform: capitalize;
+  color: var(--primary);
+}
+
+.gradient-card:hover {
+  .card-content {
+    transform: translateY(-5%);
+  }
+
+  .hover-content {
+    max-height: 30rem;
+    opacity: 1;
+    transition: 1s ease all;
+  }
+}
+
+/* Service Card Styles Ends Here  */
