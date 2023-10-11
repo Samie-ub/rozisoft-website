@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import { arrowIcon } from "../assets";
 import { Grid } from "@mui/material";
 import "../styles/project-card-styles.css";
-import "../styles/responsive-mobile.css";
 
 function ProjectCard() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const isMobileScreen = window.innerWidth <= 767;
   const [projectData, setProjectData] = useState([]);
+
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? projectData.length - 3 : prevSlide - 2
+      prevSlide === 0 ? projectData.length - 3 : prevSlide - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide >= projectData.length - 3 ? 0 : prevSlide + 2
+      prevSlide >= projectData.length - 3 ? 0 : prevSlide + 1
     );
   };
 
@@ -37,7 +37,7 @@ function ProjectCard() {
         className="project-container"
         style={{
           transform: `translateX(-${
-            currentSlide * (isMobileScreen ? 100 : 34)
+            currentSlide * (isMobileScreen ? 110 : 34)
           }%)`,
           transition: "transform 0.9s ease-in-out",
         }}

@@ -89,14 +89,10 @@
     justify-content: center;
   }
 
-  .project-container {
-    justify-content: center;
-  }
-
   .card {
     flex: 0 0 100%;
     max-width: 100%;
-    margin: 0 auto;
+   
   }
 
   .prev-button,
