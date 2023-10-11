@@ -35,7 +35,7 @@ function Navbar() {
     <div className={`navbar-container ${isNavbarFixed ? "fixed-navbar" : ""}`}>
       <Grid
         container
-        sx={{ justifyContent: { xs: "space-around", md: "space-evenly" } }}
+        sx={{ justifyContent: { xs: "space-between", md: "space-evenly" },px:{xs:2,md:0 }}}
         alignItems={"center"}
       >
         <Grid item xs={3} sm={2} md={2} lg={2} sx={{display:'flex',alignItems:'center'}}>
@@ -98,7 +98,7 @@ function Navbar() {
                       height: "100vh",
                       display: "flex",
                       flexDirection: "column",
-                      justifyContent: "space-around",
+                      justifyContent: "space-between",
                       py: 2,
                     }}
                   >
@@ -111,6 +111,7 @@ function Navbar() {
                           onClick={toggleMenu}
                           src={crossIcon}
                           alt="cross content"
+                          className="cross-icon"
                         />
                       </Grid>
                     </Grid>
