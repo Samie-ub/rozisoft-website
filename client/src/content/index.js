@@ -17,8 +17,7 @@ import {
   slideSix,
   slideSeven,
   slideEight,
-  slideNine,
-  slideTen,
+
 } from "../assets";
 
 export const navbarData = [
@@ -72,8 +71,7 @@ export const homeData = [
   slideSix,
   slideSeven,
   slideEight,
-  slideNine,
-  slideTen,
+
 ];
 
 export const aboutData = [
