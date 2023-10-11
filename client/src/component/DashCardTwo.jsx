@@ -5,7 +5,7 @@ function DashCardTwo() {
   const [displayedProjects, setDisplayedProjects] = useState(2);
   const [isExpanded, setIsExpanded] = useState(false);
   const handleDeleteProject = (projectId) => {
-    fetch(`/project/delete-project/${projectId}`, {
+    fetch(`https://rozisoft-website-backend.vercel.app/project/delete-project/${projectId}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -32,7 +32,7 @@ function DashCardTwo() {
     }
   };
   useEffect(() => {
-    fetch("/project/all-project")
+    fetch("https://rozisoft-website-backend.vercel.app/project/all-project")
       .then((response) => response.json())
       .then((data) => {
         setProjectData(data);
