@@ -16,7 +16,7 @@ function BlogSetup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/blog", {
+      const response = await axios.post("https://rozisoft-website-backend.vercel.app/blog", {
         content: blogContent,
         title: blogTitle,
         subTitle: blogSubTitle,
