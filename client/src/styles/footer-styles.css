@@ -54,3 +54,20 @@
   color: var(--white);
 }
 /* Footer Section Styles EndSSs Here */
+  @media (max-width: 767px) {
+
+    .footer-container{
+      padding: 2rem 0;
+    }
+    .footer-brand {
+      width: 70%;
+      position: relative;
+      bottom: 0%;
+      left: 0%;
+    }
+    .footer-brand-info {
+      position: relative;
+      bottom: 0;
+    }
+    
+  }

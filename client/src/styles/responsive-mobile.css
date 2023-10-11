@@ -154,8 +154,8 @@
   }
 
   .blog-card {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
 
   .slider-controls button img {
@@ -200,7 +200,7 @@
   /* Blog Section Styles Starts Here */
   .blog-card {
     flex: 0 0 100%;
-    max-width: 40%;
+    max-width: 100%;
   }
   .blog-content h1 {
     font-size: 1.1rem;
