@@ -15,7 +15,7 @@ function Account() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://rozisoft-website-h7o9.vercel.app/admin/users");
+      const response = await axios.get("https://rozisoft-website-backend.vercel.app/admin/users");
       setUsers(response.data);
     } catch (error) {
       console.error(error);
@@ -27,7 +27,7 @@ function Account() {
     e.preventDefault();
 
     try {
-      const url = "https://rozisoft-website-h7o9.vercel.app/admin/register";
+      const url = "https://rozisoft-website-backend.vercel.app/admin/register";
       const response = await axios.post(url, {
         adminID,
         adminPassword,
@@ -45,7 +45,7 @@ function Account() {
   };
   const handleDelete = async (userId) => {
     try {
-      const url = `https://rozisoft-website-h7o9.vercel.app/admin/users/${userId}`;
+      const url = `https://rozisoft-website-backend.vercel.app/admin/users/${userId}`;
       const response = await axios.delete(url);
 
       console.log(response.data);
