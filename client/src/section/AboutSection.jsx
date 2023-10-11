@@ -18,9 +18,9 @@ function AboutSection() {
               justifyContent: { xs: "center", md: "space-between" },
             }}
           >
-            <Grid item xs={11.5} md={12} lg={12} sx={{ py: { xs: 5, md: 0 } }}>
+            <Grid item xs={12} md={12} lg={12} sx={{ py: { xs: 5, md: 0 } }}>
               <h1 className="heading text-end">
-                Premier Digital Marketing <br /> Agency in Pakistan
+                Premier Digital Marketing Agency in Pakistan
               </h1>
               <br />
               <hr className="line" />
@@ -32,7 +32,7 @@ function AboutSection() {
                 alt="about section content"
               />
             </Grid>
-            <Grid item xs={11} md={6.7} lg={6}>
+            <Grid item xs={11.8} md={6.7} lg={6}>
               {aboutData.map((content, index) => {
                 return (
                   <p className="m-y text-end" key={index}>
