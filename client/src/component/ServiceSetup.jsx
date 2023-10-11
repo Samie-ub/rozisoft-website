@@ -20,7 +20,7 @@ function ServiceSetup() {
 
   const handleSave = () => {
     axios
-      .post("/service/add-service", formData)
+      .post("https://rozisoft-website-backend.vercel.app/service/add-service", formData)
       .then((response) => {
         console.log(response.data);
         toast.success("Service added successfully", {
