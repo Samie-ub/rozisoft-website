@@ -21,7 +21,7 @@ function ProjectCard() {
   };
 
   useEffect(() => {
-    fetch("/project/all-project")
+    fetch("https://rozisoft-website-backend.vercel.app/project/all-project")
       .then((response) => response.json())
       .then((data) => {
         setProjectData(data);
