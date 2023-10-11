@@ -75,6 +75,15 @@
   .social-item {
     display: none !important;
   }
+  .logo-img{
+    position: relative;
+    left: -1rem;
+  }
+
+  .cross-icon{
+    position: relative;
+    right: -1rem;
+  }
   .menu-btn {
     display: block;
   }
@@ -101,7 +110,7 @@
     text-transform: capitalize;
   }
   .nav-social {
-    width: 2.5rem;
+    width: 3rem;
   }
 
   .menu-links {
