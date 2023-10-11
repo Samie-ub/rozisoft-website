@@ -5,11 +5,11 @@ function ContactSection() {
   const contactData = [
     {
       imgSrc: phoneIcon,
-      label: "+92-123-4567890",
+      label: "+92-3488128670",
     },
     {
       imgSrc: mailIcon,
-      label: "email@address.com",
+      label: "rozisoftservice@gmail.com",
     },
   ];
   return (
