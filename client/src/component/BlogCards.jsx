@@ -59,11 +59,7 @@ function BlogCards() {
               >
                 <div className="gradient"></div>
               </div>
-              <div className="blog-content">
-                <div className="upper-tags">
-                  <span>{content.category}</span>
-                  <span>{new Date(content.date).toDateString()}</span>
-                </div>
+              <div className="blog-content">      
                 <h1>{content.title}</h1>
                 <p>{excerpt}</p>
                 <NavLink to={`/blog/${content._id}`}>
