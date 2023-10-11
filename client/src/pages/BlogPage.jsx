@@ -11,7 +11,7 @@ function BlogPage() {
   const [blogData, setBlogData] = useState({});
   useEffect(() => {
     axios
-      .get(`/blog/${blogId}`)
+      .get(`https://rozisoft-website-backend.vercel.app/blog/${blogId}`)
       .then((response) => {
         setBlogData(response.data);
       })
