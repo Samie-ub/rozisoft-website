@@ -1,136 +1,93 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Grid } from "@mui/material";
-import { socialData } from "../content";
-import { Link } from "react-scroll";
-import { logoIcon } from "../assets";
-import "../styles/footer-styles.css";
+import { NavLink } from "react-router-dom";
+import { arrowIcon } from "../assets";
+import "../styles/blog-card-styles.css";
 
-function Footer() {
-  const industriesData = [
-    "Hospitality",
-    "Travel & Tourism",
-    "Real State",
-    "Financial Service",
-    "Education",
-    "News",
-  ];
+function BlogCards() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [blogData, setBlogData] = useState([]);
+  const isMobileScreen = window.innerWidth <= 767;
 
-  const contact = [
-    {
-      label: "Phone",
-      uan: " +92 326 4075748",
-    },
-    {
-      label: "Mobile",
-      uan: " +92 348 8128670",
-    },
-    {
-      label: "Email",
-      uan: "rozisoftservice@gmail.com ",
-    },
-  ];
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? blogData.length - 1 : prevSlide - 1
+    );
+  };
 
-  const servicesData = [
-    "Web Design and Development",
-    "Social Media Marketing",
-    "Graphic Designing",
-    "Search Engine Optimization",
-    "Digital Marketing",
-    "Internet Marketing",
-  ];
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide >= blogData.length - 1 ? 0 : prevSlide + 1
+    );
+  };
 
-  const links = [
-    {
-      class: "home",
-      label: "Home",
-    },
-    {
-      class: "about",
-      label: "About us",
-    },
-    {
-      class: "service",
-      label: "Services",
-    },
-    {
-      class: "blog",
-      label: "Blogs",
-    },
-    {
-      class: "contact",
-      label: "Contact",
-    },
-  ];
+  useEffect(() => {
+    axios
+      .get("https://rozisoft-website-backend.vercel.app/blog")
+      .then((response) => {
+        setBlogData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching blog data:", error);
+      });
+  }, []);
+
+  const extractWords = (text, start, end) => {
+    const words = text.split(" ");
+    return words.slice(start, end).join(" ");
+  };
+
   return (
-    <div className="footer-container">
-      <Grid container justifyContent={"center"}>
-        <Grid item xs={12} md={11} lg={11}>
-          <Grid
-            container
-            sx={{ justifyContent: { xs: "center", md: "space-around" } }}
-          >
-            <Grid item xs={12} md={4} lg={3} sx={{pb:{xs:4,md:0}}}>
-              <img
-                src={logoIcon}
-                className="footer-brand"
-                alt="footer brand content"
-              />
-              <div className="footer-brand-info">
-                {contact.map((content) => {
-                  return (
-                    <p>
-                      <span>{content.label} : </span>
-                      {content.uan}
-                    </p>
-                  );
-                })}
-                <p>
-                  <span>Connect With Us :</span>
-                </p>
-                <div className="img-container">
-                  {socialData.map((content, index) => {
-                    return (
-                      <img src={content.icon} alt="social media account" />
-                    );
-                  })}
-                </div>
+    <div className="service-slider">
+      <div
+        className="service-container"
+        style={{
+          transform: `translateX(-${
+            currentSlide * (isMobileScreen ? 110 : 32)
+          }%)`,
+          transition: "transform 0.9s ease-in-out",
+        }}
+      >
+        {blogData.map((content, index) => {
+          const excerpt = extractWords(content.content, 10, 20);
+          return (
+            <div className="blog-card" key={index}>
+              <div
+                className="back-img"
+                style={{ backgroundImage: `url(${content.coverImageUrl})` }}
+              >
+                <div className="gradient"></div>
               </div>
-            </Grid>
-            <Grid item xs={11} md={3} lg={3} sx={{ pb: { xs: 4, md: 0 } }}>
-              <h1>Our Services</h1>
-              {servicesData.map((content) => {
-                return <p>{content}</p>;
-              })}
-            </Grid>
-            <Grid item xs={11} md={2.5} lg={2}>
-              <h1>Industries</h1>
-              {industriesData.map((content) => {
-                return <p>{content}</p>;
-              })}
-            </Grid>
-            <Grid item md={2.5} lg={2} className="display-none">
-              <h1>quick links</h1>
-              {links.map((content) => {
-                return (
-                  <p className="footer-link">
-                    <Link
-                      to={content.class}
-                      spy={true}
-                      smooth={true}
-                      offset={10}
-                      duration={1500}
-                    >
-                      {content.label}
-                    </Link>
-                  </p>
-                );
-              })}
-            </Grid>
-          </Grid>
+              <div className="blog-content">
+                <div className="upper-tags">
+                  <span>{content.category}</span>
+                  <span>{new Date(content.date).toDateString()}</span>
+                </div>
+                <h1>{content.title}</h1>
+                <p>{excerpt}</p>
+                <NavLink to={`/blog/${content._id}`}>
+                  <button className="btn">Read More</button>
+                </NavLink>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <Grid container sx={{ justifyContent: { xs: "center", md: "flex-end" } }}>
+        <Grid item lg={2}>
+          <div className="slider-controls">
+            <button onClick={prevSlide}>
+              <img src={arrowIcon} className="rotate" alt="slider left icon" />
+            </button>
+            <button onClick={nextSlide}>
+              <img src={arrowIcon} alt="slider left icon" />
+            </button>
+          </div>
         </Grid>
       </Grid>
     </div>
   );
 }
 
-export default Footer;
+export default BlogCards;

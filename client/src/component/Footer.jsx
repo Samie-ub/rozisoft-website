@@ -69,7 +69,7 @@ function Footer() {
             container
             sx={{ justifyContent: { xs: "center", md: "space-around" } }}
           >
-            <Grid item xs={11} md={4} lg={3}>
+            <Grid item xs={12} md={4} lg={3} sx={{pb:{xs:4,md:0}}}>
               <img
                 src={logoIcon}
                 className="footer-brand"
