@@ -42,6 +42,7 @@
 
   .about-container h1 {
     text-align: center !important;
+    font-size: 2rem;
   }
   .about-container p {
     text-align: center !important;
@@ -72,6 +73,9 @@
   }
   .card-content {
     width: 100%;
+  }
+  .service-section-container h1{
+    font-size: 2rem;
   }
 
   /* Service Section Ends Here */
