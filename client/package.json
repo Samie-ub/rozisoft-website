@@ -5,6 +5,7 @@
   "proxy": "https://rozisoft-website-backend.vercel.app",
   "dependencies": {
     "@emotion/react": "^11.11.1",
+    "@emailjs/browser": "^3.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.11",
     "@testing-library/jest-dom": "^5.17.0",
