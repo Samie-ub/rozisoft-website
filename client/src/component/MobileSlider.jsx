@@ -8,7 +8,7 @@ function MobileSlider() {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    fetch("https://rozisoft-website-backend.vercel.app/service/all-service")
+    fetch("/service/all-service")
       .then((response) => response.json())
       .then((data) => {
         setServiceData(data);
@@ -25,8 +25,6 @@ function MobileSlider() {
         spaceBetween={50}
         pagination={{ clickable: true }}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <>
           {serviceData.map((content, index) => {
