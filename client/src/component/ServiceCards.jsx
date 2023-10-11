@@ -20,7 +20,7 @@ function ServiceCards() {
   };
 
   useEffect(() => {
-    fetch("/service/all-service")
+    fetch("https://rozisoft-website-backend.vercel.app/service/all-service")
       .then((response) => response.json())
       .then((data) => {
         setServiceData(data);
