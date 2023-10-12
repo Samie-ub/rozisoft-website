@@ -11,6 +11,14 @@
 /* Home Section Sytyling Ends here */
 
 /* About Section Styling Starts Here */
+.square-paragraph {
+  width: 100%;
+  padding:0; 
+  box-sizing: border-box;
+  text-align: justify; 
+  margin: 0;
+}
+
 
 .about-container {
   background: linear-gradient(

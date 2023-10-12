@@ -35,7 +35,7 @@ function AboutSection() {
             <Grid item xs={11.8} md={6.7} lg={6}>
               {aboutData.map((content, index) => {
                 return (
-                  <p className="m-y text-end" key={index}>
+                  <p className="square-paragraph m-y" key={index}>
                     {content.paragraph}
                   </p>
                 );
