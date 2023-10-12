@@ -53,4 +53,3 @@ function BlogPage() {
 }
 
 export default BlogPage;
-x
