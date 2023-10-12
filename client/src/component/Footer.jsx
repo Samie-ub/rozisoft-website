@@ -69,7 +69,7 @@ function Footer() {
             container
             sx={{ justifyContent: { xs: "center", md: "space-around" } }}
           >
-            <Grid item xs={12} md={4} lg={3} sx={{pb:{xs:4,md:0}}}>
+            <Grid item xs={12} md={4} lg={3} sx={{pb:{xs:2,md:0}}}>
               <img
                 src={logoIcon}
                 className="footer-brand"
@@ -84,7 +84,7 @@ function Footer() {
                     </p>
                   );
                 })}
-                <p>
+                <p className="footer-contact">
                   <span>Connect With Us :</span>
                 </p>
                 <div className="img-container">
@@ -96,7 +96,7 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={11} md={3} lg={3} sx={{ pb: { xs: 4, md: 0 } }}>
+            <Grid item xs={11} md={3} lg={3} sx={{pb:{xs:1,md:0}}}>
               <h1>Our Services</h1>
               {servicesData.map((content) => {
                 return <p>{content}</p>;
