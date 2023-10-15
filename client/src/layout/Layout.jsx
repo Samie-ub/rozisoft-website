@@ -14,6 +14,8 @@ import ServiceSetup from "../component/ServiceSetup";
 import ProjectSetup from "../component/ProjectSetup";
 import BlogSetup from "../component/BlogSetup";
 import "../styles/responsive-mobile.css";
+import ServicePage from "../pages/ServicePage";
+import SeoPage from "../pages/SeoPage";
 
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
@@ -22,18 +24,22 @@ function PrivateRoute({ element }) {
   if (isAuthenticated) {
     return element;
   } else {
-    return <Navigate to="/rozisoft-admin/login" replace={true} />;
+    return <Navigate to="/rozisoft-admin" replace={true} />;
   }
 }
 
 function Layout() {
+
+
   return (
     <div>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/service" element={<ServicePage />} />
+          <Route path="/seo" element={<SeoPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
-          <Route path="/rozisoft-admin/login" element={<AdminLogin />} />
+          <Route path="/rozisoft-admin" element={<AdminLogin />} />
           <Route
             path="/rozisoft-admin/dashboard"
             element={<PrivateRoute element={<Dashboard />} />}

@@ -54,7 +54,7 @@ function Navbar() {
                   duration={1500}
                   key={index}
                 >
-                  <RouterLink to={"/"}>
+                  <RouterLink to={content.path}>
                     <p>{content.label}</p>
                   </RouterLink>
                 </Link>
@@ -128,7 +128,7 @@ function Navbar() {
                             key={index}
                             onClick={toggleMenu}
                           >
-                            <RouterLink to={"/"}>
+                            <RouterLink to={content.path}>
                               <p>{content.label}</p>
                             </RouterLink>
                           </Link>

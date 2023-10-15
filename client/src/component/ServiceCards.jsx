@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import { arrowIcon } from "../assets";
 import "../styles/Service-card-styles.css";
+import { Link } from "react-router-dom";
+
 
 function ServiceCards() {
   const [serviceData, setServiceData] = useState([]);
@@ -30,6 +32,7 @@ function ServiceCards() {
       });
   }, []);
 
+
   return (
     <div className="service-slider">
       <div
@@ -39,6 +42,7 @@ function ServiceCards() {
         {serviceData.map((content, index) => {
           return (
             <div key={index} className="service-card">
+              <Link to={"/"}>
               <div
                 className="service-bg"
                 style={{
@@ -63,6 +67,7 @@ function ServiceCards() {
                   </div>
                 </div>
               </div>
+            </Link>
             </div>
           );
         })}

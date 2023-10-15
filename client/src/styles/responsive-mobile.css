@@ -2,7 +2,7 @@
   /* Helper Classes Starts Here */
   .heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .line {

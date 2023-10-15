@@ -7,7 +7,7 @@ function Sidebar() {
 
   const handleLogout = () => {
     localStorage.removeItem("jwtToken");
-    navigate("/rozisoft-admin/login");
+    navigate("/rozisoft-admin");
   };
 
   const sideLinks = [

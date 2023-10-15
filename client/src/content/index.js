@@ -24,6 +24,7 @@ export const navbarData = [
   {
     class: "home",
     label: "home",
+    path:"/"
   },
   {
     class: "about",
@@ -32,6 +33,7 @@ export const navbarData = [
   {
     class: "service",
     label: "services",
+    path:"/service"
   },
   {
     class: "blog",
