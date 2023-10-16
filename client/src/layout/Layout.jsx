@@ -16,6 +16,7 @@ import BlogSetup from "../component/BlogSetup";
 import "../styles/responsive-mobile.css";
 import ServicePage from "../pages/ServicePage";
 import SeoPage from "../pages/SeoPage";
+import AboutUsPage from "../pages/AboutUsPage";
 
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
@@ -36,6 +37,7 @@ function Layout() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/seo" element={<SeoPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />

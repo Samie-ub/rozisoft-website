@@ -17,13 +17,15 @@
     #ffffff,
     #ffffff,
     #ffffff
-    );
+  );
 }
 
+/* Inherit Value Change */
 .page-card .service-card {
   max-width: 100%;
 }
 
+/* Tab Component Styles Starts Here */
 .tab-container {
   display: flex;
   justify-content: space-between;
@@ -53,6 +55,9 @@
   cursor: pointer;
   scale: 1.1;
 }
+/* Tab Component Styles Ends Here */
+
+/* Steps Card Component Styling Starts Here */
 
 .step-card {
   display: flex;
@@ -83,6 +88,9 @@
   line-height: 1.6rem;
 }
 
+/* Steps Card Component Styling Ends Here */
+
+/* Method Component Styling Starts Here */
 .m-c {
   padding: 0 1rem;
   margin: 1rem;
@@ -112,6 +120,9 @@
   line-height: 1.5rem;
   font-size: 0.9rem;
 }
+/* Method Component Styling Ends Here */
+
+/* FAQ Component Styling Starts Here */
 .faq-container {
   max-width: 90%;
   margin: 0 auto;
@@ -148,35 +159,132 @@
 .faq-icon.open {
   transform: rotate(225deg);
 }
+/* FAQ Component Styling Ends Here */
 
-.s-card{
+/* Service Component Styling Starts Here */
+.s-card {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.s-card svg{
+.s-card:hover {
+  background-color: var(--primary);
+  border-radius: 3rem;
   color: var(--white);
-  padding: 1rem ;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.s-card svg {
+  color: var(--white);
+  padding: 1rem;
   font-size: 1.5rem;
   background-color: var(--primary);
   border-radius: 100%;
 }
 
-.s-card span{
-  font-size: .9rem;
+.s-card span {
+  font-size: 0.9rem;
 }
 
+/* Service Component Styling Ends Here */
+
+.about-content h1 {
+  text-transform: capitalize;
+}
+
+.about-content p {
+  line-height: 2rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.brand-h {
+  height: 70vh;
+  background-attachment: fixed;
+  border-radius: 1rem;
+}
+
+.over-lay {
+  background-color: #17495641;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.over-lay img {
+  width: 100%;
+}
+
+.about-main h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.about-h {
+  font-weight: 300;
+  color: var(--ternary);
+  font-size: 2.5rem;
+}
+
+.about-d {
+  line-height: 1.9rem;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.about-btn {
+  font-size: 3.1rem;
+}
+
+.about-btn button {
+  padding: 1rem;
+  width: 80%;
+  border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.about-btn button:hover{
+  cursor: pointer;
+}
+
+.dropdown-content{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: absolute;
+}
 /* Responsive For Mobile Starts Here */
 
 @media (max-width: 767px) {
-
   .faq-container {
     max-width: 100%;
     margin: 0 auto;
   }
   .m-c {
-   text-align: center;
+    text-align: center;
+  }
+  .about-us-page{
+    text-align: center;
+  }
+  .about-btn {
+    font-size: 2rem;
+  }
+
+  .about-h {
+    font-size: 2rem;
+  }
+
+  .about-btn button{
+width: 100%;
   }
 }
 

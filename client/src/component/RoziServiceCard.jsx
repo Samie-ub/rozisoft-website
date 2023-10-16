@@ -32,6 +32,7 @@ function RoziServiceCard() {
                 <i class="fa-solid fa-arrow-right"></i>
                 <span>{content}</span>
               </div>
+              
             </Grid>
           );
         })}

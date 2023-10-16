@@ -1,3 +1,4 @@
+import { Grid } from '@mui/material';
 import React, { useState } from 'react';
 
 function Faqs() {
@@ -43,6 +44,11 @@ function Faqs() {
       };
   return (
     <div>
+      <Grid container justifyContent={"center"}>
+        <Grid item lg={8} sx={{pb:{xs:4,md:10}}}>
+          <h1 className="heading text-center">FAQ</h1>
+        </Grid>
+      </Grid>
         <div className="faq-container">
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">

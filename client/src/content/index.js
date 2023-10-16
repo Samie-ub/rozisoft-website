@@ -29,6 +29,7 @@ export const navbarData = [
   {
     class: "about",
     label: "about us",
+    path:"/about-us"
   },
   {
     class: "service",

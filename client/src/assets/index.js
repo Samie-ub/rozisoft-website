@@ -29,6 +29,8 @@ import s6 from "./slide-6.png";
 import s7 from "./slide-7.png";
 import s8 from "./slide-8.png";
 import seo from "./seo.png";
+import aboutH from "./about-h.png"
+import aboutII from "./aboutLat.png"
 // Exports For Images
 export const mailIcon = mail;
 export const logoIcon = logo;
@@ -60,3 +62,5 @@ export const slideSix = s6;
 export const slideSeven = s7;
 export const slideEight = s8;
 export const seoCover = seo;
+export const AboutImg = aboutH;
+export const AboutImgII = aboutII;
