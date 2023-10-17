@@ -1,22 +1,17 @@
 const express = require("express");
 const router = express.Router();
-const Service = require("../models/Service");
-
-const generatePathName = (cardTitle) => {
-  return cardTitle.toLowerCase().replace(/ /g, "-");
-};
+const Service = require("../models/Service"); 
 router.post("/add-service", async (req, res) => {
   try {
     const { backgroundImageUrl, cardTitle, cardSubServices, cardServices } =
       req.body;
 
-      const newService = new Service({
-        backgroundImageUrl,
-        cardTitle,
-        cardSubServices,
-        cardServices: cardServices.split(","),
-        pathName: generatePathName(cardTitle),
-      });
+    const newService = new Service({
+      backgroundImageUrl,
+      cardTitle,
+      cardSubServices,
+      cardServices: cardServices.split(","),
+    });
 
     await newService.save();
 
