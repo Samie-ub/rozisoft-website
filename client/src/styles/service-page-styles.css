@@ -299,6 +299,14 @@ font-size: 1rem;
   .about-btn button {
     width: 100%;
   }
+
+  .smm-content{
+    text-align: center;
+  }
+  .smm-main-points{
+    margin: 1rem 0;
+    text-align: center;
+  }
 }
 
 /* Responsive For Mobile Ends Here */

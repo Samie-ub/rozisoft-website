@@ -79,7 +79,7 @@ function SmmPage() {
                 container
                 sx={{
                   justifyContent: { xs: "center", md: "space-between" },
-                  py: { xs: 4, md: 15 },
+                  py: { xs: 10, md: 15 },
                 }}
               >
                 <Grid item xs={12} md={6} lg={6}>
