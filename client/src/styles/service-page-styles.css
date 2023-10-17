@@ -93,7 +93,7 @@
 /* Method Component Styling Starts Here */
 .m-c {
   padding: 0 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
   height: 100%;
 }
 
@@ -118,6 +118,7 @@
 
 .m-c p {
   line-height: 1.5rem;
+  text-align: justify;
   font-size: 0.9rem;
 }
 /* Method Component Styling Ends Here */
@@ -190,6 +191,7 @@
 
 /* Service Component Styling Ends Here */
 
+/* About Us Styles Starts Here */
 .about-content h1 {
   text-transform: capitalize;
 }
@@ -238,18 +240,41 @@
   font-size: 3.1rem;
 }
 
-
-.about-btn button:hover{
+.about-btn button:hover {
   cursor: pointer;
 }
 
-.dropdown-content{
+.dropdown-content {
   font-size: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
   position: absolute;
 }
+
+/* About Us Styles Ends Here */
+
+/* SMM Styles Starts Here */
+.smm-content h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.smm-content p {  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.smm-main-points h3{
+font-size: 1rem;
+}
+
+.smm-main-points p{
+  font-size: .9rem;
+  color: var(--ternary);
+}
+/* SMM Styles Stas Here */
+
 /* Responsive For Mobile Starts Here */
 
 @media (max-width: 767px) {
@@ -260,7 +285,7 @@
   .m-c {
     text-align: center;
   }
-  .about-us-page{
+  .about-us-page {
     text-align: center;
   }
   .about-btn {
@@ -271,8 +296,8 @@
     font-size: 2rem;
   }
 
-  .about-btn button{
-width: 100%;
+  .about-btn button {
+    width: 100%;
   }
 }
 

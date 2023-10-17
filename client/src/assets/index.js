@@ -31,6 +31,9 @@ import s8 from "./slide-8.png";
 import seo from "./seo.png";
 import aboutH from "./about-h.png"
 import aboutII from "./aboutLat.png"
+import smmI from "./smm.png"
+import smmII from "./smm2.png"
+import smmIII from "./smm3.png"
 // Exports For Images
 export const mailIcon = mail;
 export const logoIcon = logo;
@@ -64,3 +67,6 @@ export const slideEight = s8;
 export const seoCover = seo;
 export const AboutImg = aboutH;
 export const AboutImgII = aboutII;
+export const smmCover = smmI;
+export const smmCoverII = smmII;
+export const smmCoverIII = smmIII;

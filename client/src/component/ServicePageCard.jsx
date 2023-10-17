@@ -15,15 +15,18 @@ function ServicePageCard() {
             console.error("Error fetching service data:", error);
           });
       }, []);
-    
+      const generateValidPath = (title) => {
+        return title.toLowerCase().replace(/ /g, "-");
+      };
   return (
     <div className="page-card">
 
         <Grid container justifyContent={"center"} spacing={5} sx={{pb:{xs:4,md:20}}}>
             {serviceData.map((content, index) => {
+              const validPath = generateValidPath(content.cardTitle);
               return (
                 <Grid item xs={11} md={6} lg={5}>
-              <RouterLink to={content.cardTitle}>
+              <RouterLink to={validPath}>
               
             <div key={index} className="service-card full-width">
               <div

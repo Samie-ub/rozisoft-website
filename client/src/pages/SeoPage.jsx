@@ -10,7 +10,9 @@ import StepCards from "../component/StepCards";
 import MethodCards from "../component/MethodCards";
 import Faqs from "../component/Faqs";
 import RoziServiceCard from "../component/RoziServiceCard";
-
+import { seoStepData } from "../content/servicesContent";
+import { methodData } from "../content/servicesContent";
+import { faqs } from "../content/servicesContent";
 function SeoPage() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -30,11 +32,11 @@ function SeoPage() {
           <Grid
             container
             justifyContent={"center"}
-            sx={{ py: { xs: 4, md: 5 } }}
+            sx={{ py: { xs: 4, md: 0 } }}
           >
             <Grid item xs={11}>
               <Grid container justifyContent={"center"} alignItems={"center"}>
-                <Grid item lg={6}>
+                <Grid item md={6} lg={6}>
                   <h1 className="heading">
                     HERE’S WHAT YOU GET WITH ROZISOFT PROFESSIONAL SEO SERVICES
                     IN PAKISTAN
@@ -44,10 +46,22 @@ function SeoPage() {
                   <img src={seoCover} className="full-width" alt="" />
                 </Grid>
               </Grid>
-              <StepCards />
+              <StepCards data={seoStepData} />
 
-              <Grid container justifyContent={"center"}sx={{display:{xs:"none",md:"flex"} }}>
-                <Grid item lg={8} sx={{ py: { xs: 4, md: 10 },display:{xs:"none",md:"block"} }}>
+              <Grid
+                container
+                justifyContent={"center"}
+                sx={{ display: { xs: "none", md: "flex" } }}
+              >
+                <Grid
+                  item
+                  md={8}
+                  lg={8}
+                  sx={{
+                    py: { xs: 4, md: 10 },
+                    display: { xs: "none", md: "block" },
+                  }}
+                >
                   <h1 className="heading text-center">
                     HOW OUR SEO AGENCY CONDUCTS WEBSITE SEO AUDIT?
                   </h1>
@@ -63,8 +77,14 @@ function SeoPage() {
                   <TabbedInterface />
                 </Grid>
               </Grid>
-              <MethodCards />
-              <Faqs />
+              <MethodCards
+                heading="ROZISOFT FLEXIBLE SEO METHODOLOGY"
+                paragraph="    ROZISOFT's Flexible SEO method is based on specific steps to ensure
+        a strong SEO campaign structure. Here are the steps."
+                data={methodData}
+              />
+              <Faqs faqsData={faqs} />
+
               <RoziServiceCard />
             </Grid>
           </Grid>

@@ -133,4 +133,8 @@ li {
   scale: 1.1;
 }
 
+.upper{
+  text-transform: uppercase;
+}
+
 /* Helper Classes Ends Here */

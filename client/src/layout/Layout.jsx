@@ -18,6 +18,7 @@ import ServicePage from "../pages/ServicePage";
 import SeoPage from "../pages/SeoPage";
 import AboutUsPage from "../pages/AboutUsPage";
 import AllBlogPage from "../pages/AllBlogPage";
+import SmmPage from "../pages/SmmPage";
 
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
@@ -41,7 +42,8 @@ function Layout() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/blogs" element={<AllBlogPage />} />
-          <Route path="/seo" element={<SeoPage />} />
+          <Route path="service/search-engine-optimization" element={<SeoPage />} />
+          <Route path="service/social-media-marketing" element={<SmmPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
           <Route path="/rozisoft-admin" element={<AdminLogin />} />
           <Route
