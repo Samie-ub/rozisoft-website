@@ -48,4 +48,10 @@ h6 {
   text-decoration: underline;
 }
 
+.blog-card-all {
+  height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 /* Blog Page Styles Ends Here */

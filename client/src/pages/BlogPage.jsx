@@ -6,9 +6,17 @@ import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Navbar from "../component/Navbar";
 import "../styles/blog-page-styles.css";
+import Loader from "../component/Loader";
 function BlogPage() {
   const { blogId } = useParams();
   const [blogData, setBlogData] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   useEffect(() => {
     axios
       .get(`https://rozisoft-website-backend.vercel.app/blog/${blogId}`)
@@ -22,7 +30,11 @@ function BlogPage() {
 
   return (
     <div className="blog-page" name="blog-post">
-      <Header />
+      {isLoading ? (
+        <Loader/>
+      ):(
+        <>
+         <Header />
       <Navbar />
       <div className="blog-styles">
         <Grid container justifyContent={"center"}>
@@ -48,6 +60,9 @@ function BlogPage() {
         </Grid>
       </div>
       <Footer />
+        </>
+      )}
+     
     </div>
   );
 }

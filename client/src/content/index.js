@@ -39,6 +39,8 @@ export const navbarData = [
   {
     class: "blog",
     label: "blogs",
+    path:"/blogs"
+
   },
   {
     class: "contact",

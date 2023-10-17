@@ -92,7 +92,7 @@ function AboutUsPage() {
                       to experience increased traffic, organic sales and high
                       ROI?
                     </p>
-                    <button onClick={toggleDropdown}>
+                    <button className="btn" onClick={toggleDropdown}>
                       How can we help you?{" "}
                       <i class="fa-solid fa-angle-down"></i>
                     </button>

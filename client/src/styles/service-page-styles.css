@@ -238,18 +238,6 @@
   font-size: 3.1rem;
 }
 
-.about-btn button {
-  padding: 1rem;
-  width: 80%;
-  border: none;
-  background-color: var(--primary);
-  color: var(--white);
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-}
 
 .about-btn button:hover{
   cursor: pointer;

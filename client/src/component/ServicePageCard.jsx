@@ -23,7 +23,7 @@ function ServicePageCard() {
         <Grid container justifyContent={"center"} spacing={5} sx={{pb:{xs:4,md:20}}}>
             {serviceData.map((content, index) => {
                 return (
-            <Grid item xs={11} md={6} lg={6}>
+            <Grid item xs={11} md={6} lg={5}>
               
             <div key={index} className="service-card full-width">
               <div

@@ -154,6 +154,10 @@
     max-width: 100% !important;
   }
 
+  .blog-content{
+    padding: 0 !important;
+  }
+
   .slider-controls button img {
     width: 1rem;
   }

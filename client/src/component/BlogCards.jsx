@@ -38,6 +38,13 @@ function BlogCards() {
     return words.slice(start, end).join(" ");
   };
 
+  const calculateReadingTime = (text) => {
+    const averageWPM = 200;
+    const wordCount = text.split(" ").length;
+    const readingTimeMinutes = Math.ceil(wordCount / averageWPM);
+    return readingTimeMinutes;
+  };
+
   return (
     <div className="service-slider">
       <div
@@ -50,7 +57,9 @@ function BlogCards() {
         }}
       >
         {blogData.map((content, index) => {
-          const excerpt = extractWords(content.content, 10, 20);
+          const excerpt = extractWords(content.content, 10, 40);
+          const readingTime = calculateReadingTime(content.content);
+
           return (
             <div className="blog-card" key={index}>
               <div
@@ -59,13 +68,13 @@ function BlogCards() {
               >
                 <div className="gradient"></div>
               </div>
-              <div className="blog-content">      
+              <div className="blog-content">
                 <h1>{content.title}</h1>
-                <p>{excerpt}</p>
-                <NavLink to={`/blog/${content._id}`}>
-                  <button className="btn">Read More</button>
-                </NavLink>
               </div>
+                <NavLink className={"button-align"} to={`/blog/${content._id}`}>
+                  <button className="btn">Read More</button>
+                  <p>{`${readingTime} min read`}</p>
+                </NavLink>
             </div>
           );
         })}
