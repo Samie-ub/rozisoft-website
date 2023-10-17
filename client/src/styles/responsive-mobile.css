@@ -212,6 +212,9 @@
   .footer-container {
     background-size: cover;
   }
+  .blog-content{
+    padding: 0 ;
+  }
 
   /* Footer Section Styles Ends Here */
 }

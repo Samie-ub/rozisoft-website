@@ -18,12 +18,12 @@ function ServicePageCard() {
     
   return (
     <div className="page-card">
-      <RouterLink to="/seo">
 
         <Grid container justifyContent={"center"} spacing={5} sx={{pb:{xs:4,md:20}}}>
             {serviceData.map((content, index) => {
-                return (
-            <Grid item xs={11} md={6} lg={5}>
+              return (
+                <Grid item xs={11} md={6} lg={5}>
+              <RouterLink to={content.cardTitle}>
               
             <div key={index} className="service-card full-width">
               <div
@@ -51,12 +51,12 @@ function ServicePageCard() {
                 </div>
               </div>
             </div>
+        </RouterLink>
             </Grid>
           );
         })}
         </Grid>
       
-          </RouterLink>
     </div>
   )
 }
