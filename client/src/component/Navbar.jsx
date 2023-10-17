@@ -77,12 +77,10 @@ function Navbar() {
               );
             })}
           </div>
-          <img
-            src={menuIcon}
-            className="menu-btn"
-            alt=""
-            onClick={toggleMenu}
-          />
+          <div className="menubar-icon" onClick={toggleMenu}>
+            
+          <i class="fa-solid fa-compass"></i>
+          </div>
           {isMenuOpen && (
             <div className="menu-dropdown">
               <div className="menu-content">

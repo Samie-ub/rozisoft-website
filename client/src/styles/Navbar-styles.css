@@ -21,6 +21,11 @@
   cursor: pointer;
 }
 
+.menubar-icon svg{
+  font-size: 2rem;
+  color: var(--primary);
+}
+
 .logo-img{
   width: 5rem;
 }
