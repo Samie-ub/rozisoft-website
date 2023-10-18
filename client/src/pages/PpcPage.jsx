@@ -70,7 +70,7 @@ function PpcPage() {
                 container
                 justifyContent={"space-between"}
                 alignItems={"center"}
-                sx={{ py: { xs: 4, md: 0 },flexDirection:{xs:"column-reverse",md:"row"} }}
+                sx={{ pt: { xs: 4, md: 20 },flexDirection:{xs:"column-reverse",md:"row"} }}
               >
                 <Grid item xs={12} md={6} lg={5}>
                   <img src={ppcCoverII} className="full-width" alt="smm" />
