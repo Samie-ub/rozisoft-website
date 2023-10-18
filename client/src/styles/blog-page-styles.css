@@ -48,6 +48,10 @@ h6 {
   text-decoration: underline;
 }
 
+.read-time{
+  font-size: .9rem;
+}
+
 .blog-card-all {
   height: 25rem;
     display: flex;

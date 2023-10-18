@@ -4,6 +4,7 @@ import { socialData } from "../content";
 import { Link } from "react-scroll";
 import { logoIcon } from "../assets";
 import "../styles/footer-styles.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   const industriesData = [
@@ -31,12 +32,35 @@ function Footer() {
   ];
 
   const servicesData = [
-    "Web Design and Development",
-    "Social Media Marketing",
-    "Graphic Designing",
-    "Search Engine Optimization",
-    "Digital Marketing",
-    "Internet Marketing",
+    {
+      label: "Web Design and Development",
+      path:"/web-designing--&-development"
+    },
+    {
+      label: "Social Media Marketing",
+      path:"/social-media-marketing"
+    },
+    {
+      label:"Graphic Designing",
+      path:"/graphic-designing"
+    },
+    {
+      label:"Search Engine Optimization",
+      path:"/search-engine-optimization"
+    },
+    {
+      label: "Digital Marketing",
+      path:""
+    },
+    {
+      label:"Pay Per Click",
+      path:"/pay-per-click"
+    },
+ 
+    
+    
+   
+    
   ];
 
   const links = [
@@ -97,9 +121,13 @@ function Footer() {
               </div>
             </Grid>
             <Grid item xs={11} md={3} lg={3} sx={{pb:{xs:1,md:0}}}>
+
               <h1>Our Services</h1>
               {servicesData.map((content) => {
-                return <p>{content}</p>;
+                return (
+                  <NavLink to={content.path}>
+                  <p className="footer-link">{content.label}</p>
+              </NavLink>)
               })}
             </Grid>
             <Grid item xs={11} md={2.5} lg={2}>

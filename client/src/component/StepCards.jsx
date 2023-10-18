@@ -13,6 +13,13 @@ function StepCards({ data }) {
                 <div className="step-content">
                   <span className="step-title">{content.title}</span>
                   <p className="step-para">{content.para}</p>
+                  {content.list && (
+                    <ul>
+                      {content.list.map((item, itemIndex) => (
+                        <li className="list" key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </Grid>

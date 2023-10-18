@@ -9,8 +9,6 @@ import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 import twitter from "./twitter.png";
 import linkedin from "./linkedin.png";
-import menu from "./menu.png";
-import cross from "./cross.png";
 import about from "./about-img.png";
 import clientOne from "./client-1.png";
 import clientTwo from "./client-2.jfif";
@@ -34,6 +32,12 @@ import aboutII from "./aboutLat.png"
 import smmI from "./smm.png"
 import smmII from "./smm2.png"
 import smmIII from "./smm3.png"
+import web from "./web.png"
+import webII from "./web2.png"
+import graphic from "./graphic.png"
+import graphicII from "./graphic2.png"
+import ppc from "./ppc.png"
+import ppcII from "./ppc2.png"
 // Exports For Images
 export const mailIcon = mail;
 export const logoIcon = logo;
@@ -46,8 +50,6 @@ export const facebookIcon = facebook;
 export const instagramIcon = instagram;
 export const twitterIcon = twitter;
 export const linkedIcon = linkedin;
-export const menuIcon = menu;
-export const crossIcon = cross;
 export const aboutImage = about;
 export const clientFirst = clientOne;
 export const clientSecond = clientTwo;
@@ -70,3 +72,9 @@ export const AboutImgII = aboutII;
 export const smmCover = smmI;
 export const smmCoverII = smmII;
 export const smmCoverIII = smmIII;
+export const webCover = web;
+export const webCoverII = webII;
+export const graphicCover = graphic;
+export const graphicCoverII = graphicII;
+export const ppcCover = ppc;
+export const ppcCoverII = ppcII;

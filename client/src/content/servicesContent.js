@@ -46,6 +46,35 @@ export const seoStepData = [
     para: "Our conversion rate optimization specialist employs Search Engine Optimization services to inspect and enhance the web pages of your website, as well as your landing pages. This plays a pivotal role in elevating the conversion rate of your web content, facilitating customer contact and inquiries.",
   },
 ];
+export const pointsSeo = [
+  {
+    title: '1. Search ability Check Of The Website',
+    description: 'Initially, we commence a technical website audit to assess its search engine performance. This entails verifying proper indexing on Google, identifying and rectifying any irrelevant indexed links, and addressing pages that may return a 404 error. Additionally, we scrutinize the websites robots file to ascertain if any pages are inaccessible to web crawlers. In the next step, we ensure the correct inclusion of the sitemap on the website.',
+  },
+  {
+    title: '2. Website Speed Checker',
+    description: 'The subsequent phase of our technical audit involves assessing the websites performance, with a focus on its speed and related elements, including the minification of JS and CSS files and the presence of excessive inline CSS. Our objective is to determine if the website attains the desired speed performance on both mobile devices and desktops. Ensuring compliance with the core web vitals test is of paramount significance, as Googles significant core updates have had a notable impact on the rankings of many websites in search engine results pages (SERPs).',
+  },
+  {
+    title: '3.  Overall Website & URL Structure Check',
+    description: `Next, we evaluate the website's overall structure, examining design adherence to search engine guidelines, user-friendliness, page presentation, and navigation ease. Additionally, we scrutinize the URL structure, ensuring SEO-friendly URLs that incorporate real words, facilitating improved rankings and crawler accessibility based on URLs alone.`,
+  },
+  {
+    title: '4. Complete On Page, Meta Title Description, Images & Content Checker',
+    description: `After completing the technical assessments, we transition to evaluating the website's on-page SEO performance. This includes analyzing the optimization of meta titles and descriptions, assessing the heading hierarchy within the content, and examining the effective utilization of H tags. We also review keyword distribution, considering the integration of long-tailed keywords, synonyms, and LSI keywords. Our focus is on ensuring that the content aligns with the intended audience's needs and offers value. Equally crucial, we verify the originality of the content to prevent plagiarism issues.`,
+  },
+  {
+    title: '5.  Keyword Usage & Internal Linking Checker',
+    description: `Following the content assessment, we conduct a thorough examination of keyword usage. We meticulously evaluate whether keywords are appropriately integrated, avoiding overstuffing and ensuring they align with their intended intent. We also verify the effectiveness of internal linking, a critical factor for improving website navigation and establishing a coherent information structure. This in-depth analysis encompasses all web content, blog posts, and product descriptions, aiming to identify opportunities for enhancing on-page SEO.`,
+  },
+  {
+    title: '6. Backlink Review Checker',
+    description: `Furthermore, we meticulously assess the website's backlink profile to gauge the strength and relevance of these links. We utilize various tools to evaluate the spam score associated with each backlink. This is a critical step to ascertain the quality and health of the links pointing to your website. It's essential to ensure that your backlinks are not only influential but also free from any harmful or questionable attributes, as low-quality links can have a detrimental impact on your website's SEO performance rather than enhancing it.`,
+  },
+
+
+];
+
 
 export const methodData = [
   {
@@ -114,32 +143,32 @@ export const seoServiceData = [
 ];
 export const faqs = [
   {
-    question: 'How does seo work?',
-    answer:`Search Engine Optimization (SEO) is a strategy for increasing a website's traffic via organic search results. When you enlist professional SEO services, you can significantly boost your website's visibility and attract more traffic and leads. SEO helps users on the internet find the most relevant results for their queries. Search engines assess the intent behind user searches, consider their language and location, and rank websites that offer the most value. SEO services allow you to optimize your site for Google's search engine crawler to better understand your content on the search engine results pages (SERPs). Google gathers extensive data from web pages, and through indexing and crawling, it makes this information accessible. The structure and quality of your website's SEO services play a crucial role in determining how your content is indexed and, ultimately, how well it ranks when people search for your service.`,
+    question: "How does seo work?",
+    answer: `Search Engine Optimization (SEO) is a strategy for increasing a website's traffic via organic search results. When you enlist professional SEO services, you can significantly boost your website's visibility and attract more traffic and leads. SEO helps users on the internet find the most relevant results for their queries. Search engines assess the intent behind user searches, consider their language and location, and rank websites that offer the most value. SEO services allow you to optimize your site for Google's search engine crawler to better understand your content on the search engine results pages (SERPs). Google gathers extensive data from web pages, and through indexing and crawling, it makes this information accessible. The structure and quality of your website's SEO services play a crucial role in determining how your content is indexed and, ultimately, how well it ranks when people search for your service.`,
   },
   {
-    question: 'How do I improve my website authority?',
-    answer:`The credibility of your website hinges on the effectiveness of your off-page Link Building efforts. When your website garners reputable and high-quality mentions from other websites, which are essentially votes of confidence, it signifies your legitimacy as a business`,
+    question: "How do I improve my website authority?",
+    answer: `The credibility of your website hinges on the effectiveness of your off-page Link Building efforts. When your website garners reputable and high-quality mentions from other websites, which are essentially votes of confidence, it signifies your legitimacy as a business`,
   },
   {
-    question: 'Which part of seo I should work first?',
+    question: "Which part of seo I should work first?",
     answer: `SEO is a long-term strategy that has a lot of moving parts.Your website's on-page structure must be clear and load quickly. The content plays a major role in SEO, probably the most important role, then comes the right keyword research and proper integration.`,
   },
   {
-    question: 'What is the roi of seo?',
+    question: "What is the roi of seo?",
     answer: `The SEO ROI may take 4 to 5 months, at a minimum, for SEO efforts to become effective and for your website to rank on Google. Although SEO requires time to deliver a substantial return on investment, it's a cost-effective marketing method, usually involving only service charges with no additional payments to search engines.`,
   },
   {
-    question: 'What is better seo or ppc?',
+    question: "What is better seo or ppc?",
     answer: `SEO and PPC offer distinct advantages. SEO is a low-cost, long-term strategy that fosters organic growth. PPC, on the other hand, is a rapid, high-impact approach with precise audience targeting, but it typically requires a more significant investment.`,
   },
   {
-    question: 'What is keyword research?',
-    answer:`Keyword research involves investigating the terms and phrases people use when searching on Google for products or services similar to what your website offers. Our agency conducts comprehensive keyword research, compiling a list of search terms, including their monthly search volume and ranking difficulty.`,
+    question: "What is keyword research?",
+    answer: `Keyword research involves investigating the terms and phrases people use when searching on Google for products or services similar to what your website offers. Our agency conducts comprehensive keyword research, compiling a list of search terms, including their monthly search volume and ranking difficulty.`,
   },
   {
-    question: 'Where is Pakistan do you provide seo services?',
-    answer:`We offer SEO services in Pakistan and worldwide.`,
+    question: "Where is Pakistan do you provide seo services?",
+    answer: `We offer SEO services in Pakistan and worldwide.`,
   },
 ];
 // Seo Data Ends Here
@@ -147,7 +176,7 @@ export const faqs = [
 // SMM Data Starts Here
 export const smmStepData = [
   {
-    icon:<i class="fa-brands fa-facebook"></i>,
+    icon: <i class="fa-brands fa-facebook"></i>,
     title: "Facebook Marketing",
     para: "We know how to optimize your Facebook content to reach a massive audience. Boost your visibility on Facebook and reach more potential customers with our Facebook SEO strategies.",
   },
@@ -172,12 +201,11 @@ export const smmStepData = [
     para: "Pinterest is a valuable platform for businesses. With over 450 million active users seeking inspiration and ideas, our tested Pinterest campaigns will help you reach your target audience and grow your business.",
   },
   {
-    icon:<i class="fa-brands fa-medium"></i>,
+    icon: <i class="fa-brands fa-medium"></i>,
     title: "Medium Marketing",
     para: "Medium is the go-to platform for sharing written content and an excellent place for businesses to connect with a broader audience, build relationships with potential customers, and generate leads. At ROZISOFT, our team of experts can help you create and manage a successful Medium marketing campaign.",
   },
 ];
-
 
 export const methodDataSmm = [
   {
@@ -202,46 +230,334 @@ export const methodDataSmm = [
   },
 ];
 
+export const smmPara = [
+  "Marketing is more than just putting up ads and hoping for the best. It needs a systematic approach using the right techniques to get good results. Billboards don't catch much attention these days, but platforms like Facebook, Twitter, and Instagram offer great opportunities for effective marketing.",
+  "At ROZISOFT, we have social media marketing experts who've tested various strategies. We use SEO, PPC, content marketing, and more to create a recipe for success for your brand. With years of experience and a strong commitment to our clients, we're a top Social Media Marketing company in Pakistan.",
+  "Choose us for a great Social Media Marketing plan that gets results. Since 90% of Pakistanis are on social media, there are millions of potential customers who can become loyal to your business. Using our SEO strategies, we can direct a big part of this traffic to your business, boosting your online presence and growth.",
+  "Social media marketing, or SMM, is a powerful tool for businesses of all sizes. In Pakistan, ROZISOFT is a top social media marketing agency that can help you reach your business goals. Our methods have consistently delivered impressive results, and we're confident you'll be amazed by what we can do for your business.",
+];
 
-export const smmPara=["Marketing is more than just putting up ads and hoping for the best. It needs a systematic approach using the right techniques to get good results. Billboards don't catch much attention these days, but platforms like Facebook, Twitter, and Instagram offer great opportunities for effective marketing.","At ROZISOFT, we have social media marketing experts who've tested various strategies. We use SEO, PPC, content marketing, and more to create a recipe for success for your brand. With years of experience and a strong commitment to our clients, we're a top Social Media Marketing company in Pakistan.","Choose us for a great Social Media Marketing plan that gets results. Since 90% of Pakistanis are on social media, there are millions of potential customers who can become loyal to your business. Using our SEO strategies, we can direct a big part of this traffic to your business, boosting your online presence and growth.","Social media marketing, or SMM, is a powerful tool for businesses of all sizes. In Pakistan, ROZISOFT is a top social media marketing agency that can help you reach your business goals. Our methods have consistently delivered impressive results, and we're confident you'll be amazed by what we can do for your business."]
-
-export const smmParaTwo=["When we discuss Social Media Marketing (SMM), some might think that simply posting a few ads on Facebook will do the trick. However, in reality, SMM involves a well-thought-out strategy that focuses on specific keywords, a target audience, and choosing the right platform. At ROZISOFT, our marketing experts understand that each brand is unique. That's why we work closely with our clients to create a strategy that produces the best results","So, what does ROZISOFT provide as your Social Media Marketing partner? Here's what we prioritize:",]
-
+export const smmParaTwo = [
+  "When we discuss Social Media Marketing (SMM), some might think that simply posting a few ads on Facebook will do the trick. However, in reality, SMM involves a well-thought-out strategy that focuses on specific keywords, a target audience, and choosing the right platform. At ROZISOFT, our marketing experts understand that each brand is unique. That's why we work closely with our clients to create a strategy that produces the best results",
+  "So, what does ROZISOFT provide as your Social Media Marketing partner? Here's what we prioritize:",
+];
 
 export const faqsSmm = [
   {
-    question: 'How does social media work?',
-    answer:`Social media marketing helps businesses connect with current customers and attract new ones, all while showcasing their culture, mission, and tone. At ROZISOFT, our main goal is to boost your brand's recognition and online presence across social platforms, resulting in increased sales and a better return on investment (ROI).`,
+    question: "How does social media work?",
+    answer: `Social media marketing helps businesses connect with current customers and attract new ones, all while showcasing their culture, mission, and tone. At ROZISOFT, our main goal is to boost your brand's recognition and online presence across social platforms, resulting in increased sales and a better return on investment (ROI).`,
   },
   {
-    question: 'What Occurs in the Process of Social Media Marketing?',
-    answer:`Social media platforms like Facebook, YouTube, and Twitter are immensely popular and easily accessible to anyone at no cost. Consequently, millions of active users frequent these sites, providing business owners with the opportunity to enhance brand awareness and engage with their target audience. Furthermore, social media platforms offer relatively cost-effective avenues for running marketing campaigns, leveling the playing field for organizations of varying sizes.
+    question: "What Occurs in the Process of Social Media Marketing?",
+    answer: `Social media platforms like Facebook, YouTube, and Twitter are immensely popular and easily accessible to anyone at no cost. Consequently, millions of active users frequent these sites, providing business owners with the opportunity to enhance brand awareness and engage with their target audience. Furthermore, social media platforms offer relatively cost-effective avenues for running marketing campaigns, leveling the playing field for organizations of varying sizes.
     
     Social media marketing campaigns typically revolve around the creation of unique content that captures attention and sparks conversations. Such content not only generates interest but also motivates users to share it with their social networks. As the content spreads from one user to another, it garners attention not just for the content itself but also for the creator behind it.
     `,
   },
   {
-    question: 'Why is social media important for your company?',
+    question: "Why is social media important for your company?",
     answer: `Undoubtedly, social media is here to stay, with its capacity to build communities quickly. Hence, it's no surprise that numerous organizations have shifted their marketing efforts online. Today, businesses and organizations can pinpoint their target audience, foster community building, and establish relationships and communication with customers and clients.`,
   },
   {
-    question: 'How can we assist you with social media marketing?',
+    question: "How can we assist you with social media marketing?",
     answer: `Social media marketing campaigns are meticulously planned online marketing strategies that assist businesses and organizations in effortlessly disseminating their marketing messages across various social media platforms. We will devise and launch social media marketing campaigns centered around your company, brand, or website, facilitating the creation of an online community on platforms such as Facebook, YouTube, and Twitter. Through our creative marketing campaigns, you will witness how we employ diverse strategies to help you engage, connect with, and interact with the vast user base on these social sites. Our company has developed interactive marketing campaigns, including contests and giveaways, that leverage the viral features of social sites to rapidly disseminate marketing messages`,
   },
 ];
 
-export const  mainData=[
+export const mainData = [
   {
-    title:"Building Brand Awareness",
-    para:"Establishing visibility among your desired audience is vital for attracting the right leads. Our experts ensure that your campaigns target the ideal audience for your business. By creating brand awareness, we increase the chances of converting these leads into valuable clients."
+    title: "Building Brand Awareness",
+    para: "Establishing visibility among your desired audience is vital for attracting the right leads. Our experts ensure that your campaigns target the ideal audience for your business. By creating brand awareness, we increase the chances of converting these leads into valuable clients.",
   },
   {
-    title:"Effective Engagement",
-    para:"Attention is the currency in the realm of Social Media Platforms. To succeed in the social media game, capturing and maintaining your audience's attention is crucial. Our strength lies in crafting strategies that engage your audience effectively, sparking meaningful interactions and building strong connections."
+    title: "Effective Engagement",
+    para: "Attention is the currency in the realm of Social Media Platforms. To succeed in the social media game, capturing and maintaining your audience's attention is crucial. Our strength lies in crafting strategies that engage your audience effectively, sparking meaningful interactions and building strong connections.",
   },
   {
-    title:"Boosting Website Traffic",
-    para:"Getting people to visit your website is the initial step toward acquiring clients for your business. ROZISOFT works to optimize your website with the right keywords to attract organic and targeted traffic. This increased traffic has the potential to become long-term customers for your business. Additionally, it offers benefits beyond website visitors, as many can also become valuable social media followers. It's a win-win situation, expanding your online presence and fostering a loyal customer base."
+    title: "Boosting Website Traffic",
+    para: "Getting people to visit your website is the initial step toward acquiring clients for your business. ROZISOFT works to optimize your website with the right keywords to attract organic and targeted traffic. This increased traffic has the potential to become long-term customers for your business. Additionally, it offers benefits beyond website visitors, as many can also become valuable social media followers. It's a win-win situation, expanding your online presence and fostering a loyal customer base.",
   },
-]
+];
 // SMM Data Ends Here
+
+// Web Development Data Starts Here
+export const webPara = [
+  "In today's digital age, as nearly every industry embraces digitization, establishing a robust online presence is pivotal for business success. If you haven't created a website yet, you're missing out on valuable opportunities to connect with a global audience. Think of it as expanding your business into the virtual realm. This is where ROZISOFT, a leading website development agency in Pakistan, comes into play.",
+  "ROZISOFT has assisted numerous businesses in cultivating a standout online presence by crafting outstanding websites. With us, you won't receive a one-size-fits-all solution. We understand that every client is unique, with distinct expectations for their website. We take the time to listen and understand your needs, and then work diligently to deliver on them, often exceeding expectations!",
+  "Our services extend beyond businesses seeking new websites. If your current website is sluggish, lacks aesthetic appeal, contains irrelevant information, or isn't achieving desired results, don't hesitate to reach out to us. We possess expertise in website design and development, capable of revitalizing your website's appearance and ensuring complete SEO optimization.",
+  "Website design plays a crucial role, significantly influencing user experience and conversion rates. Prioritizing the User Interface (UI) and User Experience (UX) during website design and development is essential. Creating a visually appealing and user-friendly website is paramount in engaging customers and driving sales. A website with enhanced UI/UX serves as a gateway to engage potential customers and boost conversions.",
+];
+
+export const webStepData = [
+  {
+    icon: <i class="fa-solid fa-window-maximize"></i>,
+    title: "Static Web Designing",
+    para: `Rozisoft, a Pakistani web design company, is widely recognized for its outstanding web design services and cutting-edge digital marketing solutions. Our team of talented professionals specializes in crafting static websites featuring unique and creative designs customized to suit your specific industry. This is especially beneficial for small businesses seeking to establish a robust online presence.
+
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-gear"></i>,
+    title: "Custom Web Designing",
+    para: `At Rozisoft, our client-centric approach defines us as the top web design company. We've streamlined web development, offering clients the simplicity of customizing their websites and making necessary changes whenever they need. Our role is to guide clients in making informed choices and narrowing down the options that best align with their goals.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-cart-shopping"></i>,
+    title: "e-commerce Web Designing",
+    para: `E-commerce websites simplify the process of selling products online, offering a user-friendly interface and seamless transactions. These websites are meticulously designed to provide comprehensive product information, ensure secure transactions, and effectively promote businesses on a global scale. Our services are dedicated to helping you establish and improve your online store using cutting-edge technologies.
+
+`,
+  },
+  {
+    icon:<i class="fa-solid fa-mobile"></i>,
+    title: "Responsive Design",
+    para: `At Rozisoft, we meticulously inspect all web pages to guarantee the delivery of a polished product that is responsive on all devices, optimized for web page speed, complies with core web vitals, and operates seamlessly.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-code"></i>,
+    title: "Dynamic Web Designing",
+    para: `Websites can be broadly classified into two main categories: Static and Dynamic. A Dynamic website stands out because its content is easily changeable and manageable. Dynamic Websites offer a world of possibilities, providing an interactive and user-friendly platform for visitors.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-object-group"></i>,
+    title: "Website re-design",
+    para: `Website Redesigning is a necessary process for various reasons, such as adding or removing content and keeping it up to date. In today's fast-paced world, with constantly changing markets, expanding businesses, and the emergence of new technologies, Website Redesigning is essential.
+
+`,
+  },
+];
+
+export const methodDataWeb = [
+  {
+    number: 1,
+    title: "Shopping Cart",
+    para: "Adding a shopping cart and checkout feature to your e-commerce website, whether it's Shopify, Woo Commerce, or WordPress, is a breeze with our solution.",
+  },
+  {
+    number: 2,
+    title: "Payment Gateway",
+    para: "Seamlessly integrating various payment gateways into your responsive web design is essential for collecting payments from anywhere in the world. At ROZISOFT, we can assist you in integrating different payment gateways into your responsive web design.",
+  },
+  {
+    number: 3,
+    title: "Inventory Management",
+    para: "ROZISOFT has the expertise to design and develop a comprehensive inventory management system for your website, making it effortless to keep tabs on all your inventory.",
+  },
+  {
+    number: 4,
+    title: "Bulk Product Import",
+    para: "We can also assist you with the bulk product import feature, allowing you to swiftly add all your new products without any hassle. This feature proves invaluable for businesses with a sizable product inventory, saving time and effort.",
+  },
+];
+
+export const webParaTwo = [
+  "As technology continues to advance daily, websites have become an indispensable asset for your brand's marketing and promotional solutions. If your website isn't attracting a growing number of visitors, it won't contribute to your business's growth.",
+  "When you feel that your website isn't delivering the desired returns, it may be time for a change or a fresh start. ROZISOFT can craft an innovative, SEO-friendly website that targets specific keywords and expands your audience base",
+  "The initial impression made on a visitor is pivotal; it can either seal the deal or deter them within the first few minutes. Ensuring a positive impression from the outset is crucial, setting the stage for successful interactions and improving click-through rates—a critical ranking factor. Our website development team comprehends the significance of those initial moments. We ensure a flawless and engaging visitor experience by prioritizing interactive user interfaces and optimizing loading speed. Our unique approach sets us apart from other web design companies in Pakistan.",
+];
+
+export const webMain = [
+  {
+    title: "Responsive Web Design & Development",
+    para: "Ensuring your website functions seamlessly on all devices—mobiles, tablets, laptops, and desktops.",
+  },
+  {
+    title: "SEO-Friendly Web Designs",
+    para: "Providing your online business in Pakistan with a competitive edge over rivals in search engine rankings",
+  },
+  {
+    title: "Web Content",
+    para: "Inclusive of SEO-friendly web content, so you receive a comprehensive package.",
+  },
+  {
+    title: "Affordable Web Development and Design Packages",
+    para: `Tailored to various website needs in Pakistan
+
+    When you feel that your website isn't delivering the desired returns, it may be time for a change or a fresh start. ROZISOFT can craft an innovative, SEO-friendly website that targets specific keywords and expands your audience base. 
+    `,
+  },
+];
+
+export const faqsWeb = [
+  {
+    question: "How much does its cost for web design and development?",
+    answer: `The cost of website design and development varies from client to client, contingent upon their specific requirements. Each content management system (CMS) demands distinct efforts and carries associated costs. Additionally, individual clients have unique preferences for their website, further contributing to the variability in costs.`,
+  },
+  {
+    question: "What are the benefits of hiring our web development agency?",
+    answer: `ROZISOFT, a web development company, offers a range of benefits including website design, mobile optimization, and content creation. Our team, comprising web designers, content writers, graphic designers, and SEO specialists, works together to craft a customer-centric brand identity. Our focus is on enhancing search rankings through compelling content, site optimization for speed, and visually appealing design. At ROZISOFT, your online success takes precedence.
+    `,
+  },
+  {
+    question:
+      "What are the standout features rozisoft offers in web development to customers?",
+    answer: `ROZISOFT distinguishes itself with remarkable features, which encompass custom website design, SEO-optimized content, responsive design, utilization of cutting-edge technologies, and an unwavering commitment to revisions. Our customer-centric approach at ROZISOFT is dedicated to enhancing relevant traffic and nurturing the growth of your business.`,
+  },
+];
+
+// Web Development Data Ends Here
+
+// Graphic Design Data Starts Here
+export const DesignPara = [
+  "Graphic Design is the art of creative expression through visual mediums. Not all designs are equal, and some styles find a niche in a crowded marketplace. Graphic design enhances brand identity and expression. ROZISOFT offers services from basic logo creation to advanced UI and chromatic design. Whether you need premium quality and affordable graphic design, our professional team tailors creative designs to your needs. We create innovative corporate designs, logos, and templates, enhancing your business, brand, or product's appeal. Our experienced graphic designers transform imagination into reality, attracting more people to your business. Design plays a crucial role in any business, and we're here to help you stand out.",
+  "At ROZISOFT, we assemble a talented team of graphic designers, visual artists, and content creators. We craft designs with a passion for conveying a brand's essence, ensuring instant brand recognition and a positive business reputation.",
+  "Our graphic design team consists of carefully selected industry experts, fueled by a creative fire that permeates every project. Collaborating toward the common goal of client satisfaction, our team creates lasting impressions that resonate with viewers.",
+];
+
+export const designStepData = [
+  {
+    icon: <i class="fa-brands fa-pied-piper-alt"></i>,
+    title: "Logo Design & Branding",
+    para: `Your logo is just one piece of your brand, but it's very important. With our graphic design services, we can design a logo that fits perfectly with your brand's identity and looks great in many different situations.
+
+    ROZISOFT Graphics will create a brand identity that communicates your message and attracts your ideal customers. Our graphic design services will provide you with great-looking graphics and materials you can use in lots of different ways.
+    
+
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-rectangle-ad"></i>,
+    title: "Promotion Design",
+    para: `ROZISOFT Graphics has more than 8 years of experience designing for print. We can create attractive printed materials like business cards, brochures, newsletters, posters, and menus.
+
+    We're also skilled at designing promotional signs and large-format items used for displays at events or in your business. Whether it's indoors or outdoors, ROZISOFT Graphics can make sure your signs get attention.
+    
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-font"></i>,
+    title: "Monograms",
+    para: `Monogram logos, also known as letter marks, are a type of logo that incorporates words or initials of a business. These logos are made up of only typography and generally range from two to three letters. Famous examples of monogram logos include HBO, NASA, and KFC. Monogram logos are memorable and have a clean, crisp, and often classy look.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-bezier-curve"></i>,
+    title: "WEB GRAPHICS",
+    list: [
+      "Banner Design",
+      "Icon Sets",
+      "Craigslist Ads",
+      "Custom Ads",
+      "Custom Graphics",
+      "E-mail Templates",
+    ],
+  },
+  {
+    icon: <i class="fa-solid fa-print"></i>,
+    title: "PRINT DESIGN",
+    list: [
+      "Stationary",
+      "Brochures",
+      "Business Cards",
+      "Magazine Layouts",
+      "Pens, Mugs, Key Chains etc.",
+      "Custom Print Design",
+    ],
+  },
+  {
+    icon: <i class="fa-solid fa-copyright"></i>,
+    title: "LOGO AND BRANDING DESIGN",
+    list: [
+      "Company Logos",
+      "Complete Branding Design Packages",
+      "Custom Request Welcomed",
+    ],
+  },
+];
+
+export const designParaTwo = [
+  "Maximize your marketing impact with professional graphic design and brand consistency.",
+  "Good graphic design does more than make words easy to read. It can turn your business logo into a brand that looks professional and attracts customers. The way you show your message is just as important as the words themselves. For example, you wouldn't use the same design to attract kids and older people, would you? Of course not. That's why graphic design matters.",
+  "It's how you share your brand, and you want it to look the same everywhere. Being consistent helps build trust with your current customers and makes you look professional to new ones. On social media and in online marketing, being consistent helps people know and remember your brand, setting it apart from others.",
+];
+
+export const faqsGraphic = [
+  {
+    question: "How does logo design and branding work?",
+    answer: `Your logo is like your business's face; it's a crucial part of your brand. The colors, style, fonts, and elements in your logo show people what you stand for and what makes you unique. To craft the ideal logo for your needs, we:
+
+    Study your brand.
+    Research your industry.
+    Consider where and how your logo will be used.
+    Sketch out 2-3 logo concepts.
+    Create digital versions of your logo.
+    Work with your feedback to make it just right.
+    `,
+  },
+];
+
+// Graphic Design Data Ends Here
+
+
+// PPC Data Starts Here
+export const pointsPpc = [
+  {
+    title: 'Get Discovered Today',
+    description: 'Allow us to establish your meticulously optimized PPC campaign today, ensuring that your brand is discovered by your target audience in no time.',
+  },
+  {
+    title: 'Achieve Maximum ROI',
+    description: 'At ROZISOFT, our team of PPC experts is committed to delivering an impressive ROI of up to 20%.',
+  },
+  {
+    title: 'Reconnect with Your Potential Audience',
+    description: `Leveraging PPC, the quickest and most efficient method, we help you re-engage your potential Audience.`,
+  },
+];
+
+export const ppcParaTwo = [
+  "Pay-per-click (PPC) is a marketing method where you can showcase your branded ads on search engines like Google. PPC, such as Google Ads, enables your website to quickly attain a top position on the first page of Google, unlike SEO, which is a continuous and time-consuming process. If you're a new brand with a marketing budget, PPC ads can swiftly attract customers. ROZISOFT offers comprehensive PPC services worldwide, including landing page creation, PPC implementation, and bid adjustments for optimal results.",
+ 
+];
+
+export const methodDataPpc = [
+  {
+    number: 1,
+    title: "Keyword Research",
+    para: "Careful exploration to identify the most effective keywords for your campaign.",
+  },
+  {
+    number: 2,
+    title: "Campaign Strategy and Planning",
+    para: "Crafting a tailored strategy for your campaign to ensure optimal results.",
+  },
+  {
+    number: 3,
+    title: "Ad Creation",
+    para: "Designing engaging and compelling advertisements tailored to your campaign's goals",
+  },
+  {
+    number: 4,
+    title: "Landing Page Optimization",
+    para: "Fine-tuning landing pages to enhance user experience and conversion rates.",
+  },
+  {
+    number: 5,
+    title: "Campaign Setup and Configuration",
+    para: "Setting up the PPC campaign with precision and configuring all essential elements.",
+  },
+  {
+    number: 6,
+    title: "Ad Monitoring and Optimization",
+    para: "Continuous tracking and refinement of your ads for peak performance.",
+  },
+  {
+    number: 7,
+    title: "A/B Testing",
+    para: "Thorough testing of ad variations to discover the most effective approaches.",
+  },
+  {
+    number: 8,
+    title: "Performance Reporting",
+    para: "Providing comprehensive and transparent reports on campaign performance.",
+  },
+  {
+    number: 9,
+    title: "Ongoing Management",
+    para: "Continuous management and optimization to ensure your PPC campaign remains effective and aligned with your goals.",
+  },
+];
+// PPC Data Ends Here

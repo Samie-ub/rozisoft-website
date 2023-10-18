@@ -86,7 +86,7 @@ function AllBlogPage() {
                           to={`/blog/${content._id}`}
                         >
                           <button className="btn">Read More</button>
-                          <p>{`${readingTime} min read`}</p>
+                          <p className="read-time">{`${readingTime} min read`}</p>
                         </NavLink>
                       </div>
                     </Grid>

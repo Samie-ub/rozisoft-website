@@ -10,7 +10,7 @@ import StepCards from "../component/StepCards";
 import MethodCards from "../component/MethodCards";
 import Faqs from "../component/Faqs";
 import RoziServiceCard from "../component/RoziServiceCard";
-import { seoStepData } from "../content/servicesContent";
+import { pointsSeo, seoStepData } from "../content/servicesContent";
 import { methodData } from "../content/servicesContent";
 import { faqs } from "../content/servicesContent";
 function SeoPage() {
@@ -74,7 +74,7 @@ function SeoPage() {
                   </p>
                 </Grid>
                 <Grid item lg={11.3}>
-                  <TabbedInterface />
+                  <TabbedInterface  points={pointsSeo}/>
                 </Grid>
               </Grid>
               <MethodCards
