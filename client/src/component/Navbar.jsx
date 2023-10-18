@@ -93,7 +93,7 @@ function Navbar() {
                     item
                     xs={11}
                     sx={{
-                      height: "95vh",
+                      height: "92vh",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
