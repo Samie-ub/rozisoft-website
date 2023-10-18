@@ -77,10 +77,10 @@ function Navbar() {
               );
             })}
           </div>
-          <div className="menubar-icon" onClick={toggleMenu}>
-            
+          <div className="menubar-icon"  onClick={toggleMenu}>
           <i class="fa-solid fa-compass"></i>
           </div>
+          
           {isMenuOpen && (
             <div className="menu-dropdown">
               <div className="menu-content">
@@ -93,24 +93,23 @@ function Navbar() {
                     item
                     xs={11}
                     sx={{
-                      height: "90vh",
+                      height: "95vh",
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                      py: 2,
+                   py:1
                     }}
                   >
-                    <Grid container justifyContent={"space-between"}>
+                    <Grid container justifyContent={"space-between"} alignItems={"center"}>
                       <Grid item xs={2}>
                       <img src={logoIcon} className="logo-img" alt="brand logo" />
                       </Grid>
-                      <Grid item xs={2}>
-                        <img
-                          onClick={toggleMenu}
-                          src={crossIcon}
-                          alt="cross content"
-                          className="cross-icon"
-                        />
+                      <Grid item xs={2} style={{display:"flex",
+                    justifyContent:"flex-end"}}>
+                        <div className="menubar-icon" onClick={toggleMenu}>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        
                       </Grid>
                     </Grid>
                     <div className="para-space">

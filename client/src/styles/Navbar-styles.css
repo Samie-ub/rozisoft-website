@@ -24,6 +24,7 @@
 .menubar-icon svg{
   font-size: 2rem;
   color: var(--primary);
+   display: none;
 }
 
 .logo-img{
@@ -43,10 +44,6 @@
   background-color: #333;
 }
 
-.menu-btn {
-  width: 2rem;
-  display: none;
-}
 
 .nav-links p {
   text-transform: capitalize;
@@ -89,9 +86,6 @@
     position: relative;
     right: -1rem;
   }
-  .menu-btn {
-    display: block;
-  }
   .menu-dropdown {
     position: fixed;
     top: 0;
@@ -101,18 +95,23 @@
     background-color: #ffffffd0;
     backdrop-filter: blur(10px);
     z-index: 999;
+    text-align: center;
     overflow-y: hidden;
   }
 
+  .menubar-icon svg{
+     display: block;
+  }
   .menu-content {
     color: var(--black);
   }
 
   .menu-content p {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
     margin: 1rem 0;
     text-transform: capitalize;
+    color: var(--primary);
   }
   .nav-social {
     width: 3.5rem;
