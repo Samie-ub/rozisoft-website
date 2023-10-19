@@ -93,12 +93,10 @@ function ContactSection() {
           <div className="contact-content">
             <h1>Get a Free Quote from rozisoft</h1>
             <p>
-              We are here to give you expert opinions on real estate
-              investment, property, and marketing.
+              We are here to give you expert opinions on Digital Marketing.
             </p>
             <p>
-              Feel free to contact our real estate agents for buying or
-              selling your plots, villas, or any other property 24/7.
+              Feel free to contact our digital marketing agents for more information and details 24/7.
             </p>
             <div className="contact-ico">
               {contactData.map((content, index) => {

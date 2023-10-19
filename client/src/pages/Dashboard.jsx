@@ -7,9 +7,17 @@ import DashCardOne from "../component/DashCardOne";
 import DashCardTwo from "../component/DashCardTwo";
 import DashCardThree from "../component/DashCardThree";
 import "../styles/dashboard-styles.css";
+
 function Dashboard() {
+  // Determine if the device is a computer/laptop (screen width > 1024px)
+  const isLaptop = window.innerWidth > 1024;
+
+  if (!isLaptop) {
+    return <div>You need a laptop to view this page.</div>;
+  }
+
   return (
-    <div>
+    <div className="dashboard-container">
       <ToastContainer />
 
       <Grid container>

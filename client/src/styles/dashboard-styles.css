@@ -221,6 +221,7 @@
 
 /* Mobile Responsivness Start Here */
 @media (max-width: 767px) {
+ 
   .admin-form form {
     padding: 2rem;
   }
