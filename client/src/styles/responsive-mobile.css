@@ -146,7 +146,7 @@
 
   /* Blog Section Styles Starts Here */
   .blog-container {
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 0 0;
   }
 
   .blog-card {
@@ -158,8 +158,20 @@
     padding: 0 !important;
   }
 
+  .slider-controls{
+    padding-bottom: 4rem;
+  }
+
+  .slider-controls button{
+    position: relative;
+    top: 2rem;
+    z-index: 5;
+   
+  }
+
   .slider-controls button img {
     width: 1rem;
+    
   }
   /* Blog Section Styles Ends Here */
 
@@ -199,7 +211,7 @@
 
   /* Blog Section Styles Starts Here */
   .blog-card {
-    flex: 0 0 100%;
+    flex: 0 0 40%;
     max-width: 100%;
   }
   .blog-content h1 {

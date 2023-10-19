@@ -6,7 +6,7 @@ function BlogSection() {
   return (
     <div className="blog-container" name="blog">
       <h1 className="heading text-center">latest blogs</h1>
-      <Grid container justifyContent={"center"} py={10}>
+      <Grid container justifyContent={"center"} pt={10}>
         <Grid item xs={11} md={11.5} lg={11}>
           <BlogCards />
         </Grid>
