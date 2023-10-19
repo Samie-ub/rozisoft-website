@@ -50,11 +50,15 @@ function Footer() {
     },
     {
       label: "Digital Marketing",
-      path:""
+      path:"/digital-marketing"
     },
     {
       label:"Pay Per Click",
       path:"/pay-per-click"
+    },
+    {
+      label:"Content Writing",
+      path:"/content-writing"
     },
  
     
@@ -67,22 +71,31 @@ function Footer() {
     {
       class: "home",
       label: "Home",
+      path:"/"
     },
     {
       class: "about",
       label: "About us",
+      path:"/about-us"
+
     },
     {
       class: "service",
       label: "Services",
+      path:"/service"
+
     },
     {
       class: "blog",
       label: "Blogs",
+      path:"/blogs"
+
     },
     {
       class: "contact",
       label: "Contact",
+      path:"/contact-us"
+
     },
   ];
   return (
@@ -147,8 +160,10 @@ function Footer() {
                       smooth={true}
                       offset={10}
                       duration={1500}
-                    >
+                      >
+                    <NavLink to={content.path}>
                       {content.label}
+                      </NavLink>
                     </Link>
                   </p>
                 );

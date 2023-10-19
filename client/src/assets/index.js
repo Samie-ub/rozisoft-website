@@ -38,6 +38,9 @@ import graphic from "./graphic.png"
 import graphicII from "./graphic2.png"
 import ppc from "./ppc.png"
 import ppcII from "./ppc2.png"
+import content from "./content.png"
+import contentII from "./content2.png"
+import dm from "./dm.png"
 // Exports For Images
 export const mailIcon = mail;
 export const logoIcon = logo;
@@ -78,3 +81,6 @@ export const graphicCover = graphic;
 export const graphicCoverII = graphicII;
 export const ppcCover = ppc;
 export const ppcCoverII = ppcII;
+export const contentCover = content;
+export const contentCoverII = contentII;
+export const dmCover = dm;

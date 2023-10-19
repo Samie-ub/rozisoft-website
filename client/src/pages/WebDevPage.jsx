@@ -49,7 +49,7 @@ function WebDevPage() {
                 </Grid>
               </Grid>
               <Grid container justifyContent={"center"}>
-                <Grid item lg={12}>
+                <Grid item lg={11}>
                   <div className="smm-content">
                     <h1>WEBSITE DEVELOPMENT AGENCY IN PAKISTAN</h1>
                     <div className="smm-main-points">

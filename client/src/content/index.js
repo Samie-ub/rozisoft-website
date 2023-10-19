@@ -45,6 +45,8 @@ export const navbarData = [
   {
     class: "contact",
     label: "contact",
+    path:"/contact-us"
+
   },
 ];
 

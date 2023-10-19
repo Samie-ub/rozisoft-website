@@ -561,3 +561,112 @@ export const methodDataPpc = [
   },
 ];
 // PPC Data Ends Here
+
+// Content Writing Data Starts Here
+export const contentPara = [
+  "Even the best websites can struggle to rank on Google if they lack valuable and fitting content. Your website should effectively convey its message to both online users and search engines, such as Google. Here at ROZISOFT, we recognize the significance of top-notch website content that's also optimized for SEO. Our team of expert website content writers in Pakistan is committed to providing comprehensive and SEO-friendly web content that captivates your audience and boosts your website's visibility in search results",
+  "Creating content that ranks well is a complex task. It needs to appeal to both online users and search engines. What appeals to your audience? Ensure the information in your content is pertinent and aligns with the tone of your website. Keep in mind, having relevant and high-quality content on your website is crucial. Think of it like speaking to a group of students about retirement plans.",
+  "Search engines are like robots, and they treat perfectly crafted content the same as mediocre content. To connect with search engines, we must ensure the content is optimized for them. It might sound like a lot of work, and it is. That's why, at ROZISOFT, we allow our clients to focus on their services while we communicate on their behalf, bringing in new customers from the digital world.",
+];
+
+export const contentStepData = [
+  {
+    icon: <i class="fa-solid fa-pen"></i>,
+    title: "Product Descriptions",
+    para: `Images alone no longer suffice to sell your products effectively! To promote your products or services successfully, you need engaging product descriptions that clarify what the product is, how it functions, and what it offers. Our team of expert writers can craft tailored product descriptions that will set you apart in the market.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-file"></i>,
+    title: "Landing Pages",
+    para: `Our web content writing experts in Pakistan can assist you in creating highly converting content for your landing pages. We understand your audience's needs and can create content that drives favorable results 
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-mask"></i>,
+    title: "Unique & Relevant Content",
+    para: `Our professional web content writing services in Pakistan guarantee entirely unique and relevant content, free from grammatical errors. Our expert writers can create content that effectively communicates your business to your audience, engaging them through your content.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-newspaper"></i>,
+    title: "Press Release",
+   para:`Looking to promote your business? Consider using our press release writing services. Our in-house writers can produce high-quality content targeting either US or UK audiences, captivating your readers. We offer affordable press release writing services designed to enhance your business reputation while saving you time and money.`
+  },
+  {
+    icon: <i class="fa-solid fa-magnifying-glass-chart"></i>,
+    title: "Optimized Content",
+   para:`Our SEO content writing services provide fully optimized content for search engine results pages, eliminating your worries about website ranking. Our expert writers blend quality writing skills with experience in creating content optimized for search engines.`
+  },
+  {
+    icon: <i class="fa-solid fa-clock"></i>,
+    title: "Delivery on time",
+   para:`
+   Punctuality is paramount at Rozisoft. We consistently deliver our services on time, providing you with quality results precisely when you need them. Your projects are our priority, and we ensure they stay on track, helping you meet your goals without unnecessary delays.`
+  },
+  
+];
+
+export const contentParaTwo = [
+  "Effective website content is essential for conveying the right message to your target audience. Your website's homepage and other sections should be informative, distinctive, user-friendly, and optimized for search engines. Achieving this requires a unique skill set that strikes a balance between engaging content and informative delivery. Professional website content writers focus on providing information rather than emphasizing commercial aspects or product promotions.",
+  "At ROZISOFT, our website content writing services in Pakistan set us apart. We are dedicated to delivering in-depth, concise, and accurate content that effectively connects with your intended audience. Our team of experienced and professional writers utilizes a diverse vocabulary and industry-specific terminology to promote your products or services online","Website content writers specialize in crafting content tailored for websites, with each site catering to a specific target audience requiring the most relevant information to attract business. Content should incorporate keywords aimed at enhancing a website's SEO. Content writing is closely related to SEO copywriting, and it's vital to choose topics and keywords with both in mind. Developing SEO content is crucial for helping your business appear in more relevant search results and driving increased traffic to your site.",
+];
+// Content Writing Data Ends Here
+
+// Digital Marketing Data Starts Here
+export const pointsDm = [
+  {
+    title: 'Brand Awareness',
+    description: 'Our strategy involves crafting campaigns designed to reach your specific target audience, piquing their interest in your product or service and enhancing brand awareness.',
+  },
+  {
+    title: 'Sales',
+    description: 'Through a combination of social media and search engine techniques, we employ both paid and organic methods to amplify lead generation and drive increased sales for your business.',
+  },
+  {
+    title: 'Growth',
+    description: `As we roll out tailored campaigns for your products and services, you'll experience consistent brand growth, fueling the expansion of your market presence.`,
+  },
+  {
+    title: 'Great Exposure',
+    description: `We provide our clients with innovative concepts to garner the market recognition and exposure they rightfully deserve, ensuring they receive outstanding visibility.`,
+  },
+];
+export const dmStepData = [
+  {
+    icon: <i class="fa-solid fa-traffic-light"></i>,
+    title: "Traffic Generation & Coversions",
+    para: `3.	Traffic Generation & Coversions
+    Our campaigns are created to work on both unpaid and paid platforms to attract more customers and bring in new visitors consistently. We ensure that potential customers follow a well-structured path to become dedicated, repeat customers.
+    `,
+  },
+  {
+    icon: <i class="fa-solid fa-gears"></i>,
+    title: "Retargeting & Conversion Rate Optimization",
+    para: `We study how visitors behave on our site to find any weaknesses in our campaign. Then, we focus our efforts on bringing back the audience who left without buying anything, all in an effort to boost our conversion rate.`,
+  },
+  {
+    icon: <i class="fa-solid fa-clipboard"></i>,
+    title: "Content Marketing",
+    para: `Content takes on various forms, whether it's a blog post, image, video, or podcast. Regardless of the format, it must be designed for ease of consumption and must provide value to your audience. But the journey doesn't stop there. Exceptional content, like outstanding products, must be strategically positioned to ensure it reaches the right audience; otherwise, it might remain unnoticed indefinitely.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-arrow-pointer"></i>,
+    title: "PPC Marketing (Pay-Per-Click)",
+   para:`Pay-per-click (PPC) is a versatile marketing medium that enables you to showcase your branded ads on platforms like Google and other search engines. Unlike SEO, PPC allows you to swiftly secure the top position on Google's first page. It's especially effective for new brands with ample marketing budgets, as it can swiftly attract customers. Even if your brand is just getting started, PPC ads can be created and executed effectively.`
+  },
+  {
+    icon: <i class="fa-solid fa-chart-pie"></i>,
+    title: "Digital Marketing Strategy",
+   para:`First, before we start anything, we thoroughly examine your brand and where it stands. Then, we create a unique digital marketing plan that's tailored to attract the right potential customers, generate leads, and boost sales`
+  },
+  {
+    icon: <i class="fa-solid fa-flag"></i>,
+    title: "Campaign Setup",
+   para:`Once we've chosen which marketing channels to use and who our target audience is, it's time to create campaigns that are precise and affordable. We always aim to stay within the budget and avoid overspending.`
+  },
+  
+];
+
+// Digital Marketing Data Ends Here

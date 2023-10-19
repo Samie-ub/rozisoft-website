@@ -22,6 +22,9 @@ import SmmPage from "../pages/SmmPage";
 import WebDevPage from "../pages/WebDevPage";
 import GraphicDesignPage from "../pages/GraphicDesignPage";
 import PpcPage from "../pages/PpcPage";
+import ContentWritingPage from "../pages/ContentWritingPage";
+import DigitalMarketingPage from "../pages/DigitalMarketingPage";
+import ContactPage from "../pages/ContactPage";
 
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
@@ -43,6 +46,7 @@ function Layout() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/blogs" element={<AllBlogPage />} />
           <Route path="/search-engine-optimization" element={<SeoPage />} />
@@ -50,6 +54,8 @@ function Layout() {
           <Route path="/social-media-marketing" element={<SmmPage />} />
           <Route path="/graphic-designing" element={<GraphicDesignPage />} />
           <Route path="/pay-per-click" element={<PpcPage />} />
+          <Route path="/content-writing" element={<ContentWritingPage />} />
+          <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
           {/* Dashboard Routes */}
           <Route path="/rozisoft-admin" element={<AdminLogin />} />
