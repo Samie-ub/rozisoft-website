@@ -32,6 +32,9 @@ function ServiceCards() {
       });
   }, []);
 
+  const generateValidPath = (title) => {
+    return title.toLowerCase().replace(/ /g, "-");
+  };
 
   return (
     <div className="service-slider">
@@ -40,9 +43,10 @@ function ServiceCards() {
         style={{ transform: `translateX(-${currentSlide * 50}%)` }}
       >
         {serviceData.map((content, index) => {
+          const validPath = generateValidPath(content.cardTitle);
           return (
             <div key={index} className="service-card">
-              <Link to={"/"}>
+              <Link to={`/${validPath}`}>
               <div
                 className="service-bg"
                 style={{

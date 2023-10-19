@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 function MobileSlider() {
   const [serviceData, setServiceData] = useState([]);
@@ -17,7 +18,9 @@ function MobileSlider() {
         console.error("Error fetching service data:", error);
       });
   }, []);
-
+  const generateValidPath = (title) => {
+    return title.toLowerCase().replace(/ /g, "-");
+  };
   return (
     <div>
       <Swiper
@@ -28,8 +31,10 @@ function MobileSlider() {
       >
         <>
           {serviceData.map((content, index) => {
+             const validPath = generateValidPath(content.cardTitle);
             return (
               <SwiperSlide key={index}>
+                <Link to={`/${validPath}`}>
                 <div className="service-card">
                   <div
                     className="service-bg"
@@ -57,6 +62,7 @@ function MobileSlider() {
                     </div>
                   </div>
                 </div>
+                </Link>
               </SwiperSlide>
             );
           })}
