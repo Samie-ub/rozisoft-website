@@ -58,4 +58,26 @@ h6 {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+  }
+
+  .pagination button{
+    background-color: var(--primary);
+    border: none;
+    padding: 1rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .page-numbers button.active {
+    background-color: var(--ternary); /* Change to your desired background color */
+    color: #fff; /* Change to your desired text color */
+  }
 /* Blog Page Styles Ends Here */
+

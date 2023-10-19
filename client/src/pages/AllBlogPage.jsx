@@ -7,9 +7,12 @@ import Header from "../component/Header";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import "../styles/blog-page-styles.css";
+
 function AllBlogPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [blogData, setBlogData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(6); // Set the number of items per page
 
   const extractWords = (text, start, end) => {
     const words = text.split(" ");
@@ -22,11 +25,13 @@ function AllBlogPage() {
     const readingTimeMinutes = Math.ceil(wordCount / averageWPM);
     return readingTimeMinutes;
   };
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 2000);
   }, []);
+
   useEffect(() => {
     axios
       .get("https://rozisoft-website-backend.vercel.app/blog")
@@ -37,6 +42,16 @@ function AllBlogPage() {
         console.error("Error fetching blog data:", error);
       });
   }, []);
+
+  // Calculate the index range of the current page
+  const indexOfLastBlog = currentPage * itemsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - itemsPerPage;
+  const currentBlogs = blogData.slice(indexOfFirstBlog, indexOfLastBlog);
+
+  // Change page
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <div>
@@ -56,7 +71,7 @@ function AllBlogPage() {
                   pb: { xs: 4, md: 10 },
                 }}
               >
-                {blogData.map((content, index) => {
+                {currentBlogs.map((content, index) => {
                   const excerpt = extractWords(content.content, 10, 40);
                   const readingTime = calculateReadingTime(content.content);
 
@@ -68,8 +83,9 @@ function AllBlogPage() {
                       md={3.8}
                       lg={3.5}
                       sx={{ py: { xs: 4, md: 5 } }}
+                      key={index}
                     >
-                      <div className="blog-card-all full-width" key={index}>
+                      <div className="blog-card-all full-width">
                         <div
                           className="back-img"
                           style={{
@@ -93,9 +109,47 @@ function AllBlogPage() {
                   );
                 })}
               </Grid>
+              <Grid
+                container
+                justifyContent={"center"}
+                sx={{ pb: { xs: 4, md: 10 } }}
+              >
+                <Grid item lg={4}>
+                  <div className="pagination">
+                    <button
+                      onClick={() => paginate(currentPage - 1)}
+                      disabled={currentPage === 1}
+                    >
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    
+                    <div className="page-numbers">
+                      {Array.from({
+                        length: Math.ceil(blogData.length / itemsPerPage),
+                      }).map((number, index) => (
+                        <button
+                          key={index}
+                          onClick={() => paginate(index + 1)}
+                          className={currentPage === index + 1 ? "active" : ""}
+                        >
+                          {index + 1}
+                        </button>
+                      ))}
+                    </div>
+                    <button
+                      onClick={() => paginate(currentPage + 1)}
+                      disabled={
+                        currentPage ===
+                        Math.ceil(blogData.length / itemsPerPage)
+                      }
+                    >
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
-
           <Footer />
         </>
       )}
