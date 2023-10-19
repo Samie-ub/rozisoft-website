@@ -118,7 +118,10 @@ function Footer() {
                 <div className="img-container">
                   {socialData.map((content, index) => {
                     return (
+                      <a href={content.href} target="_black" rel="no-ref">
+
                       <img src={content.icon} alt="social media account" />
+                      </a>
                     );
                   })}
                 </div>

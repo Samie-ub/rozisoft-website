@@ -49,7 +49,7 @@ export const navbarData = [
 
 export const socialData = [
   {
-    href: "/",
+    href: "https://www.facebook.com/Rozisoft/",
     icon: facebookIcon,
   },
   {
@@ -61,7 +61,7 @@ export const socialData = [
     icon: twitterIcon,
   },
   {
-    href: "/",
+    href: "https://www.linkedin.com/in/rozi-soft/",
     icon: linkedIcon,
   },
 ];
