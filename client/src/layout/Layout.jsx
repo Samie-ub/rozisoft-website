@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -25,7 +25,7 @@ import PpcPage from "../pages/PpcPage";
 import ContentWritingPage from "../pages/ContentWritingPage";
 import DigitalMarketingPage from "../pages/DigitalMarketingPage";
 import ContactPage from "../pages/ContactPage";
-
+import initLocomotiveScroll from "../hooks/LocomotiveScroll";
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
   const isAuthenticated = !!token;
@@ -38,7 +38,9 @@ function PrivateRoute({ element }) {
 }
 
 function Layout() {
-
+  useEffect(() => {
+    initLocomotiveScroll();
+  }, []);
 
   return (
     <div>

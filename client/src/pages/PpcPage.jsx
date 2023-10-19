@@ -18,7 +18,7 @@ function PpcPage() {
       }, 2000);
     }, []);
   return (
-    <div>
+    <div className="seo-page">
           {isLoading ? (
         <Loader />
       ) : (

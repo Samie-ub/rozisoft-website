@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Grid } from "@mui/material";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";

@@ -34,68 +34,59 @@ function Footer() {
   const servicesData = [
     {
       label: "Web Design and Development",
-      path:"/web-designing--&-development"
+      path: "/web-designing--&-development",
     },
     {
       label: "Social Media Marketing",
-      path:"/social-media-marketing"
+      path: "/social-media-marketing",
     },
     {
-      label:"Graphic Designing",
-      path:"/graphic-designing"
+      label: "Graphic Designing",
+      path: "/graphic-designing",
     },
     {
-      label:"Search Engine Optimization",
-      path:"/search-engine-optimization"
+      label: "Search Engine Optimization",
+      path: "/search-engine-optimization",
     },
     {
       label: "Digital Marketing",
-      path:"/digital-marketing"
+      path: "/digital-marketing",
     },
     {
-      label:"Pay Per Click",
-      path:"/pay-per-click"
+      label: "Pay Per Click",
+      path: "/pay-per-click",
     },
     {
-      label:"Content Writing",
-      path:"/content-writing"
+      label: "Content Writing",
+      path: "/content-writing",
     },
- 
-    
-    
-   
-    
   ];
 
   const links = [
     {
       class: "home",
       label: "Home",
-      path:"/"
+      path: "/",
     },
     {
       class: "about",
       label: "About us",
-      path:"/about-us"
-
+      path: "/about-us",
     },
     {
       class: "service",
       label: "Services",
-      path:"/service"
-
+      path: "/service",
     },
     {
       class: "blog",
       label: "Blogs",
-      path:"/blogs"
-
+      path: "/blogs",
     },
     {
       class: "contact",
       label: "Contact",
-      path:"/contact-us"
-
+      path: "/contact-us",
     },
   ];
   return (
@@ -106,7 +97,7 @@ function Footer() {
             container
             sx={{ justifyContent: { xs: "center", md: "space-around" } }}
           >
-            <Grid item xs={12} md={4} lg={3} sx={{pb:{xs:2,md:0}}}>
+            <Grid item xs={12} md={4} lg={3} sx={{ pb: { xs: 2, md: 0 } }}>
               <img
                 src={logoIcon}
                 className="footer-brand"
@@ -133,14 +124,14 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={11} md={3} lg={3} sx={{pb:{xs:1,md:0}}}>
-
+            <Grid item xs={11} md={3} lg={3} sx={{ pb: { xs: 1, md: 0 } }}>
               <h1>Our Services</h1>
               {servicesData.map((content) => {
                 return (
                   <NavLink to={content.path}>
-                  <p className="footer-link">{content.label}</p>
-              </NavLink>)
+                    <p className="footer-link">{content.label}</p>
+                  </NavLink>
+                );
               })}
             </Grid>
             <Grid item xs={11} md={2.5} lg={2}>
@@ -160,10 +151,8 @@ function Footer() {
                       smooth={true}
                       offset={10}
                       duration={1500}
-                      >
-                    <NavLink to={content.path}>
-                      {content.label}
-                      </NavLink>
+                    >
+                      <NavLink to={content.path}>{content.label}</NavLink>
                     </Link>
                   </p>
                 );

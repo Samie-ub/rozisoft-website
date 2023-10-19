@@ -17,36 +17,33 @@ import {
   slideSix,
   slideSeven,
   slideEight,
-
 } from "../assets";
 
 export const navbarData = [
   {
     class: "home",
     label: "home",
-    path:"/"
+    path: "/",
   },
   {
     class: "about",
     label: "about us",
-    path:"/about-us"
+    path: "/about-us",
   },
   {
     class: "service",
     label: "services",
-    path:"/service"
+    path: "/service",
   },
   {
     class: "blog",
     label: "blogs",
-    path:"/blogs"
-
+    path: "/blogs",
   },
   {
     class: "contact",
     label: "contact",
-    path:"/contact-us"
-
+    path: "/contact-us",
   },
 ];
 
@@ -78,7 +75,6 @@ export const homeData = [
   slideSix,
   slideSeven,
   slideEight,
-
 ];
 
 export const aboutData = [
