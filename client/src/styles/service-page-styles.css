@@ -252,6 +252,15 @@
   position: absolute;
 }
 
+.dropdown-content a{
+  font-weight: 500;
+  padding: .1rem 0;
+}
+
+.dropdown-content a:hover{
+  color: var(--primary);
+}
+
 /* About Us Styles Ends Here */
 
 /* SMM Styles Starts Here */
@@ -306,6 +315,11 @@ font-size: 1rem;
   .smm-main-points{
     margin: 1rem 0;
     text-align: center;
+  }
+  .dropdown-content {
+   background-color: var(--white);
+   width: 89%;
+   padding: 3rem 0;
   }
 }
 

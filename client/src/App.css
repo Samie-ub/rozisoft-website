@@ -137,3 +137,9 @@ li {
   text-transform: uppercase;
 }
 /* Helper Classes Ends Here */
+
+@media (max-width: 767px) {
+  .btn:hover {
+    scale: 1;
+  }
+}

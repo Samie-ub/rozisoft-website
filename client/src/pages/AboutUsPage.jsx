@@ -20,6 +20,36 @@ function AboutUsPage() {
       setIsLoading(false);
     }, 2000);
   }, []);
+  const servicesData = [
+    {
+      label: "Web Design and Development",
+      path: "/web-designing--&-development",
+    },
+    {
+      label: "Social Media Marketing",
+      path: "/social-media-marketing",
+    },
+    {
+      label: "Graphic Designing",
+      path: "/graphic-designing",
+    },
+    {
+      label: "Search Engine Optimization",
+      path: "/search-engine-optimization",
+    },
+    {
+      label: "Digital Marketing",
+      path: "/digital-marketing",
+    },
+    {
+      label: "Pay Per Click",
+      path: "/pay-per-click",
+    },
+    {
+      label: "Content Writing",
+      path: "/content-writing",
+    },
+  ];
   return (
     <div className="about-us-page">
       {isLoading ? (
@@ -98,10 +128,15 @@ function AboutUsPage() {
                     </button>
                     {isDropdownOpen && (
                       <div className="dropdown-content">
-                        <Link>Search Engine Optimization (SEO)</Link>
-                        <Link>Social Media Marketing (SMM)</Link>
-                        <Link>Search Engine Optimization (SEO)</Link>
-                        <Link>Search Engine Optimization (SEO)</Link>
+                        {
+                          servicesData.map((content)=>{
+                            return(
+                              <Link to={content.path}>{content.label}</Link>
+                            )
+                          })
+                        }
+                       
+                    
                       </div>
                     )}
                   </div>
