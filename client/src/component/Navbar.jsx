@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import { Grid } from "@mui/material";
 import { socialData, navbarData } from "../content";
-import { menuIcon, crossIcon,logoIcon } from "../assets";
+import { logoIcon } from "../assets";
 import "../styles/Navbar-styles.css";
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -35,10 +35,20 @@ function Navbar() {
     <div className={`navbar-container ${isNavbarFixed ? "fixed-navbar" : ""}`}>
       <Grid
         container
-        sx={{ justifyContent: { xs: "space-between", md: "space-evenly" },px:{xs:2,md:0 }}}
+        sx={{
+          justifyContent: { xs: "space-between", md: "space-evenly" },
+          px: { xs: 2, md: 0 },
+        }}
         alignItems={"center"}
       >
-        <Grid item xs={3} sm={2} md={2} lg={2} sx={{display:'flex',alignItems:'center'}}>
+        <Grid
+          item
+          xs={3}
+          sm={2}
+          md={2}
+          lg={2}
+          sx={{ display: "flex", alignItems: "center" }}
+        >
           <img src={logoIcon} className="logo-img" alt="brand logo" />
         </Grid>
         <Grid item xs={2} sm={7} md={6} lg={6}>
@@ -77,10 +87,10 @@ function Navbar() {
               );
             })}
           </div>
-          <div className="menubar-icon"  onClick={toggleMenu}>
-          <i class="fa-solid fa-compass"></i>
+          <div className="menubar-icon" onClick={toggleMenu}>
+            <i class="fa-solid fa-compass"></i>
           </div>
-          
+
           {isMenuOpen && (
             <div className="menu-dropdown">
               <div className="menu-content">
@@ -97,19 +107,29 @@ function Navbar() {
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "space-between",
-                   py:1
+                      py: 1,
                     }}
                   >
-                    <Grid container justifyContent={"space-between"} alignItems={"center"}>
+                    <Grid
+                      container
+                      justifyContent={"space-between"}
+                      alignItems={"center"}
+                    >
                       <Grid item xs={2}>
-                      <img src={logoIcon} className="logo-img" alt="brand logo" />
+                        <img
+                          src={logoIcon}
+                          className="logo-img"
+                          alt="brand logo"
+                        />
                       </Grid>
-                      <Grid item xs={2} style={{display:"flex",
-                    justifyContent:"flex-end"}}>
+                      <Grid
+                        item
+                        xs={2}
+                        style={{ display: "flex", justifyContent: "flex-end" }}
+                      >
                         <div className="menubar-icon" onClick={toggleMenu}>
-                        <i class="fa-solid fa-circle-xmark"></i>
+                          <i class="fa-solid fa-circle-xmark"></i>
                         </div>
-                        
                       </Grid>
                     </Grid>
                     <div className="para-space">
