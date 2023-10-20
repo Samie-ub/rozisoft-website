@@ -10,25 +10,22 @@ import "react-quill/dist/quill.snow.css";
 function BlogSetup() {
   const [blogContent, setBlogContent] = useState("");
   const [blogTitle, setBlogTitle] = useState("");
-  const [blogSubTitle, setBlogSubTitle] = useState("");
-  const [blogcategory, setBlogCategory] = useState("");
   const [blogCoverImageUrl, setBlogCoverImageUrl] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://rozisoft-website-backend.vercel.app/blog", {
-        content: blogContent,
-        title: blogTitle,
-        subTitle: blogSubTitle,
-        coverImageUrl: blogCoverImageUrl,
-        category: blogcategory,
-      });
+      const response = await axios.post(
+        "https://rozisoft-website-backend.vercel.app/blog",
+        {
+          content: blogContent,
+          title: blogTitle,
+          coverImageUrl: blogCoverImageUrl,
+        }
+      );
       toast.success("Blog post created successfully");
       setBlogContent("");
       setBlogTitle("");
-      setBlogSubTitle("");
       setBlogCoverImageUrl("");
-      setBlogCategory("");
       console.log(response);
     } catch (error) {
       console.error("Error creating blog post:", error);
@@ -74,22 +71,7 @@ function BlogSetup() {
                         value={blogTitle}
                         onChange={(e) => setBlogTitle(e.target.value)}
                       />
-                      <input
-                        type="text"
-                        className="i-width"
-                        placeholder="Add blog sub-title"
-                        value={blogSubTitle}
-                        required
-                        onChange={(e) => setBlogSubTitle(e.target.value)}
-                      />
-                      <input
-                        type="text"
-                        className="i-width"
-                        required
-                        placeholder="Add blog category"
-                        value={blogcategory}
-                        onChange={(e) => setBlogCategory(e.target.value)}
-                      />
+
                       <input
                         type="url"
                         required

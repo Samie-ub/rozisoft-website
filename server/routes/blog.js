@@ -3,15 +3,13 @@ const router = express.Router();
 const Blog = require("../models/Blog");
 
 router.post("/", async (req, res) => {
-  const { title, subTitle, coverImageUrl, content, category } = req.body;
+  const { title, coverImageUrl, content } = req.body;
 
   try {
     const newBlogPost = new Blog({
       title,
-      subTitle,
       coverImageUrl,
       content,
-      category,
     });
     const savedBlogPost = await newBlogPost.save();
     res.status(201).json(savedBlogPost);
