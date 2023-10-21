@@ -7,7 +7,7 @@ function AboutSection() {
   return (
     <div className="about-container" name="about">
       <Grid container justifyContent={"center"}>
-        <Grid item xs={12} sm={11} md={11} lg={11}>
+        <Grid item xs={11} sm={11} md={11} lg={11}>
           <Grid
             container
             justifyContent={"space-between"}
