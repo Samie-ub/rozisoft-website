@@ -252,12 +252,12 @@
   position: absolute;
 }
 
-.dropdown-content a{
+.dropdown-content a {
   font-weight: 500;
-  padding: .1rem 0;
+  padding: 0.1rem 0;
 }
 
-.dropdown-content a:hover{
+.dropdown-content a:hover {
   color: var(--primary);
 }
 
@@ -270,16 +270,17 @@
   font-weight: 400;
 }
 
-.smm-content p {  font-size: 0.9rem;
+.smm-content p {
+  font-size: 0.9rem;
   margin: 1rem 0;
 }
 
-.smm-main-points h3{
-font-size: 1rem;
+.smm-main-points h3 {
+  font-size: 1rem;
 }
 
-.smm-main-points p{
-  font-size: .9rem;
+.smm-main-points p {
+  font-size: 0.9rem;
   color: var(--ternary);
 }
 /* SMM Styles Stas Here */
@@ -292,7 +293,7 @@ font-size: 1rem;
     margin: 0 auto;
   }
 
-  .about-content p{
+  .about-content p {
     text-align: center;
   }
   .m-c {
@@ -313,17 +314,17 @@ font-size: 1rem;
     width: 100%;
   }
 
-  .smm-content{
+  .smm-content {
     text-align: center;
   }
-  .smm-main-points{
+  .smm-main-points {
     margin: 1rem 0;
     text-align: center;
   }
   .dropdown-content {
-   background-color: var(--white);
-   width: 89%;
-   padding: 3rem 0;
+    background-color: var(--white);
+    width: 89%;
+    padding: 3rem 0;
   }
 }
 

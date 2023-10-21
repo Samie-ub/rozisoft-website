@@ -1,6 +1,5 @@
 /* Blog Card Styles Starts Here */
 .blog-card {
-height: 25rem;
   flex: 0 0 80%;
   max-width: 31%;
   display: flex;
@@ -8,55 +7,68 @@ height: 25rem;
   justify-content: space-evenly;
 }
 
+.overlay-b{
+  background-color: #1749568f;
+  height: 25rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overlay-b:hover{
+  background-color: #174956b7;
+ transition: .5s ease all;
+
+ .button-align p{
+  color: var(--white);
+ }
+
+ .read-btn{
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+ }
+}
 
 .back-img {
-  height: 15rem;
+  height: 100%;
   border-radius: 1rem;
   background-position: center;
   background-size: cover;
 }
 
-.blog-content {
-  padding: 1rem;
+.overlay-b h1{
+  color: var(--white);
 }
-
 .button-align{
-  display:flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
 .button-align p{
-  margin-top: 2rem;
-}
-
-.blog-read{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.blog-content .upper-tags {
-  display: flex;
-  justify-content: space-between;
-}
-
-.blog-content p{
+  color: #cccbcb;
   font-size: .9rem;
 }
+.read-btn{
+  background-color: transparent;
+  border: none;
+  color: #cccbcb;
+  cursor: pointer;
+  border-bottom: 2px solid #cccbcb;;
+  padding: 0 0 .5rem 0;
 
-.blog-content .upper-tags span {
-  background-color: var(--primary);
-  padding: 0.5rem;
-  border-radius: 1rem;
-  font-size: 0.8rem;
-  color: var(--white);
 }
 
-.blog-content h1 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--primary);
+.read-btn:hover{
+  scale: 1.1;
+  transition: .5s ease;
 }
+
+
+
+
+
+
+
+
 /* Blog Card Styles Ends Here */

@@ -85,25 +85,23 @@ function AllBlogPage() {
                       sx={{ py: { xs: 4, md: 5 } }}
                       key={index}
                     >
-                      <div className="blog-card-all full-width">
+                      <div className="blog-card-all full-width" key={index}>
                         <div
                           className="back-img"
                           style={{
                             backgroundImage: `url(${content.coverImageUrl})`,
                           }}
                         >
-                          <div className="gradient"></div>
+                          <NavLink to={`/blog/${content._id}`}>
+                            <div className="overlay-b">
+                              <h1>{content.title}</h1>
+                              <div className="button-align">
+                                <button className="read-btn">Read More</button>
+                                <p>{`${readingTime} min read`}</p>
+                              </div>
+                            </div>
+                          </NavLink>
                         </div>
-                        <div className="blog-content">
-                          <h1>{content.title}</h1>
-                        </div>
-                        <NavLink
-                          className={"button-align"}
-                          to={`/blog/${content._id}`}
-                        >
-                          <button className="btn">Read More</button>
-                          <p className="read-time">{`${readingTime} min read`}</p>
-                        </NavLink>
                       </div>
                     </Grid>
                   );
@@ -122,7 +120,7 @@ function AllBlogPage() {
                     >
                       <i class="fa-solid fa-arrow-left"></i>
                     </button>
-                    
+
                     <div className="page-numbers">
                       {Array.from({
                         length: Math.ceil(blogData.length / itemsPerPage),

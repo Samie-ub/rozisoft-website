@@ -66,15 +66,19 @@ function BlogCards() {
                 className="back-img"
                 style={{ backgroundImage: `url(${content.coverImageUrl})` }}
               >
-                <div className="gradient"></div>
-              </div>
-              <div className="blog-content">
+              <NavLink to={`/blog/${content._id}`}>
+                <div className="overlay-b">
+               
                 <h1>{content.title}</h1>
-              </div>
-                <NavLink className={"button-align"} to={`/blog/${content._id}`}>
-                  <button className="btn">Read More</button>
+                  <div className="button-align">
+                  <button className="read-btn">Read More</button>
                   <p>{`${readingTime} min read`}</p>
+
+                  </div>
+              </div>
                 </NavLink>
+              </div>
+
             </div>
           );
         })}

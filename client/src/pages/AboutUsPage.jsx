@@ -76,7 +76,13 @@ function AboutUsPage() {
                       </div>
                     </Grid>
 
-                    <Grid item xs={12} md={5.5} lg={6}sx={{display:{xs:"none",md:"block"}}}>
+                    <Grid
+                      item
+                      xs={12}
+                      md={5.5}
+                      lg={6}
+                      sx={{ display: { xs: "none", md: "block" } }}
+                    >
                       <div
                         className="brand-h"
                         style={{
@@ -128,15 +134,9 @@ function AboutUsPage() {
                     </button>
                     {isDropdownOpen && (
                       <div className="dropdown-content">
-                        {
-                          servicesData.map((content)=>{
-                            return(
-                              <Link to={content.path}>{content.label}</Link>
-                            )
-                          })
-                        }
-                       
-                    
+                        {servicesData.map((content) => {
+                          return <Link to={content.path}>{content.label}</Link>;
+                        })}
                       </div>
                     )}
                   </div>
