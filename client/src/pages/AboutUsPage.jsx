@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
-import Footer from "../component/Footer";
 import Loader from "../component/Loader";
-import Navbar from "../component/Navbar";
 import Header from "../component/Header";
+import Navbar from "../component/Navbar";
+import Footer from "../component/Footer";
 import { aboutData, aboutDataTwo } from "../content/aboutContent";
 import { AboutImg, AboutImgII } from "../assets";
-import { Link } from "react-router-dom";
 function AboutUsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

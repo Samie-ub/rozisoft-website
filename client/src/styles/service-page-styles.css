@@ -291,6 +291,10 @@ font-size: 1rem;
     max-width: 100%;
     margin: 0 auto;
   }
+
+  .about-content p{
+    text-align: center;
+  }
   .m-c {
     text-align: center;
   }
