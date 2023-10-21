@@ -174,4 +174,8 @@
 .blog-container h1 {
   text-transform: capitalize;
 }
+
+.blog-mobile-slider{
+  padding-bottom: 4rem;
+}
 /* Blog Section Styles Ends Here */
