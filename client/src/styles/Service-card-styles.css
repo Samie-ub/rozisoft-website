@@ -84,10 +84,10 @@
 }
 
 .l-arrow{
-  background-color: var(--ternary);
+  background-color: var(--white);
   display: inline;
   padding: 1rem 1.1rem;
-  color: var(--white);
+  color: var(--primary);
   border-radius: 1rem;
   position: absolute;
   z-index: 1;
@@ -96,14 +96,14 @@
   cursor: pointer;
 }
 .r-arrow{
-  background-color: var(--ternary);
+  background-color: var(--white);
   display: inline;
   padding: 1rem 1.3rem;
-  color: var(--white);
+  color: var(--primary);
   border-radius: 1rem ;
   position: absolute;
   z-index: 1;
-  right:0;
+  right:-1%;
   bottom: 40%;
   cursor: pointer;
 }
