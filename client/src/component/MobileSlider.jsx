@@ -28,6 +28,7 @@ function MobileSlider() {
         spaceBetween={50}
         pagination={{ clickable: true }}
         slidesPerView={1}
+        loop
       >
         <>
           {serviceData.map((content, index) => {
