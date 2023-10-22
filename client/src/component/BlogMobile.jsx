@@ -31,11 +31,7 @@ function BlogMobile() {
 
   return (
     <div className="blog-mobile-slider">
-      <Swiper
-        spaceBetween={50}
-       
-        slidesPerView={1}
-      >
+      <Swiper spaceBetween={50} slidesPerView={1}>
         <>
           {blogData.map((content, index) => {
             const excerpt = extractWords(content.content, 10, 40);

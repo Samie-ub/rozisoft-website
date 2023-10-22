@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -52,7 +52,10 @@ function Layout() {
           <Route path="/service" element={<ServicePage />} />
           <Route path="/blogs" element={<AllBlogPage />} />
           <Route path="/search-engine-optimization" element={<SeoPage />} />
-          <Route path="/web-designing--&-development" element={<WebDevPage />} />
+          <Route
+            path="/web-designing--&-development"
+            element={<WebDevPage />}
+          />
           <Route path="/social-media-marketing" element={<SmmPage />} />
           <Route path="/graphic-designing" element={<GraphicDesignPage />} />
           <Route path="/pay-per-click" element={<PpcPage />} />

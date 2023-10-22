@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { Grid } from "@mui/material";
-import { arrowIcon } from "../assets";
-import "../styles/Service-card-styles.css";
+import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../styles/Service-card-styles.css";
 
+function SampleNextArrow(props) {
+  const {onClick } = props;
+  return (
+    <div className="r-arrow" onClick={onClick}>
+    <i class="fa-solid fa-arrow-right"></i>
+  </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className="l-arrow" onClick={onClick}>
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  );
+}
 
 function ServiceCards() {
   const [serviceData, setServiceData] = useState([]);
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? serviceData.length - 2 : prevSlide - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide >= serviceData.length - 2 ? 0 : prevSlide + 1
-    );
-  };
-
   useEffect(() => {
     fetch("https://rozisoft-website-backend.vercel.app/service/all-service")
       .then((response) => response.json())
@@ -35,59 +39,52 @@ function ServiceCards() {
   const generateValidPath = (title) => {
     return title.toLowerCase().replace(/ /g, "-");
   };
-
+  const settings = {
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    className: "gap-slider",
+    nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
+  };
   return (
     <div className="service-slider">
-      <div
-        className="service-container"
-        style={{ transform: `translateX(-${currentSlide * 50}%)` }}
-      >
+      <Slider {...settings}>
         {serviceData.map((content, index) => {
           const validPath = generateValidPath(content.cardTitle);
           return (
             <div key={index} className="service-card">
               <Link to={`/${validPath}`}>
-              <div
-                className="service-bg"
-                style={{
-                  backgroundImage: `url(${content.backgroundImageUrl})`,
-                }}
-              >
-                <div className="gradient-card">
-                  <div className="card-content">
-                    <hr className="card-line" />
-                    <h1>{content.cardTitle}</h1>
-                    <span>{content.cardSubServices || ""}</span>
-                  </div>
-                  <div className="hover-content">
-                    <p>Inside our services</p>
-                    <ul>
-                      {(content.cardServices || "").map(
-                        (service, serviceIndex) => (
-                          <li key={serviceIndex}>{service.trim()}</li>
-                        )
-                      )}
-                    </ul>
+                <div
+                  className="service-bg"
+                  style={{
+                    backgroundImage: `url(${content.backgroundImageUrl})`,
+                  }}
+                >
+                  <div className="gradient-card">
+                    <div className="card-content">
+                      <hr className="card-line" />
+                      <h1>{content.cardTitle}</h1>
+                      <span>{content.cardSubServices || ""}</span>
+                    </div>
+                    <div className="hover-content">
+                      <p>Inside our services</p>
+                      <ul>
+                        {(content.cardServices || "").map(
+                          (service, serviceIndex) => (
+                            <li key={serviceIndex}>{service.trim()}</li>
+                          )
+                        )}
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
             </div>
           );
         })}
-      </div>
-      <Grid container justifyContent={"flex-end"}>
-        <Grid item lg={2}>
-          <div className="slider-controls">
-            <button onClick={prevSlide}>
-              <img src={arrowIcon} className="rotate" alt="slider left icon" />
-            </button>
-            <button onClick={nextSlide}>
-              <img src={arrowIcon} alt="slider left icon" />
-            </button>
-          </div>
-        </Grid>
-      </Grid>
+      </Slider>
     </div>
   );
 }

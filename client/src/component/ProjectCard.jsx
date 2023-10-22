@@ -1,24 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { arrowIcon } from "../assets";
-import { Grid } from "@mui/material";
+import Slider from "react-slick";
+import "../styles/blog-card-styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../styles/project-card-styles.css";
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className="r-arrow" onClick={onClick}>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className="l-arrow" onClick={onClick}>
+      <i class="fa-solid fa-arrow-left"></i>
+    </div>
+  );
+}
 
 function ProjectCard() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const isMobileScreen = window.innerWidth <= 767;
   const [projectData, setProjectData] = useState([]);
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? projectData.length - 3 : prevSlide - 1
-    );
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide >= projectData.length - 3 ? 0 : prevSlide + 1
-    );
-  };
 
   useEffect(() => {
     fetch("https://rozisoft-website-backend.vercel.app/project/all-project")
@@ -30,18 +36,45 @@ function ProjectCard() {
         console.error("Error fetching Project data:", error);
       });
   }, []);
-
+  const settings = {
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: "gap-slider",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows:false
+        },
+      },
+    ],
+  };
   return (
     <div className="project-slider">
-      <div
-        className="project-container"
-        style={{
-          transform: `translateX(-${
-            currentSlide * (isMobileScreen ? 110 : 34)
-          }%)`,
-          transition: "transform 0.9s ease-in-out",
-        }}
-      >
+      <Slider {...settings}>
         {projectData.map((content, index) => {
           return (
             <div key={index} className="card">
@@ -61,19 +94,7 @@ function ProjectCard() {
             </div>
           );
         })}
-      </div>
-      <Grid container justifyContent={"flex-end"}>
-        <Grid item xs={12} lg={2}>
-          <div className="slider-btn">
-            <button onClick={prevSlide} className="prev-button">
-              <img src={arrowIcon} className="rotate" alt="slider left icon" />
-            </button>
-            <button onClick={nextSlide} className="next-button">
-              <img src={arrowIcon} alt="slider left icon" />
-            </button>
-          </div>
-        </Grid>
-      </Grid>
+      </Slider>
     </div>
   );
 }

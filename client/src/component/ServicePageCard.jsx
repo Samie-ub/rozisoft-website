@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { Grid } from "@mui/material";
 import "../styles/service-page-styles.css";
-import { Link as RouterLink } from "react-router-dom";
 
 function ServicePageCard() {
   const [serviceData, setServiceData] = useState([]);

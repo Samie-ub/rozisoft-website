@@ -58,10 +58,6 @@
   /* Client Section Ends Here */
 
   /* Service Section Starts Here */
-  .service-card {
-    flex: 0 0 50%;
-    max-width: 100%;
-  }
 
   .gradient-card {
     height: 25rem;
@@ -87,31 +83,9 @@
     flex-direction: column;
     justify-content: center;
   }
-
-  .card {
-    flex: 0 0 100%;
-    max-width: 100%;
-   
+  .gap-slider{
+    margin-left: 1rem;
   }
-
-  .prev-button,
-  .next-button {
-    top: 48%;
-    padding: 10px 10px 5px 10px;
-  }
-
-  .slider-btn button img {
-    width: 1.4rem;
-  }
-
-  .prev-button {
-    left: 0px;
-  }
-
-  .next-button {
-    right: 0px;
-  }
-
   /* Project Section Ends Here */
 
   /* Call Section Styles Starts Here */
@@ -146,11 +120,6 @@
   /* Blog Section Styles Starts Here */
   .blog-container {
     padding: 2rem 0 0 0;
-  }
-
-  .blog-card {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
   }
 
   .blog-content{
@@ -196,23 +165,11 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Project Section Styles Starts Here */
-  .card {
-    flex: 0 0 80%;
-    max-width: 40%;
-  }
-
-  .prev-button,
-  .next-button {
-    top: 42%;
-  }
 
   /* Project Section Styles Ends Here */
 
   /* Blog Section Styles Starts Here */
-  .blog-card {
-    flex: 0 0 40%;
-    max-width: 100%;
-  }
+
   .blog-content h1 {
     font-size: 1.1rem;
     margin: 1rem 0 0 0;

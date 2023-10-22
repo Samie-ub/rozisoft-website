@@ -1,9 +1,5 @@
 /* project-card-styles Starts Here */
 
-.project-slider {
-  position: relative;
-  overflow: hidden;
-}
 
 .project-container {
   padding: 1rem 0;
@@ -17,8 +13,7 @@
   background-color: #8f8f8f36;
   border-radius: 1rem;
   cursor: pointer;
-  flex: 0 0 80%;
-  max-width: 31%;
+  width: 96% !important;
   height: 100%;
   margin-right: 1rem;
   transition: transform 1s ease-in-out;
@@ -62,31 +57,3 @@
   font-weight: bold;
 }
 
-/* Styles for navigation buttons */
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #474747a8;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 1rem;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.slider-btn button img {
-  width: 2rem;
-}
-
-.prev-button {
-  left: 0px;
-}
-
-.next-button {
-  right: 0px;
-}
-
-/* project-card-styles Ends Here */

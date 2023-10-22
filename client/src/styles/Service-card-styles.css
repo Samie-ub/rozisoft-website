@@ -1,50 +1,16 @@
 /* Service Card Styles Starts Here  */
-.service-slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.service-container {
-  display: flex;
-  transition: transform 0.9s ease-in-out;
-  gap: 2rem;
-}
-
-.service-card {
-  flex: 0 0 50%;
-  max-width: 48%;
-}
-
-.slider-controls {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.slider-controls button {
-  background-color: var(--primary);
-  border: none;
-  padding: 1rem 0.7rem 0.7rem 1rem;
-  cursor: pointer;
-  border-radius: 1rem;
-  margin: 1rem;
-}
-
-.slider-controls button:hover {
-  scale: 1.1;
-  transition: 0.5s ease;
-}
-
-.slider-controls button img {
-  width: 1.8rem;
-}
-
-.slider-controls button:focus {
-  outline: none;
-}
 .service-bg {
   background-position: center;
   background-size: cover;
   border-radius: 1rem;
+}
+
+.gap-slider{
+  margin-left: 2rem;
+}
+
+.service-card{
+  width: 96% !important;
 }
 
 .gradient-card {
@@ -57,6 +23,7 @@
   position: relative;
   cursor: pointer;
   border-radius: 1rem;
+  
 }
 
 .gradient-card h1 {
@@ -116,4 +83,28 @@
   }
 }
 
+.l-arrow{
+  background-color: var(--ternary);
+  display: inline;
+  padding: 1rem 1.1rem;
+  color: var(--white);
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 1;
+  left: -2%;
+  bottom: 40%;
+  cursor: pointer;
+}
+.r-arrow{
+  background-color: var(--ternary);
+  display: inline;
+  padding: 1rem 1.3rem;
+  color: var(--white);
+  border-radius: 1rem ;
+  position: absolute;
+  z-index: 1;
+  right:0;
+  bottom: 40%;
+  cursor: pointer;
+}
 /* Service Card Styles Ends Here  */

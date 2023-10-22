@@ -1,26 +1,31 @@
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 import axios from "axios";
-import { Grid } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import { arrowIcon } from "../assets";
 import "../styles/blog-card-styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../styles/Service-card-styles.css";
 
 function BlogCards() {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [blogData, setBlogData] = useState([]);
-  const isMobileScreen = window.innerWidth <= 767;
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? blogData.length - 1 : prevSlide - 1
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="r-arrow" onClick={onClick}>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
     );
-  };
+  }
 
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide >= blogData.length - 1 ? 0 : prevSlide + 1
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div className="l-arrow" onClick={onClick}>
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
     );
-  };
+  }
 
   useEffect(() => {
     axios
@@ -44,18 +49,18 @@ function BlogCards() {
     const readingTimeMinutes = Math.ceil(wordCount / averageWPM);
     return readingTimeMinutes;
   };
-
+  const settings = {
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: "gap-slider",
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
   return (
     <div className="service-slider">
-      <div
-        className="service-container"
-        style={{
-          transform: `translateX(-${
-            currentSlide * (isMobileScreen ? 110 : 32)
-          }%)`,
-          transition: "transform 0.9s ease-in-out",
-        }}
-      >
+      <Slider {...settings}>
         {blogData.map((content, index) => {
           const excerpt = extractWords(content.content, 10, 40);
           const readingTime = calculateReadingTime(content.content);
@@ -66,35 +71,20 @@ function BlogCards() {
                 className="back-img"
                 style={{ backgroundImage: `url(${content.coverImageUrl})` }}
               >
-              <NavLink to={`/blog/${content._id}`}>
-                <div className="overlay-b">
-               
-                <h1>{content.title}</h1>
-                  <div className="button-align">
-                  <button className="read-btn">Read More</button>
-                  <p>{`${readingTime} min read`}</p>
-
+                <NavLink to={`/blog/${content._id}`}>
+                  <div className="overlay-b">
+                    <h1>{content.title}</h1>
+                    <div className="button-align">
+                      <button className="read-btn">Read More</button>
+                      <p>{`${readingTime} min read`}</p>
+                    </div>
                   </div>
-              </div>
                 </NavLink>
               </div>
-
             </div>
           );
         })}
-      </div>
-      <Grid container sx={{ justifyContent: { xs: "center", md: "flex-end" } }}>
-        <Grid item lg={2}>
-          <div className="slider-controls">
-            <button onClick={prevSlide}>
-              <img src={arrowIcon} className="rotate" alt="slider left icon" />
-            </button>
-            <button onClick={nextSlide}>
-              <img src={arrowIcon} alt="slider left icon" />
-            </button>
-          </div>
-        </Grid>
-      </Grid>
+      </Slider>
     </div>
   );
 }
