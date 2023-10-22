@@ -4,12 +4,12 @@
   margin: 0 auto !important;
 }
 
-.blog-card:hover{
+.blog-card:hover {
   scale: 1.01;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-.overlay-b{
+.overlay-b {
   background-color: #1749568f;
   height: 25rem;
   border-radius: 1rem;
@@ -18,18 +18,19 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.overlay-b:hover{
+
+.overlay-b:hover {
   background-color: #174956b7;
- transition: .5s ease all;
+  transition: 0.5s ease all;
 
- .button-align p{
-  color: var(--white);
- }
+  .button-align p {
+    color: var(--white);
+  }
 
- .read-btn{
-  color: var(--white);
-  border-bottom: 2px solid var(--white);
- }
+  .read-btn {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+  }
 }
 
 .back-img {
@@ -39,38 +40,31 @@
   background-size: cover;
 }
 
-.overlay-b h1{
+.overlay-b h1 {
   color: var(--white);
 }
-.button-align{
+
+.button-align {
   display: flex;
   justify-content: space-between;
 }
 
-.button-align p{
+.button-align p {
   color: #cccbcb;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.read-btn{
+
+.read-btn {
   background-color: transparent;
   border: none;
   color: #cccbcb;
   cursor: pointer;
-  border-bottom: 2px solid #cccbcb;;
-  padding: 0 0 .5rem 0;
-
+  border-bottom: 2px solid #cccbcb;
+  padding: 0 0 0.5rem 0;
 }
 
-.read-btn:hover{
+.read-btn:hover {
   scale: 1.1;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
-
-
-
-
-
-
-
 /* Blog Card Styles Ends Here */
