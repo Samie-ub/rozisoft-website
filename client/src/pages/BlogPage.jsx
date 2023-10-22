@@ -8,6 +8,7 @@ import Navbar from "../component/Navbar";
 import "../styles/blog-page-styles.css";
 import Loader from "../component/Loader";
 import { socialData } from "../content";
+import ContactSection from "../section/ContactSection";
 function BlogPage() {
   const { blogId } = useParams();
   const [blogData, setBlogData] = useState({});
@@ -103,6 +104,7 @@ function BlogPage() {
                 </Grid>
               </Grid>
             </Grid>
+                <ContactSection py={5}/>
           </div>
           <Footer />
         </>
