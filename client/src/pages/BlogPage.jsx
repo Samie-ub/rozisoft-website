@@ -16,13 +16,26 @@ function BlogPage() {
 
   const formatDate = (inputDate) => {
     const date = new Date(inputDate);
-  
+
     const day = date.getDate();
-    const month = date.toLocaleString('default', { month: 'long' });
+    const month = date.toLocaleString("default", { month: "long" });
     const year = date.getFullYear();
-  
+
     return `${day} ${month} ${year}`;
   };
+  const calculateReadingTime = (text) => {
+    if (text) {
+      const averageWPM = 200;
+      const wordCount = text.split(" ").length;
+      const readingTimeMinutes = Math.ceil(wordCount / averageWPM);
+      return readingTimeMinutes;
+    }
+    return 0;
+  };
+
+  const readingTime = blogData.content
+    ? calculateReadingTime(blogData.content)
+    : 0;
 
   useEffect(() => {
     setTimeout(() => {
@@ -39,19 +52,7 @@ function BlogPage() {
         console.error("Error fetching blog data:", error);
       });
   }, [blogId]);
-  const calculateReadingTime = (text) => {
-    if (text) {
-      const averageWPM = 200;
-      const wordCount = text.split(" ").length;
-      const readingTimeMinutes = Math.ceil(wordCount / averageWPM);
-      return readingTimeMinutes;
-    }
-    return 0;
-  };
 
-  const readingTime = blogData.content
-    ? calculateReadingTime(blogData.content)
-    : 0;
   return (
     <div className="blog-page" name="blog-post">
       {isLoading ? (
@@ -64,8 +65,7 @@ function BlogPage() {
             <Grid container justifyContent={"center"}>
               <Grid item xs={11} md={12} lg={11}>
                 <Grid container justifyContent={"center"} py={5}>
-                 
-                  <Grid item xs={11.5} lg={12} >
+                  <Grid item xs={11.5} lg={12}>
                     <div
                       className="blog-bg"
                       style={{
@@ -81,30 +81,31 @@ function BlogPage() {
                     <h1 className="heading-blog">{blogData.title}</h1>
                   </Grid>
                   <Grid item xs={11.5} md={11} lg={10}>
-                    
                     <div
-                    className="quill-container"
+                      className="quill-container"
                       dangerouslySetInnerHTML={{ __html: blogData.content }}
                     ></div>
 
                     <div className="blog-links">
                       <div className="social">
-                        {socialData.map((content)=>{
-                          return(
+                        {socialData.map((content) => {
+                          return (
                             <a href={content.href} target="_blank" rel="no-ref">
-                              <img src={content.icon} alt="social media links" />
-                              
+                              <img
+                                src={content.icon}
+                                alt="social media links"
+                              />
                             </a>
-                          )
+                          );
                         })}
                       </div>
-                        <p className="bookmark">rozisoft</p>
+                      <p className="bookmark">rozisoft</p>
                     </div>
                   </Grid>
                 </Grid>
               </Grid>
             </Grid>
-                <ContactSection py={5}/>
+            <ContactSection py={5} />
           </div>
           <Footer />
         </>

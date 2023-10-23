@@ -240,6 +240,20 @@
   font-size: 3.1rem;
 }
 
+.about-btn button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding:.9rem 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: .7rem;
+  font-size: .9rem;
+  margin-top: 1rem;
+}
+
 .about-btn button:hover {
   cursor: pointer;
 }
@@ -255,6 +269,7 @@
 .dropdown-content a {
   font-weight: 500;
   padding: 0.1rem 0;
+  color: var(--ternary);
 }
 
 .dropdown-content a:hover {
