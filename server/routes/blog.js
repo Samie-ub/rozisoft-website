@@ -60,4 +60,26 @@ router.delete("/:blogId", async (req, res) => {
   }
 });
 
+router.put("/:blogId", async (req, res) => {
+  const { blogId } = req.params;
+  const { title, coverImageUrl, content } = req.body;
+
+  try {
+    const updatedBlogPost = await Blog.findByIdAndUpdate(
+      blogId,
+      { title, coverImageUrl, content },
+      { new: true }
+    );
+
+    if (!updatedBlogPost) {
+      return res.status(404).json({ error: "Blog post not found" });
+    }
+
+    res.status(200).json(updatedBlogPost);
+  } catch (error) {
+    console.error("Error updating blog post:", error);
+    res.status(500).json({ error: "Failed to update blog post" });
+  }
+});
+
 module.exports = router;

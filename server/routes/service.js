@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Service = require("../models/Service"); 
+const Service = require("../models/Service");
 router.post("/add-service", async (req, res) => {
   try {
     const { backgroundImageUrl, cardTitle, cardSubServices, cardServices } =
@@ -64,7 +64,8 @@ router.delete("/delete-service/:serviceId", async (req, res) => {
 router.put("/update-service/:serviceId", async (req, res) => {
   try {
     const serviceId = req.params.serviceId;
-    const { backgroundImageUrl, cardTitle, cardSubServices, cardServices } = req.body;
+    const { backgroundImageUrl, cardTitle, cardSubServices, cardServices } =
+      req.body;
 
     const updatedService = {
       backgroundImageUrl,

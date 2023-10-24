@@ -31,7 +31,6 @@ router.get("/all-project", async (req, res) => {
   }
 });
 
-// Add route to fetch a single project's details
 router.get("/project-details/:projectId", async (req, res) => {
   try {
     const projectId = req.params.projectId;

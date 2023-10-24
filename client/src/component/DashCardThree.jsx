@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+
 function DashCardThree() {
   const [blogData, setBlogData] = useState([]);
   const [displayedBlogs, setDisplayedBlogs] = useState(2);
@@ -54,12 +56,20 @@ function DashCardThree() {
               </div>
               <p>{content.title}</p>
               <p>{content.category}</p>
-              <button
-                className="btn"
-                onClick={() => handleDeleteBlog(content._id)}
-              >
-                Delete
-              </button>
+              <div className="btn-containers">
+                <button
+                  className="dash-btn"
+                  onClick={() => handleDeleteBlog(content._id)}
+                >
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button className="dash-btn">
+                <Link to={`/rozisoft-admin/dashboard/blog/edit/${content._id}`}>
+
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </Link>
+                </button>
+              </div>
             </div>
           );
         })}

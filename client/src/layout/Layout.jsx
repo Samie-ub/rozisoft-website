@@ -27,6 +27,8 @@ import DigitalMarketingPage from "../pages/DigitalMarketingPage";
 import ContactPage from "../pages/ContactPage";
 import initLocomotiveScroll from "../hooks/LocomotiveScroll";
 import ServiceEdit from "../component/ServiceEdit";
+import ProjectEdit from "../component/ProjectEdit";
+import BlogEdit from "../component/BlogEdit";
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
   const isAuthenticated = !!token;
@@ -86,9 +88,17 @@ function Layout() {
             element={<PrivateRoute element={<ProjectSetup />} />}
           />
           <Route
+  path="/rozisoft-admin/dashboard/project/edit/:projectId"
+  element={<PrivateRoute element={<ProjectEdit />} />}
+/>
+          <Route
             path="/rozisoft-admin/dashboard/blogs"
             element={<PrivateRoute element={<BlogSetup />} />}
           />
+          <Route
+  path="/rozisoft-admin/dashboard/blog/edit/:blogId"
+  element={<PrivateRoute element={<BlogEdit />} />}
+/>
         </Routes>
       </Router>
     </div>
