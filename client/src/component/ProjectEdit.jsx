@@ -6,38 +6,26 @@ import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "./Sidebar";
 import { useParams } from "react-router-dom";
 
-function ServiceEdit() {
-  const { serviceId } = useParams();
+function ProjectEdit() {
+  const { projectId } = useParams();
   const [formData, setFormData] = useState({
     backgroundImageUrl: "",
-    cardTitle: "",
-    cardServices: "",
-    cardSubServices: "",
+    projectCategory: "",
+    projectName: "",
   });
-  console.log("formData:", formData);
 
   useEffect(() => {
-    if (serviceId) {
-      fetch(
-        `https://rozisoft-website-backend.vercel.app/service/service-details/${serviceId}`
-      )
+    if (projectId) {
+      fetch(`https://rozisoft-website-backend.vercel.app/project/project-details/${projectId}`)
         .then((response) => response.json())
         .then((data) => {
-          const cardServices = data.cardServices
-            ? data.cardServices.join(", ")
-            : "";
-          setFormData({
-            backgroundImageUrl: data.backgroundImageUrl,
-            cardTitle: data.cardTitle,
-            cardSubServices: data.cardSubServices,
-            cardServices: cardServices,
-          });
+          setFormData(data);
         })
         .catch((error) => {
-          console.error("Error fetching service details:", error);
+          console.error("Error fetching project details:", error);
         });
     }
-  }, [serviceId]);
+  }, [projectId]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,21 +33,18 @@ function ServiceEdit() {
   };
 
   const handleSave = () => {
-    if (serviceId) {
+    if (projectId) {
       axios
-        .put(
-          `https://rozisoft-website-backend.vercel.app/service/update-service/${serviceId}`,
-          formData
-        )
+        .put(`https://rozisoft-website-backend.vercel.app/project/update-project/${projectId}`, formData)
         .then((response) => {
           console.log(response.data);
-          toast.success("Service updated successfully", {
+          toast.success("Project updated successfully", {
             position: toast.POSITION.TOP_RIGHT,
           });
         })
         .catch((error) => {
           console.error(error);
-          toast.error("Failed to update service", {
+          toast.error("Failed to update Project", {
             position: toast.POSITION.TOP_RIGHT,
           });
         });
@@ -93,34 +78,21 @@ function ServiceEdit() {
                 alignItems={"center"}
                 justifyContent={"space-between"}
               >
-                <Grid item xs={12} lg={6.5}>
+                <Grid item xs={12} lg={5}>
                   <div className="dash-service-card">
-                    <div className="service-card">
+                    <div className="card">
                       <div
-                        className="service-bg"
+                        className="card-bg"
                         style={{
                           backgroundImage: `url(${formData.backgroundImageUrl})`,
                         }}
-                      >
-                        <div className="gradient-card">
-                          <div className="card-content">
-                            <hr className="card-line" />
-                            <h1>{formData.cardTitle}</h1>
-                            <span className="span">
-                              {formData.cardSubServices}
-                            </span>
-                          </div>
-                          <div className="hover-content">
-                            <p>Inside our services</p>
-                            <ul>
-                              {formData.cardServices
-                                .split(",")
-                                .map((service, serviceIndex) => (
-                                  <li key={serviceIndex}>{service.trim()}</li>
-                                ))}
-                            </ul>
-                          </div>
+                      ></div>
+                      <div className="card-content-project">
+                        <div className="flex justify-between">
+                          <span>{formData.projectCategory}</span>
+                          <hr />
                         </div>
+                        <p>{formData.projectName}</p>
                       </div>
                     </div>
                   </div>
@@ -135,33 +107,26 @@ function ServiceEdit() {
                       type="url"
                       placeholder="add Background Image URL"
                       name="backgroundImageUrl"
-                      value={formData.backgroundImageUrl} // Pre-fill with the background image URL
-                      onChange={handleChange}
                       required
+                      value={formData.backgroundImageUrl}
+                      onChange={handleChange}
                     />
                     <input
                       type="text"
-                      placeholder="add Card Title"
-                      name="cardTitle"
-                      value={formData.cardTitle} // Pre-fill with the card title
-                      onChange={handleChange}
+                      placeholder="add Project Category"
+                      name="projectCategory"
                       required
+                      value={formData.projectCategory}
+                      onChange={handleChange}
                     />
 
                     <input
                       type="text"
-                      placeholder="add card services include"
-                      name="cardSubServices"
-                      value={formData.cardSubServices} // Pre-fill with the card sub-services
-                      onChange={handleChange}
+                      placeholder="add project name"
+                      name="projectName"
                       required
-                    />
-                    <textarea
-                      placeholder="add card services include (comma-separated)"
-                      name="cardServices"
-                      value={formData.cardServices} // Pre-fill with card services
+                      value={formData.projectName}
                       onChange={handleChange}
-                      required
                     />
                     <button type="submit" className="btn" onClick={handleSave}>
                       Save
@@ -177,4 +142,4 @@ function ServiceEdit() {
   );
 }
 
-export default ServiceEdit;
+export default ProjectEdit;

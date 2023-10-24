@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+
 function DashCardTwo() {
   const [projectData, setProjectData] = useState([]);
   const [displayedProjects, setDisplayedProjects] = useState(2);
@@ -56,12 +58,22 @@ function DashCardTwo() {
               </div>
               <p>{content.projectCategory}</p>
               <p>{content.projectName}</p>
-              <button
-                className="btn"
-                onClick={() => handleDeleteProject(content._id)}
-              >
-                Delete
-              </button>
+              <div className="btn-containers">
+            <button
+              className="dash-btn"
+              onClick={() => handleDeleteProject(content._id)}
+            >
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <button
+              className="dash-btn"
+              
+            >
+              <Link to={`/rozisoft-admin/dashboard/service/edit/${content._id}`}>
+             <i class="fa-solid fa-pen-to-square"></i>
+              </Link>
+            </button>
+            </div>
             </div>
           );
         })}

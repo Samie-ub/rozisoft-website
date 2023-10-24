@@ -31,6 +31,41 @@ router.get("/all-project", async (req, res) => {
   }
 });
 
+// Add route to fetch a single project's details
+router.get("/project-details/:projectId", async (req, res) => {
+  try {
+    const projectId = req.params.projectId;
+    const project = await Project.findById(projectId);
+    if (!project) {
+      return res.status(404).json({ error: "Project not found" });
+    }
+    res.status(200).json(project);
+  } catch (error) {
+    console.error("Error fetching project details:", error);
+    res.status(500).json({ error: "Failed to retrieve project details" });
+  }
+});
+
+router.put("/update-project/:projectId", async (req, res) => {
+  try {
+    const projectId = req.params.projectId;
+    const { backgroundImageUrl, projectCategory, projectName } = req.body;
+
+    const updatedProject = {
+      backgroundImageUrl,
+      projectCategory,
+      projectName,
+    };
+
+    await Project.findByIdAndUpdate(projectId, updatedProject);
+
+    res.status(200).json({ message: "Project updated successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to update project" });
+  }
+});
+
 router.delete("/delete-project/:projectId", async (req, res) => {
   try {
     const projectId = req.params.projectId;
