@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import "../styles/section-styles.css";
 function CallSection() {
-  const phoneNumber = "+92-3488128670";
+  const phoneNumber = "+92-3144085048";
   return (
     <div className="call-container">
       <Grid

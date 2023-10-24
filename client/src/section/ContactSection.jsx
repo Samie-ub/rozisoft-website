@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { mailIcon, phoneIcon } from "../assets";
+import { mailIcon, phoneIcon, whatsappIcon } from "../assets";
 function ContactSection() {
   const showToastMessage = () => {
     toast.success("Email Sucessfully Send !", {
@@ -69,6 +69,14 @@ function ContactSection() {
   const contactData = [
     {
       imgSrc: phoneIcon,
+      label: "+92-3144085048",
+    },
+    {
+      imgSrc: whatsappIcon,
+      label: "+92-3464075748",
+    },
+    {
+      imgSrc: whatsappIcon,
       label: "+92-3488128670",
     },
     {

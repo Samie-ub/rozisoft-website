@@ -17,6 +17,7 @@ import {
   slideSix,
   slideSeven,
   slideEight,
+  PinterestIcon,
 } from "../assets";
 
 export const navbarData = [
@@ -63,6 +64,10 @@ export const socialData = [
   {
     href: "https://www.linkedin.com/in/rozi-soft/",
     icon: linkedIcon,
+  },
+  {
+    href: "https://www.pinterest.com/Rozisoftpk/",
+    icon: PinterestIcon,
   },
 ];
 

@@ -13,7 +13,7 @@ function Header() {
               <div className="flex">
                 <div className="header-item flex">
                   <img src={phoneIcon} alt="header icons" />
-                  <p>+92-3488128670</p>
+                  <p>+92-3144085048</p>
                 </div>
                 <div className="header-item flex">
                   <img src={mailIcon} alt="header icons" />
@@ -25,12 +25,12 @@ function Header() {
             <div className="flex justify-end">
                 <div className="header-item flex">
                   <img src={starIcon} alt="header icons" />
-                  <p>12 Years of Excellence</p>
+                  <p>6 Years of Excellence</p>
                 </div>
-                <div className="header-item flex">
+                {/* <div className="header-item flex">
                   <img src={tickIcon} alt="header icons" />
                   <p> Government License/DTS: 1994</p>
-                </div>
+                </div> */}
               </div>
             </Grid>
           </Grid>

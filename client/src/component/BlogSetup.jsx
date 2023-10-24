@@ -51,7 +51,6 @@ function BlogSetup() {
       [{ indent: "-1" }, { indent: "+1" }],
       ["clean"],
     ],
-    
   };
 
   const handleImage = () => {
