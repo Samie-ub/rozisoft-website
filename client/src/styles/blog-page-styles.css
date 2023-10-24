@@ -84,6 +84,11 @@
   color: #555757;
   font-size: 0.9rem;
 }
+.quill-container img {
+ width: 50%;
+
+ border-radius: 1rem;
+}
 
 .quill-container li {
   list-style: inherit;
@@ -129,3 +134,9 @@
   color: var(--white); 
 }
 /* Blog Page Styles Ends Here */
+@media (max-width: 767px) {
+  .blog-links{
+    display: none;
+  
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import { Grid } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
@@ -11,6 +11,8 @@ function BlogSetup() {
   const [blogContent, setBlogContent] = useState("");
   const [blogTitle, setBlogTitle] = useState("");
   const [blogCoverImageUrl, setBlogCoverImageUrl] = useState("");
+  const quillRef = useRef();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -28,8 +30,37 @@ function BlogSetup() {
       setBlogCoverImageUrl("");
       console.log(response);
     } catch (error) {
-      console.error("Error creating blog post:", error);
-      toast.error("Failed to create blog post");
+      console.error("Error creating a blog post:", error);
+      toast.error("Failed to create a blog post");
+    }
+  };
+
+  const modules = {
+    clipboard: {
+      matchVisual: false,
+    },
+    toolbar: [
+      ["bold", "italic", "underline", "strike"],
+      [{ header: [1, 2, 3, false] }],
+      ["link"],
+      [{ list: "ordered" }, { list: "bullet" }],
+      [{ script: "sub" }, { script: "super" }],
+      ["blockquote", "code-block"],
+      [{ direction: "rtl" }],
+      [{ color: [] }, { background: [] }],
+      [{ indent: "-1" }, { indent: "+1" }],
+      ["clean"],
+    ],
+    
+  };
+
+  const handleImage = () => {
+    const url = window.prompt("Enter the URL of the image:");
+    if (url) {
+      const editor = quillRef.current.getEditor();
+      const cursorPosition = editor.getSelection().index;
+      editor.clipboard.dangerouslyPasteHTML(cursorPosition, `<img src="${url}" alt=""/>`);
+      
     }
   };
 
@@ -82,12 +113,22 @@ function BlogSetup() {
                       />
                       <div className="quill-editor">
                         <ReactQuill
+                          modules={modules}
+                          ref={quillRef}
                           value={blogContent}
                           theme="snow"
                           onChange={(value) => setBlogContent(value)}
                           placeholder="Write your blog post here..."
                         />
                       </div>
+
+                      <button
+                        type="button"
+                        className="btn"
+                        onClick={handleImage}
+                      >
+                        Insert Image
+                      </button>
                       <button type="submit" className="btn">
                         Publish
                       </button>

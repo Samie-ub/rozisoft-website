@@ -51,7 +51,7 @@ function AboutUsPage() {
     },
   ];
   return (
-    <div className="about-us-page">
+    <div className="blog-page">
       {isLoading ? (
         <Loader />
       ) : (

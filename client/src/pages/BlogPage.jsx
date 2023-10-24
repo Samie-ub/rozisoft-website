@@ -2,13 +2,13 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Grid } from "@mui/material";
+import ContactSection from "../section/ContactSection";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
 import Navbar from "../component/Navbar";
-import "../styles/blog-page-styles.css";
 import Loader from "../component/Loader";
 import { socialData } from "../content";
-import ContactSection from "../section/ContactSection";
+import "../styles/blog-page-styles.css";
 function BlogPage() {
   const { blogId } = useParams();
   const [blogData, setBlogData] = useState({});
@@ -90,7 +90,7 @@ function BlogPage() {
                       <div className="social">
                         {socialData.map((content) => {
                           return (
-                            <a href={content.href} target="_blank" rel="no-ref">
+                            <a href={content.href} target="_blank" rel="noreferrer">
                               <img
                                 src={content.icon}
                                 alt="social media links"
