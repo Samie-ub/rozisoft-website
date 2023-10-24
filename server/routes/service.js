@@ -33,6 +33,22 @@ router.get("/all-service", async (req, res) => {
   }
 });
 
+router.get("/service-details/:serviceId", async (req, res) => {
+  try {
+    const serviceId = req.params.serviceId;
+    const service = await Service.findById(serviceId);
+
+    if (!service) {
+      return res.status(404).json({ error: "Service not found" });
+    }
+
+    res.status(200).json(service);
+  } catch (error) {
+    console.error("Error fetching service details:", error);
+    res.status(500).json({ error: "Failed to retrieve service details" });
+  }
+});
+
 router.delete("/delete-service/:serviceId", async (req, res) => {
   try {
     const serviceId = req.params.serviceId;

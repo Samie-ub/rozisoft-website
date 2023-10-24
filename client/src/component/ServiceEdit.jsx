@@ -11,9 +11,10 @@ function ServiceEdit() {
   const [formData, setFormData] = useState({
     backgroundImageUrl: "",
     cardTitle: "",
-    cardServices: "", // Initialize with an empty string or other default value
+    cardServices: "",
     cardSubServices: "",
   });
+  console.log("formData:", formData);
 
   useEffect(() => {
     if (serviceId) {
@@ -121,7 +122,7 @@ function ServiceEdit() {
                       type="url"
                       placeholder="add Background Image URL"
                       name="backgroundImageUrl"
-                      value={formData.backgroundImageUrl}
+                      value={formData.backgroundImageUrl} // Pre-fill with the background image URL
                       onChange={handleChange}
                       required
                     />
@@ -129,7 +130,7 @@ function ServiceEdit() {
                       type="text"
                       placeholder="add Card Title"
                       name="cardTitle"
-                      value={formData.cardTitle}
+                      value={formData.cardTitle} // Pre-fill with the card title
                       onChange={handleChange}
                       required
                     />
@@ -138,14 +139,14 @@ function ServiceEdit() {
                       type="text"
                       placeholder="add card services include"
                       name="cardSubServices"
-                      value={formData.cardSubServices}
+                      value={formData.cardSubServices} // Pre-fill with the card sub-services
                       onChange={handleChange}
                       required
                     />
                     <textarea
                       placeholder="add card services include (comma-separated)"
                       name="cardServices"
-                      value={formData.cardServices}
+                      value={formData.cardServices} // Pre-fill with card services
                       onChange={handleChange}
                       required
                     />
