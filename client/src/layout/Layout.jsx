@@ -26,6 +26,7 @@ import ContentWritingPage from "../pages/ContentWritingPage";
 import DigitalMarketingPage from "../pages/DigitalMarketingPage";
 import ContactPage from "../pages/ContactPage";
 import initLocomotiveScroll from "../hooks/LocomotiveScroll";
+import ServiceEdit from "../component/ServiceEdit";
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
   const isAuthenticated = !!token;
@@ -75,6 +76,10 @@ function Layout() {
           <Route
             path="/rozisoft-admin/dashboard/service"
             element={<PrivateRoute element={<ServiceSetup />} />}
+          />
+           <Route
+            path="/rozisoft-admin/dashboard/service/edit/:serviceId"
+            element={<PrivateRoute element={<ServiceEdit />} />}
           />
           <Route
             path="/rozisoft-admin/dashboard/projects"

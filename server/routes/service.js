@@ -45,4 +45,25 @@ router.delete("/delete-service/:serviceId", async (req, res) => {
   }
 });
 
+router.put("/update-service/:serviceId", async (req, res) => {
+  try {
+    const serviceId = req.params.serviceId;
+    const { backgroundImageUrl, cardTitle, cardSubServices, cardServices } = req.body;
+
+    const updatedService = {
+      backgroundImageUrl,
+      cardTitle,
+      cardSubServices,
+      cardServices: cardServices.split(","),
+    };
+
+    await Service.findByIdAndUpdate(serviceId, updatedService);
+
+    res.status(200).json({ message: "Service updated successfully" });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Failed to update service" });
+  }
+});
+
 module.exports = router;

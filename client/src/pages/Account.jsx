@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
 import { Grid } from "@mui/material";
 import Sidebar from "../component/Sidebar";
-import axios from "axios";
-
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/dashboard-styles.css";
 function Account() {
   const [adminID, setAdminID] = useState("");
@@ -39,6 +40,7 @@ function Account() {
 
       setAdminID("");
       setAdminPassword("");
+      toast.success("user added successfully");
     } catch (error) {
       console.error(error);
     }
@@ -53,10 +55,12 @@ function Account() {
       setUsers((prevUsers) => prevUsers.filter((user) => user._id !== userId));
     } catch (error) {
       console.error(error);
+      toast.error("There should be one user.");
     }
   };
   return (
     <div>
+      <ToastContainer />
       <Grid container>
         <Grid item lg={11.5}>
           <Grid

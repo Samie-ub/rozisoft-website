@@ -109,6 +109,25 @@
   width: 50% !important;
 }
 
+.btn-containers{
+  display: flex;
+  gap: .9rem;
+}
+
+.dash-btn{
+  background-color: var(--primary);
+  border: none;
+  color: var(--white);
+  padding: .5rem .7rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.dash-btn:hover{
+background-color: var(--ternary);
+transition: .5s ease;
+}
+
 /* Dashboard Styles Ends Here */
 
 /* Dashboard Sidebar Styles Starts Here */
@@ -169,7 +188,7 @@
 }
 
 .blog-stats button {
-  margin: 0;
+  margin: 1rem 0;
 }
 
 .blog-stats table {

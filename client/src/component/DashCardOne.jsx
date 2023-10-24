@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 function DashCardOne() {
   const [serviceData, setServiceData] = useState([]);
@@ -54,12 +55,23 @@ function DashCardOne() {
               />
             </div>
             <p>{content.cardTitle}</p>
+            <div className="btn-containers">
             <button
-              className="btn"
+              className="dash-btn"
               onClick={() => handleDeleteService(content._id)}
             >
-              Delete
+              <i class="fa-solid fa-trash"></i>
             </button>
+            <button
+              className="dash-btn"
+              
+            >
+              <Link to={`/rozisoft-admin/dashboard/service/edit/${content._id}`}>
+             <i class="fa-solid fa-pen-to-square"></i>
+              </Link>
+            </button>
+            </div>
+            
           </div>
         ))}
         {serviceData.length > 2 && (
