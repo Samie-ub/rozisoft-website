@@ -54,7 +54,7 @@ export const socialData = [
     icon: facebookIcon,
   },
   {
-    href: "/",
+    href: "https://instagram.com/rozi.soft?igshid=OGQ5ZDc2ODk2ZA==",
     icon: instagramIcon,
   },
   {
