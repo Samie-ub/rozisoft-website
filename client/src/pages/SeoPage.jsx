@@ -35,7 +35,7 @@ function SeoPage() {
             sx={{ py: { xs: 4, md: 0 } }}
           >
             <Grid item xs={11}>
-              <Grid container justifyContent={"center"} alignItems={"center"}>
+              <Grid container justifyContent={"center"} alignItems={"center"} sx={{py:{xs:4,md:10}}}>
                 <Grid item md={6} lg={6}>
                   <h1 className="heading">
                     HERE’S WHAT YOU GET WITH ROZISOFT PROFESSIONAL SEO SERVICES
@@ -43,7 +43,7 @@ function SeoPage() {
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={seoCover} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698270162/typesofSEO.jpeg_xqd3ct.jpg  " className="full-width" alt="" />
                 </Grid>
               </Grid>
               <StepCards data={seoStepData} />

@@ -40,7 +40,7 @@ function ContentWritingPage() {
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={contentCover} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698270162/content_writing_gfctnf.png" className="full-width" alt="" />
                 </Grid>
               </Grid>
               <Grid container justifyContent={"center"}>
@@ -64,9 +64,9 @@ function ContentWritingPage() {
                 sx={{ py: { xs: 4, md: 10 } }}
               >
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={contentCoverII} className="full-width" alt="smm" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698270163/content-writing-services-.jpeg_ynebht.jpg" className="full-width" alt="smm" />
                 </Grid>
-                <Grid item xs={12} md={5} lg={6}>
+                <Grid item xs={12} md={5} lg={5}>
                   <div className="smm-content">
                     <h1 className="upper">
                       Quality Graphic Design | Brand Consistency
