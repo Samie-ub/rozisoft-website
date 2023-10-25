@@ -38,14 +38,14 @@ function WebDevPage() {
             sx={{ pt: { xs: 4, md: 0 }, pb: { xs: 4, md: 20 } }}
           >
             <Grid item xs={11}>
-              <Grid container justifyContent={"center"} alignItems={"center"}>
+              <Grid container justifyContent={"center"} alignItems={"center"} sx={{py:{xs:4,md:10}}}>
                 <Grid item xs={12} md={6} lg={6}>
                   <h1 className="heading upper">
                     SIMPLE TO USE, MODERN DESIGN WEB DEVELOPMENT IN PAKISTAN
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={webCover} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265729/responsive_web_designing_pfo4mn.webp" className="full-width" alt="" />
                 </Grid>
               </Grid>
               <Grid container justifyContent={"center"}>
@@ -80,7 +80,7 @@ function WebDevPage() {
                   lg={5}
                   sx={{ display: { xs: "none", md: "block" } }}
                 >
-                  <img src={webCoverII} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265733/web_designing_mjssio.jpg" className="full-width" alt="" />
                 </Grid>
                 <Grid item xs={10} md={6} lg={6}>
                   <div className="smm-content">

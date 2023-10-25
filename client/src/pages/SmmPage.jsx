@@ -44,7 +44,7 @@ function SmmPage() {
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={smmCover} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265732/Social-Media_zzxqbi.png" className="full-width" alt="" />
                 </Grid>
               </Grid>
               <StepCards data={smmStepData} />
@@ -54,7 +54,7 @@ function SmmPage() {
                 sx={{ py: { xs: 4, md: 10 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
-                  <img src={smmCoverII} className="full-width" alt="smm" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265729/SMM_bvbomo.png" className="full-width" alt="smm" />
                 </Grid>
                 <Grid item xs={12} md={5} lg={6}>
                   <div className="smm-content">
@@ -99,7 +99,7 @@ function SmmPage() {
                   })}
                 </Grid>
                 <Grid item xs={12} md={5} lg={5} sx={{display:{xs:"none",md:"block"}}}>
-                  <img src={smmCoverIII} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265732/what-is-social-media-marketing_nxhde9.jpg" className="full-width" alt="" />
                 </Grid>
               </Grid>
             </Grid>

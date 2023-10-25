@@ -292,6 +292,7 @@
 
 .smm-main-points h3 {
   font-size: 1rem;
+  color: var(--primary);
 }
 
 .smm-main-points p {

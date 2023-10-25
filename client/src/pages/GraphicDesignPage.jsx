@@ -37,7 +37,7 @@ function GraphicDesignPage() {
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src={graphicCover} className="full-width" alt="" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265726/graphic_designing_gyghac.png" className="full-width" alt="" />
                 </Grid>
               </Grid>
               <Grid container justifyContent={"center"}>
@@ -59,7 +59,7 @@ function GraphicDesignPage() {
                 sx={{ py: { xs: 4, md: 10 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
-                  <img src={graphicCoverII} className="full-width" alt="smm" />
+                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265727/graphic_design_dnrmho.jpg" className="full-width" alt="smm" />
                 </Grid>
                 <Grid item xs={12} md={5} lg={6}>
                   <div className="smm-content">
