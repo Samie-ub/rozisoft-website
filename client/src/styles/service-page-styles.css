@@ -342,7 +342,38 @@
     padding: 3rem 0;
   }
 }
+/* Service Page Styles Ends Here */
 
 /* Responsive For Mobile Ends Here */
 
-/* Service Page Styles Ends Here */
+/* Tablet Responsive Starts Here */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ 
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+  .m-c {
+    text-align: center;
+  }
+  .about-us-page {
+    text-align: center;
+  }
+  .about-btn {
+    font-size: 2rem;
+  }
+
+  .about-h {
+    font-size: 2rem;
+  }
+
+  .about-btn button {
+    width: 100%;
+  }
+}
+
+/* Tablet Responsive Ends Here */

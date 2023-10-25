@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 import { Grid } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactQuill from "react-quill";
 import Sidebar from "./Sidebar";
 import "react-quill/dist/quill.snow.css";
-import { useParams } from "react-router-dom";
 
 function BlogEdit() {
   const { blogId } = useParams();
@@ -64,7 +64,7 @@ function BlogEdit() {
       console.error("Error creating/updating a blog post:", error);
       toast.error("Failed to create/update blog post");
     }
-  }
+  };
 
   const modules = {
     clipboard: {
@@ -89,9 +89,12 @@ function BlogEdit() {
     if (url) {
       const editor = quillRef.current.getEditor();
       const cursorPosition = editor.getSelection().index;
-      editor.clipboard.dangerouslyPasteHTML(cursorPosition, `<img src="${url}" alt=""/>`);
+      editor.clipboard.dangerouslyPasteHTML(
+        cursorPosition,
+        `<img src="${url}" alt=""/>`
+      );
     }
-  }
+  };
 
   return (
     <div>
