@@ -33,7 +33,7 @@ function ContentWritingPage() {
             sx={{ pt: { xs: 4, md: 0 }, pb: { xs: 4, md: 0 } }}
           >
             <Grid item xs={11}>
-              <Grid container justifyContent={"center"} alignItems={"center"}>
+              <Grid container justifyContent={"center"} alignItems={"center"} sx={{py:{xs:4,md:2}}}>
                 <Grid item xs={12} md={6} lg={6}>
                   <h1 className="heading upper">
                     HIGH-QUALITY WEBSITE CONTENT WRITING SERVICES IN PAKISTAN.
