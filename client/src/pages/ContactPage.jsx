@@ -6,29 +6,29 @@ import Header from "../component/Header";
 import ContactSection from "../section/ContactSection";
 
 function ContactPage() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <div>
-                 {isLoading ? (
+      {isLoading ? (
         <Loader />
       ) : (
         <>
           <Header />
           <Navbar />
-        
-        <ContactSection/>
-     
+
+          <ContactSection />
+
           <Footer />
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default ContactPage
+export default ContactPage;

@@ -32,17 +32,17 @@ function ContactSection() {
     setLoading(true);
     emailjs
       .send(
-        "service_nw9xram",
-        "template_o09m1fl",
+        "service_1r7z9rl",
+        "template_yna5qez",
         {
           from_name: form.name,
-          to_name: "Samie",
+          to_name: "Rozisoft Admin",
           from_email: form.email,
-          to_email: "wuzsamie@gmail.com",
+          to_email: "rozisoftservice@gmail.com",
           message: form.message,
           from_tel: form.tel,
         },
-        "02nLtWEy4i5OTg7Qp"
+        "vL5ecrIL5X6cYL91i"
       )
       .then(
         () => {
