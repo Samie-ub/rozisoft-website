@@ -38,9 +38,9 @@ function Account() {
 
       setUsers((prevUsers) => [...prevUsers, { adminID, adminPassword }]);
 
+      toast.success("user added successfully");
       setAdminID("");
       setAdminPassword("");
-      toast.success("user added successfully");
     } catch (error) {
       console.error(error);
     }
