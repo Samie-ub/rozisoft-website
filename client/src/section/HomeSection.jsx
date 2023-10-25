@@ -11,13 +11,13 @@ function HomeSection() {
   return (
     <div className="home-container"  name="home">
       <Grid container justifyContent={"center"}>
-        <Grid item xs={12} md={12} lg={12}>
+        <Grid item xs={12} sm={12} md={12} lg={12}>
           <Grid
             container
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <Grid item xs={12} md={12} lg={12}>
+            <Grid item xs={12} sm={12} md={12} lg={12}>
               <Swiper
                 modules={[Autoplay]}
                 spaceBetween={50}

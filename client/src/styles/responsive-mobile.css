@@ -159,9 +159,32 @@
 /* Tablet Responsive Starts Here */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* Project Section Styles Starts Here */
 
-  /* Project Section Styles Ends Here */
+  .display-none {
+    display: none;
+  }
+  .line {
+    width: 15% !important;
+    height: 0.8rem;
+    float: none !important;
+    margin: 0 auto !important;
+  }
+  .about-container h1 {
+    text-align: center !important;
+    font-size: 2rem;
+  }
+  .about-container p {
+    text-align: center !important;
+  }
+
+  .call-container {
+    text-align: center;
+  }
+
+  .bg-image {
+    height: 50vh;
+    background-position: right;
+  }
 
   /* Blog Section Styles Starts Here */
 
@@ -171,15 +194,22 @@
   }
   /* Blog Section Styles Ends Here */
 
-  /* Footer Section Styles Starts Here */
+  /* Footer Section Start Here */
   .footer-container {
-    background-size: cover;
+    text-align: center;
   }
-  .blog-content {
-    padding: 0;
+  .footer-brand {
+    width: 50%;
+    position: relative;
+    bottom: 10%;
+    left: 0%;
+  }
+  .footer-brand-info {
+    position: relative;
+    bottom: 15%;
   }
 
-  /* Footer Section Styles Ends Here */
+  /* Footer Section Ends Here */
 }
 
 /* Tablet Responsive Ends Here */

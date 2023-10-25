@@ -73,7 +73,7 @@
 /* Navbar Styles Ends Here */
 
 /* Media query for mobile screens Starts Here*/
-@media (max-width: 767px) {
+@media (max-width: 770px) {
   .nav-links,
   .social-item {
     display: none !important;
@@ -98,6 +98,11 @@
     z-index: 999;
     text-align: center;
     overflow-y: hidden;
+  }
+
+  .menubar-icon{
+    display: flex;
+    justify-content: center;
   }
 
   .menubar-icon svg{

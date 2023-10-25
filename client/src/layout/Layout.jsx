@@ -79,7 +79,7 @@ function Layout() {
             path="/rozisoft-admin/dashboard/service"
             element={<PrivateRoute element={<ServiceSetup />} />}
           />
-           <Route
+          <Route
             path="/rozisoft-admin/dashboard/service/edit/:serviceId"
             element={<PrivateRoute element={<ServiceEdit />} />}
           />
@@ -88,17 +88,17 @@ function Layout() {
             element={<PrivateRoute element={<ProjectSetup />} />}
           />
           <Route
-  path="/rozisoft-admin/dashboard/project/edit/:projectId"
-  element={<PrivateRoute element={<ProjectEdit />} />}
-/>
+            path="/rozisoft-admin/dashboard/project/edit/:projectId"
+            element={<PrivateRoute element={<ProjectEdit />} />}
+          />
           <Route
             path="/rozisoft-admin/dashboard/blogs"
             element={<PrivateRoute element={<BlogSetup />} />}
           />
           <Route
-  path="/rozisoft-admin/dashboard/blog/edit/:blogId"
-  element={<PrivateRoute element={<BlogEdit />} />}
-/>
+            path="/rozisoft-admin/dashboard/blog/edit/:blogId"
+            element={<PrivateRoute element={<BlogEdit />} />}
+          />
         </Routes>
       </Router>
     </div>

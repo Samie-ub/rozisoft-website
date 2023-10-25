@@ -92,12 +92,12 @@ function Footer() {
   return (
     <div className="footer-container">
       <Grid container justifyContent={"center"}>
-        <Grid item xs={12} md={11} lg={11}>
+        <Grid item xs={12} sm={11.5} md={11} lg={11}>
           <Grid
             container
-            sx={{ justifyContent: { xs: "center", md: "space-around" } }}
+            sx={{ justifyContent: { xs: "center", sm:"space-around", md: "space-around" } }}
           >
-            <Grid item xs={12} md={4} lg={3} sx={{ pb: { xs: 2, md: 0 } }}>
+            <Grid item xs={12} sm={5} md={4} lg={3} sx={{ pb: { xs: 2, md: 0 } }}>
               <img
                 src={logoIcon}
                 className="footer-brand"
@@ -126,7 +126,7 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={11} md={3} lg={3} sx={{ pb: { xs: 1, md: 0 } }}>
+            <Grid item xs={11} sm={3.5} md={3} lg={3} sx={{ pb: { xs: 1, md: 0 } }}>
               <h1>Our Services</h1>
               {servicesData.map((content) => {
                 return (
@@ -136,13 +136,13 @@ function Footer() {
                 );
               })}
             </Grid>
-            <Grid item xs={11} md={2.5} lg={2}>
+            <Grid item xs={11} sm={3} md={2.5} lg={2}>
               <h1>Industries</h1>
               {industriesData.map((content) => {
                 return <p>{content}</p>;
               })}
             </Grid>
-            <Grid item md={2.5} lg={2} className="display-none">
+            <Grid item sm={0} md={2.5} lg={2} className="display-none">
               <h1>quick links</h1>
               {links.map((content) => {
                 return (

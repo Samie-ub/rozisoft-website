@@ -72,7 +72,7 @@ function Navbar() {
             })}
           </div>
         </Grid>
-        <Grid item xs={1} sm={2} md={2} lg={2}>
+        <Grid item xs={1} sm={1} md={2} lg={2}>
           <div className="social-item flex justify-center">
             {socialData.map((content, index) => {
               return (
