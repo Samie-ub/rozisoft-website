@@ -123,7 +123,7 @@ function Footer() {
                 {contact.map((content) => {
                   return (
                     <p>
-                      <a href={content.href} target="_blank"  rel="noreferrer">
+                      <a href={content.href} target="_blank" className="footer-link"  rel="noreferrer">
                         <span>{content.label} : </span>
                         {content.uan}
                       </a>
