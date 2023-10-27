@@ -20,14 +20,17 @@ function Footer() {
     {
       label: "Phone",
       uan: " +92 326 4075748",
+      href: "tel:+923264075748",
     },
     {
       label: "Mobile",
       uan: " +92 348 8128670",
+      href: "https://wa.me/+923488128670",
     },
     {
       label: "Email",
       uan: "rozisoftservice@gmail.com ",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rozisoftservice@gmail.com",
     },
   ];
 
@@ -95,9 +98,22 @@ function Footer() {
         <Grid item xs={12} sm={11.5} md={11} lg={11}>
           <Grid
             container
-            sx={{ justifyContent: { xs: "center", sm:"space-around", md: "space-around" } }}
+            sx={{
+              justifyContent: {
+                xs: "center",
+                sm: "space-around",
+                md: "space-around",
+              },
+            }}
           >
-            <Grid item xs={12} sm={5} md={4} lg={3} sx={{ pb: { xs: 2, md: 0 } }}>
+            <Grid
+              item
+              xs={12}
+              sm={5}
+              md={4}
+              lg={3}
+              sx={{ pb: { xs: 2, md: 0 } }}
+            >
               <img
                 src={logoIcon}
                 className="footer-brand"
@@ -107,8 +123,10 @@ function Footer() {
                 {contact.map((content) => {
                   return (
                     <p>
-                      <span>{content.label} : </span>
-                      {content.uan}
+                      <a href={content.href} target="_blank"  rel="noreferrer">
+                        <span>{content.label} : </span>
+                        {content.uan}
+                      </a>
                     </p>
                   );
                 })}
@@ -126,7 +144,14 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={11} sm={3.5} md={3} lg={3} sx={{ pb: { xs: 1, md: 0 } }}>
+            <Grid
+              item
+              xs={11}
+              sm={3.5}
+              md={3}
+              lg={3}
+              sx={{ pb: { xs: 1, md: 0 } }}
+            >
               <h1>Our Services</h1>
               {servicesData.map((content) => {
                 return (

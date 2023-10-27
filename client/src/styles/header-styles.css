@@ -12,6 +12,10 @@
   font-size: 0.8rem;
   color: var(--white);
 }
+.header-item a {
+  font-size: 0.8rem;
+  color: var(--white);
+}
 
 /* Header Styles Ends Here */
 

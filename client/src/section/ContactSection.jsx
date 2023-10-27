@@ -70,18 +70,23 @@ function ContactSection() {
     {
       imgSrc: phoneIcon,
       label: "+92-3144085048",
+      href:"tel:+923144085048"
     },
     {
       imgSrc: whatsappIcon,
       label: "+92-3464075748",
+      href:"https://wa.me/+923464075748"
     },
     {
       imgSrc: whatsappIcon,
       label: "+92-3488128670",
+      href:"https://api.whatsapp.com/send?phone=+923488128670",
+      href:"https://wa.me/+923488128670"
     },
     {
       imgSrc: mailIcon,
       label: "rozisoftservice@gmail.com",
+      href:"https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rozisoftservice@gmail.com"
     },
   ];
   return (
@@ -111,7 +116,7 @@ function ContactSection() {
                 return (
                   <div>
                     <img src={content.imgSrc} alt="contact icons" />
-                    <span>{content.label}</span>
+                    <a href={content.href} target="_blank" rel="noreferrer">{content.label}</a>
                   </div>
                 );
               })}
