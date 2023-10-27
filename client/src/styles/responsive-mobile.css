@@ -108,6 +108,16 @@
     font-size: 2rem;
   }
 
+  .contact-ico img {
+    width: 1.2rem;
+    margin-right: .2rem;
+  }
+
+  .contact-ico {
+    text-align: start;
+    align-items: center;
+  }
+
   .contact-form button {
     width: 100%;
   }
