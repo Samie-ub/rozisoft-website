@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/Service-card-styles.css";
 
 function SampleNextArrow(props) {
-  const {onClick } = props;
+  const { onClick } = props;
   return (
     <div className="r-arrow" onClick={onClick}>
-    <i class="fa-solid fa-arrow-right"></i>
-  </div>
+      <i class="fa-solid fa-arrow-right"></i>
+    </div>
   );
 }
 
@@ -46,7 +46,7 @@ function ServiceCards() {
     slidesToScroll: 1,
     className: "gap-slider",
     nextArrow: <SampleNextArrow />,
-      prevArrow: <SamplePrevArrow />
+    prevArrow: <SamplePrevArrow />,
   };
   return (
     <div className="service-slider">

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 import { Grid } from "@mui/material";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Sidebar from "./Sidebar";
-import { useParams } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 
 function ServiceEdit() {
   const { serviceId } = useParams();
@@ -14,7 +14,6 @@ function ServiceEdit() {
     cardServices: "",
     cardSubServices: "",
   });
-  console.log("formData:", formData);
 
   useEffect(() => {
     if (serviceId) {
@@ -52,7 +51,6 @@ function ServiceEdit() {
           formData
         )
         .then((response) => {
-          console.log(response.data);
           toast.success("Service updated successfully", {
             position: toast.POSITION.TOP_RIGHT,
           });
@@ -135,7 +133,7 @@ function ServiceEdit() {
                       type="url"
                       placeholder="add Background Image URL"
                       name="backgroundImageUrl"
-                      value={formData.backgroundImageUrl} // Pre-fill with the background image URL
+                      value={formData.backgroundImageUrl}
                       onChange={handleChange}
                       required
                     />
@@ -143,7 +141,7 @@ function ServiceEdit() {
                       type="text"
                       placeholder="add Card Title"
                       name="cardTitle"
-                      value={formData.cardTitle} // Pre-fill with the card title
+                      value={formData.cardTitle}
                       onChange={handleChange}
                       required
                     />
@@ -152,14 +150,14 @@ function ServiceEdit() {
                       type="text"
                       placeholder="add card services include"
                       name="cardSubServices"
-                      value={formData.cardSubServices} // Pre-fill with the card sub-services
+                      value={formData.cardSubServices}
                       onChange={handleChange}
                       required
                     />
                     <textarea
                       placeholder="add card services include (comma-separated)"
                       name="cardServices"
-                      value={formData.cardServices} // Pre-fill with card services
+                      value={formData.cardServices}
                       onChange={handleChange}
                       required
                     />

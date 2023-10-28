@@ -1,5 +1,5 @@
-import { Grid } from "@mui/material";
 import React from "react";
+import { Grid } from "@mui/material";
 import { seoServiceData } from "../content/servicesContent";
 function RoziServiceCard() {
   return (
@@ -23,7 +23,7 @@ function RoziServiceCard() {
         justifyContent={"space-between"}
         spacing={5}
         alignItems={"center"}
-        sx={{pb:{xs:4,md:20}}}
+        sx={{ pb: { xs: 4, md: 20 } }}
       >
         {seoServiceData.map((content, index) => {
           return (
@@ -32,7 +32,6 @@ function RoziServiceCard() {
                 <i class="fa-solid fa-arrow-right"></i>
                 <span>{content}</span>
               </div>
-              
             </Grid>
           );
         })}

@@ -5,6 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import initLocomotiveScroll from "../hooks/LocomotiveScroll";
 import HomePage from "../pages/HomePage";
 import BlogPage from "../pages/BlogPage";
 import AdminLogin from "../pages/AdminLogin";
@@ -13,7 +14,6 @@ import Account from "../pages/Account";
 import ServiceSetup from "../component/ServiceSetup";
 import ProjectSetup from "../component/ProjectSetup";
 import BlogSetup from "../component/BlogSetup";
-import "../styles/responsive-mobile.css";
 import ServicePage from "../pages/ServicePage";
 import SeoPage from "../pages/SeoPage";
 import AboutUsPage from "../pages/AboutUsPage";
@@ -25,10 +25,12 @@ import PpcPage from "../pages/PpcPage";
 import ContentWritingPage from "../pages/ContentWritingPage";
 import DigitalMarketingPage from "../pages/DigitalMarketingPage";
 import ContactPage from "../pages/ContactPage";
-import initLocomotiveScroll from "../hooks/LocomotiveScroll";
 import ServiceEdit from "../component/ServiceEdit";
 import ProjectEdit from "../component/ProjectEdit";
 import BlogEdit from "../component/BlogEdit";
+import "../styles/responsive-mobile.css";
+import LinkBuilding from "../pages/LinkBuilding";
+
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
   const isAuthenticated = !!token;
@@ -63,9 +65,10 @@ function Layout() {
           <Route path="/graphic-designing" element={<GraphicDesignPage />} />
           <Route path="/pay-per-click" element={<PpcPage />} />
           <Route path="/content-writing" element={<ContentWritingPage />} />
-          <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
           <Route path="/blog/:blogId" element={<BlogPage />} />
-          {/* Dashboard Routes */}
+          <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
+          <Route path="/link-building" element={<LinkBuilding />} />
+          {/* Dashboard Routes Starts Here */}
           <Route path="/rozisoft-admin" element={<AdminLogin />} />
           <Route
             path="/rozisoft-admin/dashboard"
@@ -99,6 +102,7 @@ function Layout() {
             path="/rozisoft-admin/dashboard/blog/edit/:blogId"
             element={<PrivateRoute element={<BlogEdit />} />}
           />
+          {/* Dashboard Routes Ends Here */}
         </Routes>
       </Router>
     </div>

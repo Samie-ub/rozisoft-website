@@ -636,7 +636,7 @@ export const dmStepData = [
   {
     icon: <i class="fa-solid fa-traffic-light"></i>,
     title: "Traffic Generation & Coversions",
-    para: `3.	Traffic Generation & Coversions
+    para: `Traffic Generation & Coversions
     Our campaigns are created to work on both unpaid and paid platforms to attract more customers and bring in new visitors consistently. We ensure that potential customers follow a well-structured path to become dedicated, repeat customers.
     `,
   },
@@ -670,3 +670,93 @@ export const dmStepData = [
 ];
 
 // Digital Marketing Data Ends Here
+
+// Link Building Data Starts here
+export const lbStepData = [
+  {
+    icon: <i class="fa-solid fa-bullseye"></i>,
+    title: "Keyword Strategy",
+    para: ` We use specific keywords as anchor texts in link building. Our experts do detailed research to create a smart keyword plan, avoiding overuse and getting quality backlinks. This helps us create content that ranks high in search results and attracts good websites to link to us.
+    `,
+  },
+  {
+    icon: <i class="fa-regular fa-chart-bar"></i>,
+    title: "Competitor Analysis",
+    para: `We study what links your competitors have to find opportunities for your site. We group these links based on industry and how easy they are to get. Then, we use this data to make your link-building plan.`,
+  },
+  {
+    icon: <i class="fa-solid fa-link"></i>,
+    title: "Backlink Audits",
+    para: `Having good links is important for bringing in quality visitors. We check your links carefully to find any that might get you in trouble with Google. We make a list of where your links come from, check their quality, and suggest which ones to remove.
+`,
+  },
+  {
+    icon: <i class="fa-solid fa-satellite-dish"></i>,
+    title: "Outreach Service",
+   para:`We keep in touch with the websites that link to us, building strong relationships with webmasters, bloggers, and others. We find our target audience and look for websites that are similar. We also check how well these websites do in search engines.`
+  },
+  {
+    icon: <i class="fa-regular fa-paste"></i>,
+    title: "Guest Posts",
+   para:` Our team of content experts creates interesting and informative posts. We share these on websites where your potential audience hangs out. We also promote these posts on social media to bring in more visitors.`
+  },
+  {
+    icon: <i class="fa-solid fa-user-pen"></i>,
+    title: "Niche Edits",
+   para:`We ask authority websites to add links to our content in their existing articles. We make sure these links are legitimate and earned fairly.`
+  },
+  {
+    icon: <i class="fa-solid fa-copyright"></i>,
+    title: "Brand Mentions",
+   para:`We turn brand mentions into links, getting lots of new backlinks. We find places where your brand is mentioned but not linked, connect with the authors, and explain why they should link to your website. This helps us get high-quality backlinks and build long-term relationships.`
+  },
+  {
+    icon: <i class="fa-solid fa-shield-halved"></i>,
+    title: "Broken Link Recovery",
+   para:`We replace broken links on other websites with links to your site. We find websites with broken links, create or change content that fits, and ask them to use our links instead.`
+  },
+  {
+    icon: <i class="fa-solid fa-fire"></i>,
+    title: "Sponsorship Campaign",
+   para:`We connect your brand with local events and campaigns to reach your local audience. This also helps improve your brand's visibility and reach a wider audience.`
+  },
+];
+
+export const lbParaTwo = [
+  "Getting links from other websites is a really important part of SEO. To do it right, you need to get good links from reliable and trusted websites.The better these websites are, the more it helps your website show up in search results. Also, having more websites linking to yours means more people will come to your website.",
+  "At Rozisoft, we use smart tools and strategies to look at your links and find good websites to link to yours. Our link-building service includes checking your links, looking at your content, comparing with your competitors, doing content marketing, and creating a plan just for you. We work closely with our SEO team to make sure we follow the rules and help your brand. You can trust us to give our very best to make your links work well."
+];
+
+export const methodDatalb = [
+  {
+    number: 1,
+    title: "Detailed Website Analysis",
+    para: "We go through your website to figure out which pages work best, where there are gaps in your content, find and fix broken links, and plan how to get more links from other sites. Analyzing your site also helps us understand who visits your pages and what they're interested in, which guides us in making content that's just for them. We use data to create link building strategies that bring in valuable referrals.",
+  },
+  {
+    number: 2,
+    title: "White Hat Link Building Methods",
+    para: "We stay away from tricky link building tactics that can harm your site with Google penalties and hurt your search engine ranking. At Rozisoft, we use ethical link building methods and set clear goals to get good links from strong websites. We always check the quality of the websites that link to you to make sure they are trustworthy.",
+  },
+  {
+    number: 3,
+    title: "Planning Your Campaign",
+    para: "From picking the right keywords to promoting your content and getting more links, we make sure every part of your link building plan is focused on smart goals. Our link building experts set your targets, create your content, research where to get links, and start link building campaigns. We plan these campaigns to get the best opportunities for good links.",
+  },
+  {
+    number: 4,
+    title: "Strategy Meeting",
+    para: "Our link building experts make sure that all our link building packages meet your standards for quality. We work with our digital marketing experts and talk to your project managers to come up with link building methods that help your online growth. You can schedule a call with us to start your campaign.",
+  },
+  {
+    number: 5,
+    title: "Experienced Link Builders",
+    para: "Rozisoft link building specialists have many years of experience in creating ethical link building solutions. Our team knows the rules set by search engines for building brand awareness and promoting content on the internet. Work with us and use link building methods approved by search engines.",
+  },
+  {
+    number: 6,
+    title: "Tailored Strategies for Clients",
+    para: "We look at your target audience, what your brand is all about, and the links that point to your website to make sure your link building plan matches your goals. Our link building agency offers a six-month contract for our service, so you have time to see the results of our link building efforts. We also give you detailed reports about your campaign, showing how many links we got, how your ranking improved, and a summary of the links we got.",
+  },
+];
+// Link Building Data Ends here

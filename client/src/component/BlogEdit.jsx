@@ -43,7 +43,6 @@ function BlogEdit() {
           }
         );
         toast.success("Blog post updated successfully");
-        console.log(response);
       } else {
         const response = await axios.post(
           "https://rozisoft-website-backend.vercel.app/blog",
@@ -54,7 +53,6 @@ function BlogEdit() {
           }
         );
         toast.success("Blog post created successfully");
-        console.log(response);
       }
 
       setBlogContent("");

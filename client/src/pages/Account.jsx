@@ -34,8 +34,6 @@ function Account() {
         adminPassword,
       });
 
-      console.log(response.data);
-
       setUsers((prevUsers) => [...prevUsers, { adminID, adminPassword }]);
 
       toast.success("user added successfully");

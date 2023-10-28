@@ -63,6 +63,10 @@ function Footer() {
       label: "Content Writing",
       path: "/content-writing",
     },
+    {
+      label: "Link Building",
+      path: "/link-building",
+    },
   ];
 
   const links = [

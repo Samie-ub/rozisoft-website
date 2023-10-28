@@ -28,7 +28,6 @@ function BlogSetup() {
       setBlogContent("");
       setBlogTitle("");
       setBlogCoverImageUrl("");
-      console.log(response);
     } catch (error) {
       console.error("Error creating a blog post:", error);
       toast.error("Failed to create a blog post");
