@@ -6,54 +6,71 @@ import Navbar from "../component/Navbar";
 import Header from "../component/Header";
 import StepCards from "../component/StepCards";
 import MethodCards from "../component/MethodCards";
-import { lbParaTwo, lbStepData, methodDatalb } from "../content/servicesContent";
+import {
+  lbParaTwo,
+  lbStepData,
+  methodDatalb,
+} from "../content/servicesContent";
 
 function LinkBuilding() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <div className="seo-page">
-           {isLoading ? (
+      {isLoading ? (
         <Loader />
       ) : (
         <>
           <Header />
           <Navbar />
-        
+
           <Grid
             container
             justifyContent={"center"}
             sx={{ pt: { xs: 4, md: 0 }, pb: { xs: 4, md: 0 } }}
           >
             <Grid item xs={11}>
-              <Grid container justifyContent={"center"} alignItems={"center"} sx={{py:{xs:4,md:10}}}>
+              <Grid
+                container
+                justifyContent={"center"}
+                alignItems={"center"}
+                sx={{ py: { xs: 4, md: 10 } }}
+              >
                 <Grid item xs={12} md={6} lg={6}>
                   <h1 className="heading upper">
-                  Build a Robust Link Strategy and Boost Your Search Rankings
+                    Build a Robust Link Strategy and Boost Your Search Rankings
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698403189/Picture1_ykullq.png" className="full-width" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1698403189/Picture1_ykullq.png"
+                    className="full-width"
+                    alt=""
+                  />
                 </Grid>
               </Grid>
-              <StepCards data={lbStepData}/>
+              <StepCards data={lbStepData} />
               <Grid
                 container
                 justifyContent={"space-between"}
                 sx={{ py: { xs: 4, md: 10 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
-                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698403470/3_xpfye0.jpg" className="full-width" alt="smm" />
+                  <img
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1698403470/3_xpfye0.jpg"
+                    className="full-width"
+                    alt="smm"
+                  />
                 </Grid>
                 <Grid item xs={12} md={5} lg={6}>
                   <div className="smm-content">
                     <h1 className="upper">
-                    The Best Link Building Service For Your Business
+                      The Best Link Building Service For Your Business
                     </h1>
                     {lbParaTwo.map((content) => {
                       return <p>{content}</p>;
@@ -72,7 +89,7 @@ function LinkBuilding() {
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default LinkBuilding
+export default LinkBuilding;

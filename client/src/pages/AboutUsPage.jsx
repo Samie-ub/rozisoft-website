@@ -49,6 +49,10 @@ function AboutUsPage() {
       label: "Content Writing",
       path: "/content-writing",
     },
+    {
+      label: "Link Building",
+      path: "/link-building",
+    },
   ];
   return (
     <div className="blog-page">
