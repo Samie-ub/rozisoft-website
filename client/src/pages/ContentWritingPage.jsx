@@ -69,7 +69,7 @@ function ContentWritingPage() {
                 <Grid item xs={12} md={5} lg={5}>
                   <div className="smm-content">
                     <h1 className="upper">
-                      Quality Graphic Design | Brand Consistency
+                    PROFESSIONAL & CREATIVE WEBSITE CONTENT WRITING
                     </h1>
                     {contentParaTwo.map((content) => {
                       return <p>{content}</p>;
