@@ -1,24 +1,29 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
 import Header from "../component/Header";
-import { dmCover } from "../assets";
 import TabbedInterface from "../component/TabbedInterface";
 import StepCards from "../component/StepCards";
 import { dmStepData, pointsDm } from "../content/servicesContent";
 function DigitalMarketingPage() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000);
-    }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <div className="seo-page">
-           {isLoading ? (
+      <Helmet>
+        <title>
+          Digital Marketing Strategy Development – Best Online Strategy{" "}
+        </title>
+      </Helmet>
+      {isLoading ? (
         <Loader />
       ) : (
         <>
@@ -30,14 +35,23 @@ function DigitalMarketingPage() {
             sx={{ pt: { xs: 4, md: 0 }, pb: { xs: 4, md: 0 } }}
           >
             <Grid item xs={11}>
-              <Grid container justifyContent={"center"} alignItems={"center"} sx={{py:{xs:4,md:10}}}>
+              <Grid
+                container
+                justifyContent={"center"}
+                alignItems={"center"}
+                sx={{ py: { xs: 4, md: 10 } }}
+              >
                 <Grid item xs={12} md={6} lg={6}>
                   <h1 className="heading upper">
-                  Leading Digital Marketing Agency.
+                    Leading Digital Marketing Agency.
                   </h1>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6}>
-                  <img src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265731/social_media_marketing_mgm1pn.jpg" className="full-width" alt="" />
+                  <img
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1698265731/social_media_marketing_mgm1pn.jpg"
+                    className="full-width"
+                    alt=""
+                  />
                 </Grid>
               </Grid>
               <Grid
@@ -55,17 +69,18 @@ function DigitalMarketingPage() {
                   }}
                 >
                   <h1 className="heading upper text-center">
-                  Why We are the Best Digital Marketing Agency
+                    Why We are the Best Digital Marketing Agency
                   </h1>
                   <p className="text-center">
-                  We craft captivating customer experiences, steering clear of deceptive tactics to expand your customer base
+                    We craft captivating customer experiences, steering clear of
+                    deceptive tactics to expand your customer base
                   </p>
                 </Grid>
                 <Grid item lg={10}>
-                  <TabbedInterface  points={pointsDm}/>
+                  <TabbedInterface points={pointsDm} />
                 </Grid>
               </Grid>
-              <StepCards data={dmStepData}/>
+              <StepCards data={dmStepData} />
             </Grid>
           </Grid>
 
@@ -73,7 +88,7 @@ function DigitalMarketingPage() {
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default DigitalMarketingPage
+export default DigitalMarketingPage;

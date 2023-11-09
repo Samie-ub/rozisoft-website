@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
+import { Helmet } from "react-helmet";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
 import Header from "../component/Header";
-import { ppcCover, ppcCoverII } from "../assets";
 import { methodDataPpc, pointsPpc, ppcParaTwo } from "../content/servicesContent";
 import TabbedInterface from "../component/TabbedInterface";
 import MethodCards from "../component/MethodCards";
@@ -19,6 +19,9 @@ function PpcPage() {
     }, []);
   return (
     <div className="seo-page">
+      <Helmet>
+        <title>PCC Management Services | Drive Sales with PCC Services</title>
+      </Helmet>
           {isLoading ? (
         <Loader />
       ) : (

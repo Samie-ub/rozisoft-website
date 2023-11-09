@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import Loader from "../component/Loader";
 import Header from "../component/Header";
@@ -17,6 +18,9 @@ function ServicePage() {
   }, []);
   return (
     <div className="service-page">
+       <Helmet>
+        <title>Digital Marketing Services – Here’s what we do|Rozisoft</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

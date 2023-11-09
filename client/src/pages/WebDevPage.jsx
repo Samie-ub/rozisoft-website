@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
 import Header from "../component/Header";
 import MethodCards from "../component/MethodCards";
-import { webCover, webCoverII } from "../assets";
 import {
   faqsWeb,
   methodDataWeb,
@@ -26,6 +26,9 @@ function WebDevPage() {
   }, []);
   return (
     <div className="seo-page">
+       <Helmet>
+        <title>Custom Web Design Services | Custom Website Design Company </title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
@@ -12,7 +13,7 @@ function AllBlogPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [blogData, setBlogData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(6); // Set the number of items per page
+  const [itemsPerPage] = useState(6);
 
   const extractWords = (text, start, end) => {
     const words = text.split(" ");
@@ -43,18 +44,19 @@ function AllBlogPage() {
       });
   }, []);
 
-  // Calculate the index range of the current page
   const indexOfLastBlog = currentPage * itemsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - itemsPerPage;
   const currentBlogs = blogData.slice(indexOfFirstBlog, indexOfLastBlog);
 
-  // Change page
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
   return (
     <div>
+       <Helmet>
+        <title>SEO, Digital PR & Content Marketing Blog|Rozisoft</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

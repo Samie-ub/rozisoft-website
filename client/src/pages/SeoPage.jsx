@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
@@ -23,6 +24,9 @@ function SeoPage() {
   }, []);
   return (
     <div className="seo-page">
+      <Helmet>
+        <title>No 1 SEO Company in Pakistan – SEO Services in Pakistan</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

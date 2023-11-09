@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import { Link } from "react-router-dom";
 import { Grid } from "@mui/material";
 import Loader from "../component/Loader";
@@ -56,6 +58,9 @@ function AboutUsPage() {
   ];
   return (
     <div className="blog-page">
+       <Helmet>
+            <title>Top digital marketing agency in Pakistan</title>
+          </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

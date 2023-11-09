@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
@@ -15,6 +16,9 @@ function ContactPage() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Get in Touch – Rozisoft</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (

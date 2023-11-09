@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Grid } from "@mui/material";
 import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
 import Header from "../component/Header";
-import { graphicCover, graphicCoverII } from "../assets";
 import { DesignPara, designParaTwo, designStepData, faqsGraphic } from "../content/servicesContent";
 import StepCards from "../component/StepCards";
 import Faqs from "../component/Faqs";
@@ -18,6 +18,9 @@ function GraphicDesignPage() {
   }, []);
   return (
     <div className="service-page ">
+      <Helmet>
+        <title>Top Graphic Design Company |Graphic Designing Services</title>
+      </Helmet>
       {isLoading ? (
         <Loader />
       ) : (
