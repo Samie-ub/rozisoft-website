@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
 import HomeSection from "../section/HomeSection";
 import AboutSection from "../section/AboutSection";
 import ClientSection from "../section/ClientSection";
@@ -27,9 +26,7 @@ function HomePage() {
   }, []);
   return (
     <div>
-      <Helmet>
-        <title>Leading Digital Marketing Agency in Pakistan</title>
-      </Helmet>
+   
       {isLoading ? (
         <Loader />
       ) : (
