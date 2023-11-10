@@ -28,21 +28,9 @@ import s5 from "./slide-5.png";
 import s6 from "./slide-6.png";
 import s7 from "./slide-7.png";
 import s8 from "./slide-8.png";
-import seo from "./seo.png";
 import aboutH from "./about-h.png"
 import aboutII from "./aboutLat.png"
-import smmI from "./smm.png"
-import smmII from "./smm2.png"
-import smmIII from "./smm3.png"
-import web from "./web.png"
-import webII from "./web2.png"
-import graphic from "./graphic.png"
-import graphicII from "./graphic2.png"
-import ppc from "./ppc.png"
-import ppcII from "./ppc2.png"
-import content from "./content.png"
-import contentII from "./content2.png"
-import dm from "./dm.png"
+
 // Exports For Images
 export const mailIcon = mail;
 export const logoIcon = logo;
@@ -73,18 +61,6 @@ export const slideFive = s5;
 export const slideSix = s6;
 export const slideSeven = s7;
 export const slideEight = s8;
-export const seoCover = seo;
 export const AboutImg = aboutH;
 export const AboutImgII = aboutII;
-export const smmCover = smmI;
-export const smmCoverII = smmII;
-export const smmCoverIII = smmIII;
-export const webCover = web;
-export const webCoverII = webII;
-export const graphicCover = graphic;
-export const graphicCoverII = graphicII;
-export const ppcCover = ppc;
-export const ppcCoverII = ppcII;
-export const contentCover = content;
-export const contentCoverII = contentII;
-export const dmCover = dm;
+

@@ -18,7 +18,7 @@ function AboutSection() {
               justifyContent: { xs: "center", md: "space-between" },
             }}
           >
-            <Grid item xs={12} md={12} lg={12} sx={{ py: { xs: 5, md: 0 } }}>
+            <Grid item xs={12} md={12} lg={12} sx={{ py: { xs: 0, md: 0 } }}>
               <h1 className="heading text-end">
                 Premier Digital Marketing <br /> Agency in Pakistan
               </h1>
