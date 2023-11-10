@@ -6,10 +6,7 @@
   }
 
   .line {
-    width: 40% !important;
-    height: 0.8rem;
-    float: none !important;
-    margin: 0 auto !important;
+    display: none;
   }
 
   .card-line {
