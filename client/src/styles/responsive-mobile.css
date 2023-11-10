@@ -2,7 +2,12 @@
   /* Helper Classes Starts Here */
   .heading {
     text-align: center;
-    font-size: 1.9rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  .square-paragraph{
+    font-size: .9rem;
+    text-align: left;
   }
 
   .line {
