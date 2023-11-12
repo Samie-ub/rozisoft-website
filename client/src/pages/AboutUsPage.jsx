@@ -61,7 +61,7 @@ function AboutUsPage() {
        <Helmet>
             <title>Top digital marketing agency in Pakistan</title>
             <meta
-          name="discription"
+          name="description"
           content="Rozisoft provide the best software Solutions services for businesses. Our software solutions are widely used by different industries. Like IT Services, businesses."
         />
           </Helmet>

@@ -26,7 +26,7 @@ function SeoPage() {
       <Helmet>
         <title>No 1 SEO Company in Pakistan – SEO Services in Pakistan</title>
         <meta
-          name="discription"
+          name="description"
           content="Result-driven SEO services that resonate with your unique business needs. Grow your business while beating all the competition."
         />
       </Helmet>

@@ -28,7 +28,7 @@ function SmmPage() {
        <Helmet>
         <title>Social Media marketing Services in Islamabad & SMM Company /Agency </title>
         <meta
-          name="discription"
+          name="description"
           content="Rozisoft organizes your Brand and Business by offering top social media marketing services. We deliver you the best results to increase your business brand and sales."
         />
       </Helmet>

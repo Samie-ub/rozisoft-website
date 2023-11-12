@@ -25,10 +25,3 @@
     transition: .2s ease-in-out;
 }
 
-@media (max-width: 767px) {
- .page-btn{
-   position: relative;
-   left: 24%;
-   padding: 1rem 3rem;
- }
-  }

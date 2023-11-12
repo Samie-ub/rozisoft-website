@@ -26,7 +26,7 @@ function LinkBuilding() {
        <Helmet>
         <title>Link Building Services | Best Link Strategy Solutions</title>
         <meta
-          name="discription"
+          name="description"
           content="Establish your online authority and increase your visibility with a robust, results-driven link building strategy."
         />
       </Helmet>

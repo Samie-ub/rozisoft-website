@@ -57,7 +57,7 @@ function AllBlogPage() {
        <Helmet>
         <title>Rozisoft Digital marketing blogs</title>
         <meta
-          name="discription"
+          name="description"
           content="Stay up to date with the latest digital marketing and web development trends, news and tips."
         />
       </Helmet>

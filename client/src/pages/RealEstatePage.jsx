@@ -48,6 +48,40 @@ function RealEstatePage() {
                     the best website solution that goes above and beyond what
                     our clients think they need.
                   </p>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  sx={{ display: { xs: "none", md: "block" } }}
+                >
+                  <img
+                    className="full-width"
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699770994/Real_estate_xzm77f.png"
+                    alt="industries content"
+                  />
+                </Grid>
+              </Grid>
+              <Grid
+                container
+                justifyContent={"space-between"}
+                sx={{ py: { xs: 6, md: 12 } }}
+              >
+                  <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  sx={{ display: { xs: "none", md: "block" } }}
+                >
+                  <img
+                    className="full-width"
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699791460/House_searching-rafiki_nlihjx.png"
+                    alt="industries content"
+                  />
+                </Grid>
+                <Grid item xs={12} md={6} lg={5}>
                   <p className="page-para">
                     Our goal is to make sure that people searching for homes
                     online have an easy and enjoyable experience. We focus on
@@ -69,23 +103,13 @@ function RealEstatePage() {
                     it's a way to exceed the expectations of both our clients
                     and the people looking for their dream homes.
                   </p>
+                  <Link to="/service">
                   <button className="page-btn">
-                    <Link to="/service">Learn more</Link>
+                    Learn more
                   </button>
+                  </Link>
                 </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  lg={6}
-                  sx={{ display: { xs: "none", md: "block" } }}
-                >
-                  <img
-                    className="full-width"
-                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699770994/Real_estate_xzm77f.png"
-                    alt="industries content"
-                  />
-                </Grid>
+              
               </Grid>
             </Grid>
           </Grid>

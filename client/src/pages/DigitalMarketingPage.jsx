@@ -23,7 +23,7 @@ function DigitalMarketingPage() {
           Digital Marketing Strategy Development – Best Online Strategy
         </title>
         <meta
-          name="discription"
+          name="description"
           content="Are you looking for an effective content marketing strategy for your business? Feel free to contact us today!"
         />
       </Helmet>

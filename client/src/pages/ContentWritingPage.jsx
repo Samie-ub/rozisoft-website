@@ -26,7 +26,7 @@ function ContentWritingPage() {
           Best SEO Content Writing Services | Content Writing Company
         </title>
         <meta
-          name="discription"
+          name="description"
           content="Content marketing is the practice of creating content (blog or social media posts, videos, tweets) that attracts your target audience."
         />
       </Helmet>

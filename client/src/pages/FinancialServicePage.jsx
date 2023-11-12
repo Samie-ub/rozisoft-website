@@ -48,6 +48,40 @@ function FinancialServicePage() {
                     understanding is the key to creating solutions that not only
                     meet but go beyond what our clients first thought of.
                   </p>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  sx={{ display: { xs: "none", md: "block" } }}
+                >
+                  <img
+                    className="full-width"
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699770994/financial-services_ieg4y5.png"
+                    alt="industries content"
+                  />
+                </Grid>
+              </Grid>
+              <Grid
+                container
+                justifyContent={"space-between"}
+                sx={{ py: { xs: 6, md: 12 } }}
+              >
+                 <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={6}
+                  sx={{ display: { xs: "none", md: "block" } }}
+                >
+                  <img
+                    className="full-width"
+                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699791690/Finance_leaders-rafiki_vjfdbw.png"
+                    alt="industries content"
+                  />
+                </Grid>
+                <Grid item xs={12} md={6} lg={5}>
                   <p className="page-para">
                     Our main goal is to make things better for clients in the
                     financial world. We want to make sure their work is
@@ -74,23 +108,13 @@ function FinancialServicePage() {
                     the way to go above and beyond what our financial clients
                     expect from us.
                   </p>
+                  <Link to="/service">
                   <button className="page-btn">
-                    <Link to="/service">Learn more</Link>
+                    Learn more
                   </button>
+                  </Link>
                 </Grid>
-                <Grid
-                  item
-                  xs={12}
-                  md={6}
-                  lg={6}
-                  sx={{ display: { xs: "none", md: "block" } }}
-                >
-                  <img
-                    className="full-width"
-                    src="https://res.cloudinary.com/dwohygqua/image/upload/v1699770994/financial-services_ieg4y5.png"
-                    alt="industries content"
-                  />
-                </Grid>
+               
               </Grid>
             </Grid>
           </Grid>

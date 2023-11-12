@@ -29,7 +29,7 @@ function WebDevPage() {
        <Helmet>
         <title>Custom Web Design Services | Custom Website Design Company </title>
         <meta
-          name="discription"
+          name="description"
           content="Rozisoft is a reliable web development company in Islamabad, Pakistan offers top-quality website design and development services to businesses."
         />
       </Helmet>

@@ -21,7 +21,7 @@ function ServicePage() {
        <Helmet>
         <title>Digital Marketing Services – Here’s what we do|Rozisoft</title>
         <meta
-          name="discription"
+          name="description"
           content="Rozisoft Marketing Agency is a full-service digital marketing agency. We provide SEO, PPC, social media, web design and more."
         />
       </Helmet>
