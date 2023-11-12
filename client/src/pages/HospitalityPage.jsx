@@ -32,7 +32,7 @@ function HospitalityPage() {
                 container
                 justifyContent={"space-between"}
                 alignItems={"center"}
-                sx={{ py: { xs: 6, md: 6 } }}
+                sx={{ py: { xs: 0, md: 6 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
                   <h1 className="page-head">Hospitality</h1>
@@ -58,7 +58,7 @@ function HospitalityPage() {
                 container
                 justifyContent={"space-between"}
                 alignItems={"center"}
-                sx={{ py: { xs: 6, md: 6 } }}
+                sx={{ py: { xs: 4, md: 6 } }}
               >
                 <Grid  item xs={12} md={6} lg={6} sx={{display:{xs:"none",md:"block"}}}>
                   <img

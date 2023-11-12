@@ -30,7 +30,7 @@ function RealEstatePage() {
               <Grid
                 container
                 justifyContent={"space-between"}
-                sx={{ py: { xs: 6, md: 12 } }}
+                sx={{ py: { xs: 0, md: 12 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
                   <h1 className="page-head">Real Estate</h1>
@@ -66,7 +66,7 @@ function RealEstatePage() {
               <Grid
                 container
                 justifyContent={"space-between"}
-                sx={{ py: { xs: 6, md: 12 } }}
+                sx={{ py: { xs: 4, md: 12 } }}
               >
                   <Grid
                   item

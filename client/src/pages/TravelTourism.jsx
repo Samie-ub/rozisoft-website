@@ -32,7 +32,7 @@ function TravelTourism() {
               container
               alignItems={"center"}
               justifyContent={"space-between"}
-              sx={{ py: { xs: 6, md: 4 } }}
+              sx={{ py: { xs: 0, md: 4 } }}
             >
               <Grid item xs={12} md={6} lg={5}>
                 <h1 className="page-head">Travel & Tourism</h1>
@@ -52,7 +52,7 @@ function TravelTourism() {
               container
               alignItems={"center"}
               justifyContent={"space-between"}
-              sx={{ py: { xs: 6, md: 4 } }}
+              sx={{ py: { xs: 4, md: 4 } }}
             >
                <Grid  item xs={12} md={6} lg={6} sx={{display:{xs:"none",md:"block"}}}>
                 <img

@@ -32,7 +32,7 @@ function EducationPage() {
                 container
                 justifyContent={"space-between"}
                 alignItems={"center"}
-                sx={{ py: { xs: 6, md: 4 } }}
+                sx={{ py: { xs: 0, md: 4 } }}
               >
                 <Grid item xs={12} md={6} lg={5}>
                   <h1 className="page-head">Education</h1>
@@ -58,7 +58,7 @@ function EducationPage() {
               <Grid
                 container
                 justifyContent={"space-between"}
-                sx={{ py: { xs: 6, md: 4 } }}
+                sx={{ py: { xs: 4, md: 4 } }}
               >
                 <Grid
                   item
