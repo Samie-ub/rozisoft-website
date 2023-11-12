@@ -17,7 +17,7 @@ function HomeSection() {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <Grid item xs={12} sm={12} md={12} lg={12}>
+            <Grid item xs={12} sm={12} md={12} lg={12} sx={{display:{xs:"none",md:"block"}}}>
               <Swiper
                 modules={[Autoplay]}
                 spaceBetween={50}

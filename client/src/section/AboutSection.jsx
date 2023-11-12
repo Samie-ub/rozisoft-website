@@ -16,23 +16,47 @@ function AboutSection() {
             sx={{
               py: { xs: 5, md: 20 },
               justifyContent: { xs: "center", md: "space-between" },
+              flexDirection: { xs: "column-reverse", md: "row" },
             }}
           >
-            <Grid item xs={12} md={12} lg={12} sx={{ py: { xs: 0, md: 0 } }}>
-              <h1 className="C text-end">
+            <Grid
+              item
+              xs={12}
+              md={12}
+              lg={12}
+              sx={{ py: { xs: 0, md: 0 }, order: { xs: 2, md: 1 } }}
+            >
+              <h1 className="heading text-end">
                 Premier Digital Marketing <br /> Agency in Pakistan
               </h1>
               <br />
               <hr className="line" />
             </Grid>
-            <Grid item xs={12} sm={12} md={5} lg={5}>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={5}
+              lg={5}
+              sx={{
+                order: { xs: 3, md: 2 },
+              }}
+            >
               <img
                 src={aboutImage}
                 className="full-width"
                 alt="about section content"
               />
             </Grid>
-            <Grid item xs={11.8} md={6.7} lg={6}>
+            <Grid
+              item
+              xs={11.8}
+              md={6.7}
+              lg={6}
+              sx={{
+                order: { xs: 1, md: 3 },
+              }}
+            >
               {aboutData.map((content, index) => {
                 return (
                   <p className="square-paragraph m-y" key={index}>
