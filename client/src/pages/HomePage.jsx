@@ -29,6 +29,10 @@ function HomePage() {
     <div>
       <Helmet>
         <title>Leading Digital Marketing Agency in Pakistan</title>
+        <meta
+          name="discription"
+          content="seo company in Pakistan ,seo islamabad, Top seo companies in islamabad,Seo Services in Lahore,Seo expert in islamabad, Digital Marketing company in islamabad, seo companies, best seo services, Link-building services, digital marketing Company, seo services, best seo agency in Pakistan , Professional seo expert , seo agency in islamabad , top seo services in Pakistan, best seo company in islamabad, best digital marketing agency in Pakistan, Search Engine Optimization, Digital marketing expert in Pakistan, professional seo company in islamabad, Content Writing, Pay Per click services in islamabad ,web designing company, web development , best web designing company, graphic designing company, graphic design, SMM"
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

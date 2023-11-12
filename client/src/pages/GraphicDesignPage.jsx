@@ -20,6 +20,10 @@ function GraphicDesignPage() {
     <div className="service-page ">
       <Helmet>
         <title>Top Graphic Design Company |Graphic Designing Services</title>
+        <meta
+          name="discription"
+          content="Rozisoft Graphics offers a full range of graphic design services - we can create your entire brand identity or a few pieces of print collateral."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

@@ -8,12 +8,30 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   const industriesData = [
-    "Hospitality",
-    "Travel & Tourism",
-    "Real State",
-    "Financial Service",
-    "Education",
-    "News",
+    {
+      label: "Hospitality",
+      path: "/hospitality",
+    },
+    {
+      label: "Travel & Tourism",
+      path: "/travel-tourism",
+    },
+    {
+      label: "Real State",
+      path: "/real-estate",
+    },
+    {
+      label: "Financial Service",
+      path: "/financial-service",
+    },
+    {
+      label: "Education",
+      path: "/education",
+    },
+    {
+      label: "News",
+      path: "/news",
+    },
   ];
 
   const contact = [
@@ -127,7 +145,12 @@ function Footer() {
                 {contact.map((content) => {
                   return (
                     <p>
-                      <a href={content.href} target="_blank" className="footer-link"  rel="noreferrer">
+                      <a
+                        href={content.href}
+                        target="_blank"
+                        className="footer-link"
+                        rel="noreferrer"
+                      >
                         <span>{content.label} : </span>
                         {content.uan}
                       </a>
@@ -168,7 +191,11 @@ function Footer() {
             <Grid item xs={11} sm={3} md={2.5} lg={2}>
               <h1>Industries</h1>
               {industriesData.map((content) => {
-                return <p>{content}</p>;
+                return (
+                  <NavLink to={content.path}>
+                    <p className="footer-link">{content.label}</p>
+                  </NavLink>
+                );
               })}
             </Grid>
             <Grid item sm={0} md={2.5} lg={2} className="display-none">

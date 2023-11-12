@@ -20,8 +20,12 @@ function DigitalMarketingPage() {
     <div className="seo-page">
       <Helmet>
         <title>
-          Digital Marketing Strategy Development – Best Online Strategy{" "}
+          Digital Marketing Strategy Development – Best Online Strategy
         </title>
+        <meta
+          name="discription"
+          content="Are you looking for an effective content marketing strategy for your business? Feel free to contact us today!"
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

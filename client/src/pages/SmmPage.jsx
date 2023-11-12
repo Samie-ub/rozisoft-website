@@ -27,6 +27,10 @@ function SmmPage() {
     <div className="seo-page">
        <Helmet>
         <title>Social Media marketing Services in Islamabad & SMM Company /Agency </title>
+        <meta
+          name="discription"
+          content="Rozisoft organizes your Brand and Business by offering top social media marketing services. We deliver you the best results to increase your business brand and sales."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

@@ -21,6 +21,10 @@ function PpcPage() {
     <div className="seo-page">
       <Helmet>
         <title>PCC Management Services | Drive Sales with PCC Services</title>
+        <meta
+          name="discription"
+          content="Grow your business and expand your reach with optimized and data-driven PPC marketing campaigns and services."
+        />
       </Helmet>
           {isLoading ? (
         <Loader />

@@ -20,6 +20,10 @@ function ServicePage() {
     <div className="service-page">
        <Helmet>
         <title>Digital Marketing Services – Here’s what we do|Rozisoft</title>
+        <meta
+          name="discription"
+          content="Rozisoft Marketing Agency is a full-service digital marketing agency. We provide SEO, PPC, social media, web design and more."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

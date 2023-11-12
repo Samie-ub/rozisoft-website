@@ -30,6 +30,12 @@ import ProjectEdit from "../component/ProjectEdit";
 import BlogEdit from "../component/BlogEdit";
 import "../styles/responsive-mobile.css";
 import LinkBuilding from "../pages/LinkBuilding";
+import HospitalityPage from "../pages/HospitalityPage";
+import TravelTourism from "../pages/TravelTourism";
+import RealEstatePage from "../pages/RealEstatePage";
+import FinancialServicePage from "../pages/FinancialServicePage";
+import EducationPage from "../pages/EducationPage";
+import NewsPage from "../pages/NewsPage";
 
 function PrivateRoute({ element }) {
   const token = localStorage.getItem("jwtToken");
@@ -68,6 +74,12 @@ function Layout() {
           <Route path="/blog/:blogId" element={<BlogPage />} />
           <Route path="/digital-marketing" element={<DigitalMarketingPage />} />
           <Route path="/link-building" element={<LinkBuilding />} />
+          <Route path="/hospitality" element={<HospitalityPage />} />
+          <Route path="/travel-tourism" element={<TravelTourism />} />
+          <Route path="/real-estate" element={<RealEstatePage />} />
+          <Route path="/financial-service" element={<FinancialServicePage />} />
+          <Route path="/education" element={<EducationPage />} />
+          <Route path="/news" element={<NewsPage />} />
           {/* Dashboard Routes Starts Here */}
           <Route path="/rozisoft-admin" element={<AdminLogin />} />
           <Route

@@ -19,7 +19,7 @@ function AboutSection() {
             }}
           >
             <Grid item xs={12} md={12} lg={12} sx={{ py: { xs: 0, md: 0 } }}>
-              <h1 className="heading text-end">
+              <h1 className="C text-end">
                 Premier Digital Marketing <br /> Agency in Pakistan
               </h1>
               <br />

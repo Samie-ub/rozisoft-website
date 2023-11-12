@@ -55,7 +55,11 @@ function AllBlogPage() {
   return (
     <div>
        <Helmet>
-        <title>SEO, Digital PR & Content Marketing Blog|Rozisoft</title>
+        <title>Rozisoft Digital marketing blogs</title>
+        <meta
+          name="discription"
+          content="Stay up to date with the latest digital marketing and web development trends, news and tips."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

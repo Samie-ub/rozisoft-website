@@ -25,6 +25,10 @@ function ContentWritingPage() {
         <title>
           Best SEO Content Writing Services | Content Writing Company
         </title>
+        <meta
+          name="discription"
+          content="Content marketing is the practice of creating content (blog or social media posts, videos, tweets) that attracts your target audience."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />

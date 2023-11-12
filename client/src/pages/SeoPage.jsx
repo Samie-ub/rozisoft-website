@@ -5,7 +5,6 @@ import Footer from "../component/Footer";
 import Loader from "../component/Loader";
 import Navbar from "../component/Navbar";
 import Header from "../component/Header";
-import { seoCover } from "../assets";
 import TabbedInterface from "../component/TabbedInterface";
 import StepCards from "../component/StepCards";
 import MethodCards from "../component/MethodCards";
@@ -26,6 +25,10 @@ function SeoPage() {
     <div className="seo-page">
       <Helmet>
         <title>No 1 SEO Company in Pakistan – SEO Services in Pakistan</title>
+        <meta
+          name="discription"
+          content="Result-driven SEO services that resonate with your unique business needs. Grow your business while beating all the competition."
+        />
       </Helmet>
       {isLoading ? (
         <Loader />
