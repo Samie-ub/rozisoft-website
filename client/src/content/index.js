@@ -14,9 +14,6 @@ import {
   slideThree,
   slideOFour,
   slideFive,
-  slideSix,
-  slideSeven,
-  slideEight,
   PinterestIcon,
 } from "../assets";
 
@@ -77,9 +74,6 @@ export const homeData = [
   slideThree,
   slideOFour,
   slideFive,
-  slideSix,
-  slideSeven,
-  slideEight,
 ];
 
 export const aboutData = [

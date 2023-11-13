@@ -25,9 +25,6 @@ import s2 from "./slide-2.png";
 import s3 from "./slide-3.png";
 import s4 from "./slide-4.png";
 import s5 from "./slide-5.png";
-import s6 from "./slide-6.png";
-import s7 from "./slide-7.png";
-import s8 from "./slide-8.png";
 import aboutH from "./about-h.png"
 import aboutII from "./aboutLat.png"
 
@@ -58,9 +55,6 @@ export const slideTwo = s2;
 export const slideThree = s3;
 export const slideOFour = s4;
 export const slideFive = s5;
-export const slideSix = s6;
-export const slideSeven = s7;
-export const slideEight = s8;
 export const AboutImg = aboutH;
 export const AboutImgII = aboutII;
 
