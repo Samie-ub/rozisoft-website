@@ -44,7 +44,7 @@ function BlogPage() {
   }, []);
   useEffect(() => {
     axios
-      .get(`https://rozisoft-website-backend.vercel.app/blog/${blogId}`)
+      .get(`https://rozisoft-com-backend.vercel.app/blog/${blogId}`)
       .then((response) => {
         setBlogData(response.data);
       })

@@ -18,7 +18,7 @@ function ServiceEdit() {
   useEffect(() => {
     if (serviceId) {
       fetch(
-        `https://rozisoft-website-backend.vercel.app/service/service-details/${serviceId}`
+        `https://rozisoft-com-backend.vercel.app/service/service-details/${serviceId}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -47,7 +47,7 @@ function ServiceEdit() {
     if (serviceId) {
       axios
         .put(
-          `https://rozisoft-website-backend.vercel.app/service/update-service/${serviceId}`,
+          `https://rozisoft-com-backend.vercel.app/service/update-service/${serviceId}`,
           formData
         )
         .then((response) => {

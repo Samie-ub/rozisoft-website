@@ -7,7 +7,7 @@ function DashCardThree() {
   const [displayedBlogs, setDisplayedBlogs] = useState(2);
   const [isExpanded, setIsExpanded] = useState(false);
   const handleDeleteBlog = (blogId) => {
-    fetch(`https://rozisoft-website-backend.vercel.app/blog/${blogId}`, { method: "DELETE" })
+    fetch(`https://rozisoft-com-backend.vercel.app/blog/${blogId}`, { method: "DELETE" })
       .then((response) => {
         if (response.status === 204) {
           toast.success("Blog deleted successfully");
@@ -32,7 +32,7 @@ function DashCardThree() {
     }
   };
   useEffect(() => {
-    fetch("https://rozisoft-website-backend.vercel.app/blog/")
+    fetch("https://rozisoft-com-backend.vercel.app/blog/")
       .then((response) => response.json())
       .then((data) => {
         setBlogData(data);

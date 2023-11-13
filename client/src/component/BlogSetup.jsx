@@ -17,7 +17,7 @@ function BlogSetup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://rozisoft-website-backend.vercel.app/blog",
+        "https://rozisoft-com-backend.vercel.app/blog",
         {
           content: blogContent,
           title: blogTitle,

@@ -6,7 +6,7 @@ function DashCardOne() {
   const [displayedServices, setDisplayedServices] = useState(2);
   const [isExpanded, setIsExpanded] = useState(false);
   const handleDeleteService = (serviceId) => {
-    fetch(`https://rozisoft-website-backend.vercel.app/service/delete-service/${serviceId}`, {
+    fetch(`https://rozisoft-com-backend.vercel.app/service/delete-service/${serviceId}`, {
       method: "DELETE",
     })
       .then((response) => {
@@ -33,7 +33,7 @@ function DashCardOne() {
     }
   };
   useEffect(() => {
-    fetch("https://rozisoft-website-backend.vercel.app/service/all-service")
+    fetch("https://rozisoft-com-backend.vercel.app/service/all-service")
       .then((response) => response.json())
       .then((data) => {
         setServiceData(data);

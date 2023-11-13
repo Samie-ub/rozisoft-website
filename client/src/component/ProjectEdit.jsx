@@ -16,7 +16,7 @@ function ProjectEdit() {
 
   useEffect(() => {
     if (projectId) {
-      fetch(`https://rozisoft-website-backend.vercel.app/project/project-details/${projectId}`)
+      fetch(`https://rozisoft-com-backend.vercel.app/project/project-details/${projectId}`)
         .then((response) => response.json())
         .then((data) => {
           setFormData(data);
@@ -35,7 +35,7 @@ function ProjectEdit() {
   const handleSave = () => {
     if (projectId) {
       axios
-        .put(`https://rozisoft-website-backend.vercel.app/project/update-project/${projectId}`, formData)
+        .put(`https://rozisoft-com-backend.vercel.app/project/update-project/${projectId}`, formData)
         .then((response) => {
           console.log(response.data);
           toast.success("Project updated successfully", {

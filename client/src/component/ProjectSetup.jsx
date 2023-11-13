@@ -23,7 +23,7 @@ function ProjectSetup() {
 
   const handleSave = () => {
     axios
-      .post("https://rozisoft-website-backend.vercel.app/project/add-project", newProject)
+      .post("https://rozisoft-com-backend.vercel.app/project/add-project", newProject)
       .then((response) => {
         console.log(response.data);
         toast.success("Project added successfully", {

@@ -15,7 +15,7 @@ function AdminLogin() {
     e.preventDefault();
 
     try {
-      const url = "https://rozisoft-website-backend.vercel.app/admin/login";
+      const url = "https://rozisoft-com-backend.vercel.app/admin/login";
       const response = await axios.post(url, {
         adminID,
         adminPassword,

@@ -3,7 +3,7 @@
   "homepage": "https://rozisoft.com/",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://rozisoft-website-backend.vercel.app",
+  "proxy": "https://rozisoft-com-backend.vercel.app",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",

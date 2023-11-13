@@ -7,7 +7,7 @@ function ServicePageCard() {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    fetch("https://rozisoft-website-backend.vercel.app/service/all-service")
+    fetch("https://rozisoft-com-backend.vercel.app/service/all-service")
       .then((response) => response.json())
       .then((data) => {
         setServiceData(data);

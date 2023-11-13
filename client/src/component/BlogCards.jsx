@@ -29,7 +29,7 @@ function BlogCards() {
 
   useEffect(() => {
     axios
-      .get("https://rozisoft-website-backend.vercel.app/blog")
+      .get("https://rozisoft-com-backend.vercel.app/blog")
       .then((response) => {
         setBlogData(response.data);
       })
