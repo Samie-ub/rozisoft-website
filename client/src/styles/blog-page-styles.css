@@ -153,7 +153,7 @@
   cursor: pointer;
 }
 
-.page-numbers button.active {
+.pagination button.active{
   background-color: var(
     --ternary
   );

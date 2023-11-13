@@ -54,7 +54,7 @@ function AllBlogPage() {
 
   return (
     <div>
-       <Helmet>
+      <Helmet>
         <title>Rozisoft Digital marketing blogs</title>
         <meta
           name="description"
@@ -124,22 +124,31 @@ function AllBlogPage() {
                       onClick={() => paginate(currentPage - 1)}
                       disabled={currentPage === 1}
                     >
-                      <i class="fa-solid fa-arrow-left"></i>
+                      <i className="fa-solid fa-arrow-left"></i>
                     </button>
 
-                    <div className="page-numbers">
-                      {Array.from({
-                        length: Math.ceil(blogData.length / itemsPerPage),
-                      }).map((number, index) => (
-                        <button
-                          key={index}
-                          onClick={() => paginate(index + 1)}
-                          className={currentPage === index + 1 ? "active" : ""}
-                        >
-                          {index + 1}
-                        </button>
-                      ))}
-                    </div>
+                    {Array.from({
+                      length: Math.ceil(blogData.length / itemsPerPage),
+                    }).map(
+                      (number, index) =>
+                        (index === 0 ||
+                          index === currentPage - 1 ||
+                          index === currentPage ||
+                          index === currentPage + 1 ||
+                          index ===
+                            Math.ceil(blogData.length / itemsPerPage) - 1) && (
+                          <button
+                            key={index}
+                            onClick={() => paginate(index + 1)}
+                            className={
+                              currentPage === index + 1 ? "active" : ""
+                            }
+                          >
+                            {index + 1}
+                          </button>
+                        )
+                    )}
+
                     <button
                       onClick={() => paginate(currentPage + 1)}
                       disabled={
@@ -147,7 +156,7 @@ function AllBlogPage() {
                         Math.ceil(blogData.length / itemsPerPage)
                       }
                     >
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
                 </Grid>
